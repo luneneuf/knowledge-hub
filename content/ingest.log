@@ -1,0 +1,110 @@
+[2026-04-05 23:55:14] Watcher started. Monitoring: /Users/al02471021/obsidian-vaults/wiki/raw/
+[2026-04-05 23:56:18] Watcher started. Monitoring: /Users/al02471021/obsidian-vaults/wiki/raw/
+[2026-04-05 23:56:52] START: /Users/al02471021/obsidian-vaults/wiki/raw/uwo/test-trigger.md
+[2026-04-05 23:56:52] SKIP (already running): /Users/al02471021/obsidian-vaults/wiki/raw/uwo/test-trigger.md
+원본 파일 내용이 `# 테스트` 한 줄뿐입니다. 내용이 거의 없는 테스트 파일인데, 그대로 ingest를 진행할까요? 아니면 이건 트리거 테스트용이라 위키 페이지 생성 없이 넘어가도 될까요?
+[2026-04-05 23:57:08] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/uwo/test-trigger.md
+[2026-04-08 09:58:55] START: /Users/al02471021/obsidian-vaults/wiki/raw/labor/2026-04-07_노무wiki_파이프라인_셋업.md
+파일 쓰기 권한이 필요합니다. 권한을 허용해주시면 index.md와 log.md 갱신을 완료하겠습니다.
+[2026-04-08 09:59:51] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/labor/2026-04-07_노무wiki_파이프라인_셋업.md
+[2026-04-08 17:31:28] START: /Users/al02471021/obsidian-vaults/wiki/raw/uwo/damascus_steel.md
+index.md에 대한 쓰기 권한이 계속 거부되고 있습니다. 권한 프롬프트에서 "Allow" 또는 "Always allow"를 선택해 주시면 나머지 작업을 바로 완료하겠습니다.
+
+현재 진행 상황:
+- **완료**: `wiki/trade-goods/다마스쿠스-강철.md` 생성
+- **대기 중**: `index.md` 갱신, `log.md` 갱신
+[2026-04-08 17:32:26] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/uwo/damascus_steel.md
+[2026-04-08 19:29:41] START: /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/compass_artifact_wf-091c61f3-a3ad-414f-8ded-b209380d5156_text_markdown.md
+Ingest 완료. 처리 결과:
+
+- **소스 페이지 생성**: `wiki/sources/src_LAKA_종합_리서치_리포트.md` — 재무 데이터, 소유권 변동 3단계, 경영진 상세, 마케팅 캠페인, 제품 라인, 일본 오프라인 타임라인, 서플라이체인, 성수 플래그십, 경쟁사 비교표 등 핵심 내용 정리
+- **엔티티 업데이트**: `wiki/entities/LAKA.md` — 변성수 공동대표·임지현 CD 추가, 제품 라인 확장(50색 틴트·쿠션·클렌징), 국내 채널 상세(올리브영 700매장·노세일 정책), 소유권 변동 상세화
+- **index.md**: 소스 페이지 1건 추가
+- **log.md**: 2026-04-08 작업 기록 추가
+[2026-04-08 19:34:18] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/compass_artifact_wf-091c61f3-a3ad-414f-8ded-b209380d5156_text_markdown.md
+[2026-04-08 19:34:20] START: /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/compass_artifact_wf-917ad205-9023-4321-ae91-2dc9cc1f45c1_text_markdown.md
+index.md와 log.md 편집 권한을 승인해주시면 갱신을 완료하겠습니다. wiki 페이지 자체는 이미 생성 완료되었습니다:
+
+- **생성**: `wiki/analysis/LAKA_재고_200억_구조분석.md`
+- **대기 중**: index.md에 항목 추가, log.md에 작업 기록 추가
+[2026-04-08 19:35:50] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/compass_artifact_wf-917ad205-9023-4321-ae91-2dc9cc1f45c1_text_markdown.md
+[2026-04-08 19:35:52] START: /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/compass_artifact_wf-e8560c48-3bd6-41a4-870d-875eab1a4147_text_markdown.md
+index.md와 log.md 편집에 권한이 필요합니다. 허용해 주시면 바로 갱신하겠습니다.
+
+위키 페이지는 이미 생성 완료되었습니다:
+
+- **생성**: `wiki/analysis/LAKA_채용공고_현황분석.md`
+- **내용**: LAKA 한국 본사 11개월 채용 공백, 2025년 초 채용 러시(11건+), 일본 JT 4건 활성 공고, 구다이글로벌 분리 현황, 이직 준비자 시사점
+- **태그**: `cosmetics`, `analysis`, `career`
+- **내부 링크**: `[[이지철]]`, `[[구다이글로벌]]`, `[[LAKA]]`
+
+index.md와 log.md 편집 권한을 승인해 주시면 나머지 처리를 완료하겠습니다.
+[2026-04-08 19:37:42] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/compass_artifact_wf-e8560c48-3bd6-41a4-870d-875eab1a4147_text_markdown.md
+[2026-04-08 19:37:44] START: /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/달바글로벌_COO_보고서_최종본_20260404.md
+I notice you haven't granted write permissions for index.md, log.md, and the entity file yet. Could you approve the edit permissions? I need to update:
+
+1. **index.md** — 새 페이지 2건 등록
+2. **log.md** — 작업 이력 추가
+3. **달바글로벌.md** — 엔티티 페이지 태그/날짜 업데이트
+
+이미 완료된 작업:
+- `wiki/analysis/달바_LAKA_JT_유통구조.md` — **신규 생성** (JT를 통한 공생-긴장 구조)
+- `wiki/analysis/달바글로벌_벤치마크.md` — **전면 갱신** (최종본 데이터 반영, 리스크 매트릭스, 권역별 OPM, 실행 권고 4건 추가)
+[2026-04-08 19:40:37] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/달바글로벌_COO_보고서_최종본_20260404.md
+[2026-04-08 21:12:08] START: /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/한국콜마_vs_코스맥스_ODM_심층분석.md
+Ingest 완료. 처리 결과:
+
+**소스**: `raw/cosmetics/한국콜마_vs_코스맥스_ODM_심층분석.md`
+
+**생성/갱신된 wiki 페이지 (3건)**:
+- `wiki/analysis/한국콜마_vs_코스맥스_ODM_비교.md` — 신규. 재무·기술·전략·고객사·지역확장 심층 비교 + LAKA 관점 시사점
+- `wiki/entities/코스맥스.md` — 신규. 글로벌 화장품 ODM 1위 기업 프로필 (설립, 실적, 거점, 고객, 큐레이터 전략)
+- `wiki/entities/한국콜마.md` — 갱신. 설립 역사, 2025 실적, 선케어 초격차, 북미 제2공장, 연우 리스크 등 대폭 보강
+
+**index.md** — analysis 1건, entities 1건 추가
+**log.md** — 2026-04-08 (6) 항목 append
+[2026-04-08 21:18:13] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/한국콜마_vs_코스맥스_ODM_심층분석.md
+[2026-04-08 21:59:24] START: /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/K-뷰티_브랜드_IPO_동향_2024_2026.md
+index.md 수정 권한도 필요합니다. 파일 쓰기 권한을 허용해 주시면 나머지 작업을 완료하겠습니다.
+
+현재까지 완료된 작업:
+- **wiki/analysis/K뷰티_브랜드_IPO_동향.md** — 신규 생성 (5개 기업 비교표, LAKA 시사점 포함)
+- **wiki/entities/비나우.md** — 신규 생성 (넘버즈인+퓌, IPO 준비 중)
+- **wiki/entities/아로마티카.md** — 신규 생성 (비건 클린뷰티, 2025.11 코스닥)
+
+남은 작업:
+- index.md에 analysis 1건 + entities 2건 등록
+- log.md에 작업 기록 append
+- 기존 entity 3개(에이피알/달바/구다이)의 `[[K-뷰티_IPO_동향]]` 링크를 `[[K뷰티_브랜드_IPO_동향]]`으로 수정
+[2026-04-08 22:03:48] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/cosmetics/K-뷰티_브랜드_IPO_동향_2024_2026.md
+[2026-04-08 22:15:35] START: /Users/al02471021/obsidian-vaults/wiki/raw/uwo/research/미켈란젤로_vs_다빈치_르네상스_디스전.md
+log.md도 권한 차단이 되고 있네요. Edit 권한을 허용해 주시면 바로 완료됩니다.
+
+현재까지 완료된 작업:
+
+| 작업 | 상태 |
+|------|------|
+| `wiki/uwo/people/레오나르도_다빈치.md` 생성 (draft) | ✅ |
+| `wiki/uwo/people/미켈란젤로.md` 링크 수정 (draft) | ✅ |
+| `wiki/uwo/themes/르네상스_파라고네_논쟁.md` 생성 (draft) | ✅ |
+| `index.md` People + Themes 갱신 | ✅ |
+| `log.md` 작업 기록 append | ⏳ 권한 대기 |
+[2026-04-08 22:23:21] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/uwo/research/미켈란젤로_vs_다빈치_르네상스_디스전.md
+[2026-04-09 20:26:40] Watcher started. Monitoring: /Users/al02471021/obsidian-vaults/wiki/raw/
+[2026-04-10 19:23:08] Watcher started. Monitoring: /Users/al02471021/obsidian-vaults/wiki/raw/
+[2026-04-10 23:21:07] START: /Users/al02471021/obsidian-vaults/wiki/raw/uwo/research/VOC의 마카오 두 번의 패전  1601년과 1622년.md
+죄송합니다. 편집 권한이 계속 승인되지 않아 index.md, moc.md, log.md 수정을 진행할 수 없습니다. 
+
+현재까지 완료된 것과 남은 수정 사항을 정리합니다:
+
+**완료:**
+- `wiki/uwo/events/VOC_마카오_패전.md` 생성 (draft, 1601년 사건 + 1622년 전투 종합)
+
+**남은 수정 (권한 승인 후 다시 요청해 주세요):**
+
+1. **index.md**: 카운트 45→46, Events 섹션에 `[[VOC_마카오_패전]]` 추가
+2. **moc.md**: Events에 `[[VOC_마카오_패전]]` 추가  
+3. **log.md**: 2026-04-10 (2) 블록에 ingest 기록 추가
+
+편집 권한 프롬프트가 표시될 때 "Allow" 또는 "Always allow"를 선택하신 후 다시 말씀해 주시면 바로 처리하겠습니다.
+[2026-04-10 23:26:14] DONE (exit 0): /Users/al02471021/obsidian-vaults/wiki/raw/uwo/research/VOC의 마카오 두 번의 패전  1601년과 1622년.md

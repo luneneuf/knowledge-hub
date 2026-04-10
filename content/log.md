@@ -1,0 +1,128 @@
+---
+title: "Log"
+updated: 2026-04-10
+---
+
+# 변경 이력
+
+## [2026-04-10] migration | 스키마 교체 및 3축 구조 이관
+- 기존 CLAUDE.md → CLAUDE.md.bak 보존
+- 62개 페이지 3축 구조로 이관 (history/work/industry)
+  - history/uwo/ : 16페이지 (people 6, events 5, themes 3, moc/publish_log 2)
+  - work/labor/ : 1페이지
+  - industry/LAKA/ : 45페이지 (entities 14, analysis 12, sources 9, career 5, concepts 4, overview 1)
+- frontmatter: title/type/axis 필드 62개 파일 전체 추가
+- 태그 체계 교체 (history/work/industry 3축)
+- 위키링크: 케이스 A (`[[파일명]]`) — 경로 수정 불필요
+- index.md 3축 테이블 구조로 전면 재작성
+
+## 2026-04-05
+- **init** — 위키 초기화. CLAUDE.md, index.md, log.md 생성.
+- **ingest** `raw/research/라플라타강-은의강.md` — wiki 페이지 3건 생성: 라플라타강, 포토시 은광, 부에노스아이레스. index.md 갱신.
+
+## 2026-04-08
+- wiki/uwo/ 폴더 구조 생성 (people, events, themes)
+- moc.md, publish_log.md 초기 파일 생성
+- 라플라타강.md, 포토시_은광.md, 부에노스아이레스.md → wiki/uwo/events/ 이관
+- 파일명 컨벤션 적용 (포토시-은광 → 포토시_은광)
+
+## 2026-04-08 (2)
+- LAKA wiki 페이지 frontmatter 일괄 점검
+- 대상: overview.md + analysis/ career/ concepts/ entities/ sources/ (총 37개)
+- 수정: 30개 / 정상: 7개
+- 주요 작업: tags에 cosmetics + 폴더 태그 prepend, updated 2026-04-08 갱신
+- 파일명 변경: src_리서치_결과_보고서_RQ-2026-04-01.md → src_리서치_결과_보고서_RQ_2026_04_01.md (하이픈 제거)
+- 링크 업데이트: index.md, analysis/경쟁사_비교.md, analysis/글로벌_채널_전략.md, concepts/K뷰티_일본시장.md, concepts/젠더뉴트럴_뷰티.md
+- 미승인 태그(LAKA, 일본시장, 성과관리 등)는 제거하지 않고 보존
+
+## 2026-04-08 (3)
+- LAKA 태그 정리: 미승인 ~70종 → 승인 태그로 재매핑 또는 제거
+- 재매핑: 43건 (예: 일본시장→market/japan, 성과관리→hr 등)
+- 단순 제거: 78건 (브랜드/회사명/인물명 태그)
+- 모호 태그 1건 처리 완료: entities/세포라.md `유럽` → `market/eu` (CLAUDE.md에 market/eu 신규 승인)
+
+## 2026-04-08 (4)
+- index.md 전면 갱신: vault 실제 구조 기준 재작성
+- UWO 5페이지 + LAKA 37페이지 + 노무 1페이지 + 미분류 1페이지 = 총 44개 등록
+- category 비표준 필드 31개 파일에서 일괄 제거
+- CLAUDE.md LAKA 태그 목록 갱신 (신규 12개 추가)
+- 대상: wiki/ 하위 LAKA 페이지 37개 전체
+
+## 2026-04-08 (5)
+- 중복 wiki/index.md, wiki/log.md 제거
+- 빈 legacy 폴더 6개 제거 (content, history, navigators, ports, production, trade-goods)
+- 다마스쿠스_강철.md → wiki/uwo/themes/ 이관 + 파일명·frontmatter 정비 (하이픈 제거, tags=[uwo, theme])
+- 노무wiki_파이프라인_셋업.md 날짜 접두사 제거 + frontmatter 정비
+- index.md 재생성 (LAKA 31개 페이지에 한 줄 설명 머지)
+
+## 2026-04-08 (6)
+- **ingest** `raw/cosmetics/한국콜마_vs_코스맥스_ODM_심층분석.md`
+- analysis/ 1개 생성: [[한국콜마_vs_코스맥스_ODM_비교]] — ODM 양대산맥 재무·기술·전략·고객사·지역확장 비교
+- entities/ 1개 생성: [[코스맥스]] — 글로벌 화장품 ODM 1위 기업 프로필
+- entities/ 1개 업데이트: [[한국콜마]] — 설립 역사, 2025 실적, 선케어 강점, 북미 전략, 연우 리스크 보강
+- index.md 갱신 (analysis 1건, entities 1건 추가)
+
+### 머지된 이력 (구 wiki/wiki/log.md에서 흡수)
+
+**[2026-04-05] LAKA 초기 ingest** (raw/cosmetics/ 12개 파일 처리)
+- 처리 소스 (MD 8개): 리서치 결과 보고서 RQ-2026-04-01.md, LAKA_성과관리_케이스별_제도설계_20260405.md, 달바글로벌 전략 리스크 분석 — LAKA 관점.md, 중소기업 성과관리·인사평가 시스템 변화 리서치 의뢰서.md, LAKA 성과관리·인사평가 제도 설계 리서치 의뢰서.md, 성과관리 리서치 결과 보고서 20260405-1.md, 에이피알_COO_보고서_최종본_20260407.md, 달바글로벌_COO_보고서_최종본_20260407.md
+- 참조 PDF 3개: [에이피알]사업보고서_2025년.pdf, [달바글로벌]사업보고서(2025.03.18).pdf, 달바 (유진증권).pdf
+- 결과: sources 8개 + entities 11개 (LAKA, 에이피알, 달바글로벌, 이지철, 이민미, 롬앤, 구다이글로벌, 한국콜마, 세포라, 부츠, Qoo10_일본) + concepts 3개 (성과관리_시스템, K뷰티_일본시장, 젠더뉴트럴_뷰티) + analysis 5개 (글로벌_채널_전략, 경쟁사_비교, 에이피알_벤치마크, 달바글로벌_벤치마크, LAKA_성과관리_제도설계) + career 4개 (역량_매핑, 면접_예상질문, 지원_전략, 리스크_요인) = **총 31개 페이지 생성**
+
+**[2026-04-08] LAKA 종합 리서치 리포트 ingest**
+- 처리 소스: compass_artifact_wf-091c61f3-...md (현재 LAKA_코스메틱스_종합_리서치_리포트로 rename됨)
+- sources/ 1개 생성: src_LAKA_종합_리서치_리포트
+- entities/ 1개 업데이트: LAKA (경영진 상세, 제품 라인 확장, 채널 현황 보강)
+
+## 2026-04-08 (6)
+- [LAKA] raw 추가: 한국콜마 vs 코스맥스 ODM 심층분석 (`raw/cosmetics/한국콜마_vs_코스맥스_ODM_심층분석.md`)
+- [LAKA] wiki 신규: `concepts/ODM.md`, `analysis/K-뷰티_ODM_비교.md`, `entities/코스맥스.md`
+- [LAKA] wiki 업데이트: `entities/한국콜마.md` — 연혁·사업구조·글로벌 거점·고객사 보강
+- index.md 갱신: Analysis에 K-뷰티_ODM_비교, Concepts에 ODM 등록
+
+## 2026-04-08 (8)
+- [UWO] 프로젝트 범위 확장: 트위터 전용 → 역사 콘텐츠 허브로 재정의 (CLAUDE.md 갱신)
+- [UWO] 승인 태그 추가: `topic/renaissance`, `topic/art`
+- [UWO] raw 추가: `raw/uwo/research/미켈란젤로_vs_다빈치_르네상스_디스전.md` (변경 이력 블록 포함, 본문 원본 보존)
+- [UWO] wiki 신규 4건: `people/미켈란젤로.md`, `people/레오나르도_다빈치.md`, `themes/미켈란젤로_vs_다빈치.md`, `themes/파라고네.md`
+- [UWO] 자동 ingest 잔여물 제거: `themes/르네상스_파라고네_논쟁.md` (themes/미켈란젤로_vs_다빈치 + themes/파라고네로 분리·재작성됨)
+- [UWO] `wiki/uwo/people/레오나르도_다빈치.md` 자동 ingest 본 → 수동 지시서 기준 재작성 (잘못된 `period/dutch-golden-age` 태그 제거, 1999 그란 카발로 복원 fact는 머지)
+- moc.md, index.md 갱신
+
+## 2026-04-09
+- [UWO] raw 추가: `raw/uwo/research/솔리스_탐험과_죽음.md` — 후안 디아스 데 솔리스 인물 리서치, 1-트윗 단일 포스트 컨셉 포함
+- [UWO] wiki 신규: `wiki/uwo/people/솔리스.md` (3-1~3-7 구조, draft) — 라플라타강 발견자, 1516년 사망
+- index.md 갱신: People에 솔리스 등록
+
+## 2026-04-09 (3)
+- [UWO] raw 보강: `raw/uwo/research/시티_완_켐방_리서치.md` — 3-1~3-10 리서치 섹션 추가 (즉위 배경, 푸트리 사둥 후일담, 키장 금화, 연대 논쟁, UWO 게임 데이터 등)
+- [UWO] wiki 재작성: `wiki/uwo/people/시티_완_켐방.md` — raw 기반 전면 재작성. 기본 정보·역사 요약·핵심 포인트·푸트리 사둥 후일담·역사적 맥락·게임 연계·콘텐츠 현황 구성
+
+## 2026-04-09 (2)
+- [UWO] raw 추가: `raw/uwo/research/시티_완_켐방_리서치.md` — 인수인계서 원문 보존, 변경 이력 블록 포함
+- [UWO] wiki 신규: `wiki/uwo/people/시티_완_켐방.md` (3-1~3-7 구조, published) — 켈란탄 전설적 여왕, 말레이시아 중앙은행 키장 금화 기원, 실존 불확실
+- index.md 갱신: People에 시티_완_켐방 등록 (44→45개)
+
+## 2026-04-10
+- [공통] CLAUDE.md `## 환경 / 팁` 섹션 신규 생성 — symlink 팁 추가 (`ln -s ~/obsidian-vaults/wiki/CLAUDE.md ~/.claude/CLAUDE.md`)
+
+## 2026-04-08 (7)
+- [LAKA] raw 추가: K-뷰티 브랜드 IPO 동향 2024-2026 (`raw/cosmetics/K-뷰티_브랜드_IPO_동향_2024_2026.md`)
+- [LAKA] wiki 신규: `analysis/K-뷰티_IPO_동향.md`
+- [LAKA] wiki 신규 (자동 ingest 생성 → 크로스링크만 수동 보정): `entities/비나우.md`, `entities/아로마티카.md`
+- [LAKA] wiki 업데이트 (IPO 섹션 보강): `entities/에이피알.md`(창업자·미국 얼타·B2B 피부과), `entities/달바글로벌.md`(2E 전략·FI 오버행·코스트코·얼타), `entities/구다이글로벌.md`(브랜드 포트폴리오·2026 IPO 주관사·한성USA)
+- [LAKA] `entities/한국콜마.md`: 구다이글로벌·달바글로벌 크로스링크 추가
+- index.md 갱신: Analysis에 K-뷰티_IPO_동향, Entities에 비나우·아로마티카 추가
+
+## [2026-04-10] ingest | 이사벨라 데스테 (UWO A급 항해사)
+
+- raw 등록: raw/uwo/research/ 3개 파일 (기본 노트, 5개 축 심층 패키지, Q&A 추가 리서치)
+- wiki 생성: wiki/uwo/people/이사벨라_데스테.md (draft)
+- index.md: uwo 섹션 1개 항목 추가 (48→49개)
+
+## [2026-04-10] ingest | VOC의 마카오 두 번의 패전 (1601, 1622)
+
+- raw 저장: raw/uwo/research/VOC의_마카오_두_번의_패전__1601년과_1622년.md
+- wiki 신규: events/마카오_전투.md, people/빌럼_본테쿠.md
+- wiki 갱신: moc.md (Events·People 추가, 미완료 섹션 신설), index.md (51개)
+- 비고: 빌럼 본테쿠-박연 크로스링크 후속 필요

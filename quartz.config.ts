@@ -8,17 +8,23 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "지식 허브",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    analytics: null,
+    locale: "ko-KR",
+    baseUrl: "knowledge-mmh5zrwzb-reperire.vercel.app",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "raw",
+      "CLAUDE.md",
+      "CLAUDE.md.bak",
+      "# LLM Wiki.md",
+    ],
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -35,7 +41,7 @@ const config: QuartzConfig = {
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
           secondary: "#284b63",
-          tertiary: "#84a59d",
+          tertiary: "#84a98c",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
         },
@@ -46,7 +52,7 @@ const config: QuartzConfig = {
           darkgray: "#d4d4d4",
           dark: "#ebebec",
           secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          tertiary: "#84a98c",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
@@ -73,7 +79,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.RemoveDrafts(), Plugin.ExplicitPublish()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),

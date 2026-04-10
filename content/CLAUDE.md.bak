@@ -1,0 +1,179 @@
+# CLAUDE.md — Wiki Vault 통합 규칙
+
+> Claude Code가 이 vault에서 작업할 때 반드시 참조하는 규칙 파일.
+> 최종 수정: 2026-04-08
+
+---
+
+## Vault 개요
+
+- **경로**: `~/obsidian-vaults/wiki/`
+- **용도**: 다중 프로젝트 통합 위키 (Obsidian + Sync)
+- **원칙**: `raw/`는 사람이 넣고 LLM은 읽기만. `wiki/`는 LLM이 쓰고 사람은 읽기만.
+
+---
+
+## 디렉토리 구조
+
+```
+.
+├── CLAUDE.md
+├── index.md                 ← 전체 카탈로그
+├── log.md                   ← 작업 이력 (append-only)
+├── templates/
+├── raw/                     ← 원본 소스 (읽기 전용)
+│   ├── uwo/
+│   │   ├── research/
+│   │   ├── game-data/
+│   │   └── published/
+│   ├── cosmetics/
+│   └── labor/
+└── wiki/                    ← 위키 페이지 (LLM 관리)
+    ├── overview.md
+    ├── uwo/
+    │   ├── moc.md
+    │   ├── publish_log.md
+    │   ├── people/
+    │   ├── events/
+    │   └── themes/
+    ├── labor/
+    │   ├── investigations/
+    │   ├── disciplinary/
+    │   ├── contracts/
+    │   └── references/
+    ├── analysis/
+    ├── career/
+    ├── concepts/
+    ├── entities/
+    └── sources/
+```
+
+---
+
+## 파일 생성 규칙
+
+### 파일명
+- 형식: `한글_언더스코어.md` (예: `박연_종합리서치.md`)
+- 영문 자연스러운 경우 영문 허용 (예: `VOC_설립.md`)
+- wiki/ 페이지에 날짜 접두사 금지
+- 공백, 하이픈 사용 금지
+
+### Frontmatter (필수)
+모든 `wiki/` 파일은 반드시 아래 4개 필드 포함:
+```yaml
+---
+tags: [프로젝트, 분류]
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+status: draft | active | published | archived
+---
+```
+
+### 본문 구조
+- H1(`#`)은 파일당 1개, 제목으로만 사용
+- 본문은 H2(`##`)부터 시작
+- 내부 링크: `[[파일명]]` (경로 없이 파일명만)
+
+---
+
+## 프로젝트별 규칙
+
+### UWO History
+- **범위**: 역사 콘텐츠 허브. 채널(트위터·유튜브·블로그 등) 불문, 역사 리서치 전반을 다룬다. 과거 @UWOHistory 트위터 전용에서 확장됨.
+- 태그 1단계: `uwo`
+- 인물 노트 섹션 구조 (3-1 ~ 3-7):
+  - 3-1: 개요
+  - 3-2: 반전·아이러니 포인트
+  - 3-3: 숫자·날짜·지표
+  - 3-4: 실패/비극 서사 타임라인
+  - 3-5: 현대 연결 포인트
+  - 3-6: 밈화 에피소드
+  - 3-7: 게임 연계 (UWO 전용)
+- `raw/uwo/research/`는 절대 수정 금지 (읽기 참조만)
+- 항해사 CSV 등급 변환: C→A, D→B, E→C
+- 출처 미확인 사실에 `(미검증)` 표기 필수
+
+### LAKA 코스메틱
+- 태그 1단계: `cosmetics`
+- 기존 wiki 페이지 31개 → frontmatter 통일 점검 대기
+
+### 노무
+- 태그 1단계: `labor`
+- 실명 기재 허용 (로컬 전용 vault)
+- 본문 구조: 결론 → 경위 → 근거 → 리스크
+- 리스크 등급 본문 표기: 🟢 낮음 / 🟡 주의 / 🔴 고위험
+- 허위 판례·출처 인용 절대 금지. 근거 불명확 시 "근거 없음" 표시
+
+---
+
+## 승인된 태그 목록
+
+신규 태그 추가는 총괄 PM 승인 필요.
+
+### 공통
+`draft`, `active`, `published`, `archived` (status용, frontmatter로 관리)
+
+### UWO
+```
+uwo, person, event, theme, raw-material
+period/joseon, period/dutch-golden-age, period/ming, period/qing
+topic/shipwreck, topic/naturalization, topic/weapons, topic/diplomacy
+topic/renaissance, topic/art
+```
+
+### LAKA
+```
+cosmetics, analysis, career, concept, entity, source
+market/japan, market/us, market/uk, market/eu
+channel, distribution
+benchmark, m-and-a, odm
+hr, risk, interview, brand-strategy
+```
+
+### 노무
+```
+labor, investigation, disciplinary, contract, reference
+risk/low, risk/caution, risk/high
+```
+
+---
+
+## 작업 후 필수 체크리스트
+
+모든 wiki 파일 생성·수정 후:
+- [ ] frontmatter 4필드 확인 (tags, created, updated, status)
+- [ ] 태그가 승인 목록 내에 있는지 확인
+- [ ] 파일명이 한글_언더스코어 컨벤션인지 확인
+- [ ] index.md에 새 페이지 등록
+- [ ] log.md에 작업 기록 append
+- [ ] 깨진 내부 링크 없는지 확인
+
+---
+
+## Ingest 파이프라인
+
+- `raw/` 하위에 새 `.md` 파일 저장 시 fswatch가 감지
+- Claude Code CLI 자동 호출 → wiki 페이지 생성/갱신
+- 로그: `tail -f ~/obsidian-vaults/wiki/ingest.log`
+
+### 자동 ingest vs 수동 지시서 우선순위
+
+- **자동 ingest는 wiki 페이지를 자유롭게 생성·갱신하되 `status: draft`로만 저장.** `active`/`published` 승격 금지.
+- **수동 작업 지시서가 나중에 들어오면 그게 우선.** 자동 ingest가 만든 파일명·구조·내용과 충돌하더라도 지시서대로 rename/재작성/덮어쓰기. 유용한 내용은 병합.
+- 수동 작업 실행 시에는 항상 대상 파일을 먼저 Read — 자동 ingest가 이미 손댔을 수 있음.
+
+## 환경 / 팁
+
+### Claude Code 설정 심링크
+`~/.claude` 디렉터리를 vault 안으로 심링크하면
+CLAUDE.md를 Obsidian 에디터에서 직접 편집할 수 있다.
+```
+ln -s ~/obsidian-vaults/wiki/CLAUDE.md ~/.claude/CLAUDE.md
+```
+
+---
+
+## Git 규칙
+- 대량 작업(10파일 이상) 전 반드시 git commit (스냅샷)
+- 커밋 메시지 형식: `[프로젝트] 작업 내용 요약`
+- 자동 ingest 스크립트는 작업 완료 후 git add + commit 포함
