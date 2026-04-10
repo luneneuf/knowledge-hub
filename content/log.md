@@ -5,6 +5,15 @@ updated: 2026-04-10
 
 # 변경 이력
 
+## [2026-04-11] infra | Quartz 웹 퍼블리싱 파이프라인 구축
+- 모든 vault 페이지에 `publish` frontmatter 필드 추가 (기본값: false)
+- CLAUDE.md frontmatter 표준에 `publish` 필드 설명 추가
+- Quartz v4.5.2 설치 및 설정 (`~/quartz`)
+- GitHub 레포 생성: https://github.com/luneneuf/knowledge-hub
+- Vercel 프로젝트 연결: knowledge-hub (GitHub 자동 배포)
+- `~/quartz/deploy.sh` 생성 — vault 동기화 + push 원스텝 스크립트
+- 배포 후 배포 URL: https://knowledge-hub-tau-one.vercel.app
+
 ## [2026-04-10] migration | 스키마 교체 및 3축 구조 이관
 - 기존 CLAUDE.md → CLAUDE.md.bak 보존
 - 62개 페이지 3축 구조로 이관 (history/work/industry)
