@@ -4,7 +4,7 @@ title: "LAKA (라카코스메틱스)"
 tags: [cosmetics, entity]
 created: 2026-04-05
 updated: 2026-04-21
-sources: [src_종합_리서치_리포트, src_세포라_부츠_리포트, src_LAKA_종합_리서치_리포트, cosinkorea_50942, briefglance_sephora]
+sources: [src_종합_리서치_리포트, src_세포라_부츠_리포트, src_LAKA_종합_리서치_리포트, cosinkorea_50942, briefglance_sephora, pulse_mk_11493108]
 status: active
 publish: false
 type: entity
@@ -57,6 +57,9 @@ axis: industry
 - [[세포라]]: 80매장 + 온라인 (2026.02.20 입점)
 - 입점 제품: Fruity Glam Tint ($18), Fruity Lip Glotioner ($18), Bonding Glow Lipstick ($16, 온라인 독점)
 - 평점 4.5/5
+- **Miniso** 미국·캐나다 입점 (2025)
+- Cosmoprof North America (라스베이거스, 2025.07) — 북미·중남미 유통 채널 확보
+- K-Beauty Boost New York 부스 방문객 ~5,000명; 글로벌 메이크업 아티스트 Daniel Martin 협업
 
 ### 영국
 - [[부츠]]: 91매장 + 온라인 (2025.12 론칭)
@@ -66,8 +69,16 @@ axis: industry
 - 올리브영 전국 700개+ 매장, 무신사 뷰티, 시코르
 - 자사몰 '노 세일(No Sale)' 정책
 
-### 기타
-- 타이베이 신광미쓰코시, 방콕 시암스퀘어, 두바이, 홍콩 팝업
+### 중동
+- Beautyworld Middle East 데뷔 — UAE·사우디·걸프 바이어 협상
+- Cosmoprof Asia Hong Kong 참가; 글로벌 리테일러 협상 중, 2026 초 입점 목표
+
+### 아시아 팝업
+- 타이완 신광미쓰코시: 방문객 **19,000명+**
+- 방콕 시암스퀘어 BTS 스카이워크: 컬러믹솔로지 팝업, 태국 배우 출연
+- 두바이, 홍콩 팝업
+
+### 기타 채널
 - 유럽 Notino, 인도네시아 Sociolla
 
 ## 조직 및 제도
