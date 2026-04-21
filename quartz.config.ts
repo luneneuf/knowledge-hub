@@ -18,11 +18,15 @@ const config: QuartzConfig = {
     ignorePatterns: [
       "private",
       "templates",
+      "scripts",
       ".obsidian",
       "raw",
       "CLAUDE.md",
       "CLAUDE.md.bak",
       "# LLM Wiki.md",
+      "watcher.log",
+      "ingest.log",
+      "log.md",
     ],
     defaultDateType: "created",
     theme: {

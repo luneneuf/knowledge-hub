@@ -1,25 +1,18 @@
 #!/bin/bash
 set -e
 
-# Sync uwo vault wiki → content/uwo/
-mkdir -p ~/quartz/content/uwo
-rsync -av --delete \
-  --exclude='.git' --exclude='.obsidian' \
-  ~/obsidian-vaults/uwo/wiki/ ~/quartz/content/uwo/
-
-# Sync business vault wiki → content/business/
-mkdir -p ~/quartz/content/business
-rsync -av --delete \
-  --exclude='.git' --exclude='.obsidian' \
-  ~/obsidian-vaults/business/wiki/ ~/quartz/content/business/
+# deploy.sh — quartz/content가 단일 소스
+# Claude가 quartz/content를 직접 편집 → 이 스크립트 실행으로 Vercel 배포
+# Obsidian은 ~/quartz/content/ 를 vault로 열면 됨
 
 cd ~/quartz
+
 git add -A
 
 if git diff --cached --quiet; then
-  echo "No changes to commit. Skipping commit and push."
+  echo "변경사항 없음. 배포 스킵."
 else
   git commit -m "content: $(date '+%Y-%m-%d %H:%M')"
   git push
-  echo "Pushed to GitHub. Vercel auto-deploy triggered."
+  echo "GitHub 푸시 완료. Vercel 자동 배포 트리거됨."
 fi

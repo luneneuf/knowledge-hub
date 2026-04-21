@@ -3,7 +3,7 @@ title: "moc"
 
 tags: [uwo]
 created: 2026-04-08
-updated: 2026-04-10
+updated: 2026-04-11
 status: draft
 publish: false
 type: log
@@ -39,6 +39,10 @@ axis: history
 ## 미완료
 
 - 박연-본테쿠 연결 조사 필요: 박연(1626년 조선 난파 VOC 항해사)과 빌럼 본테쿠의 동시대 네트워크 관계 확인 → [[박연_종합리서치]] 생성 후 [[빌럼_본테쿠]] 보완
+
+## 가이드
+
+- [[content_style]] — UWO History 콘텐츠 스타일 가이드 (톤·구조·용어 통일)
 
 ## 발행 로그
 
