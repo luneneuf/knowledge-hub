@@ -3,8 +3,8 @@
 title: "LAKA (라카코스메틱스)"
 tags: [cosmetics, entity]
 created: 2026-04-05
-updated: 2026-04-08
-sources: [src_종합_리서치_리포트, src_세포라_부츠_리포트, src_LAKA_종합_리서치_리포트]
+updated: 2026-04-21
+sources: [src_종합_리서치_리포트, src_세포라_부츠_리포트, src_LAKA_종합_리서치_리포트, cosinkorea_50942, briefglance_sephora]
 status: active
 publish: false
 type: entity
@@ -36,8 +36,10 @@ axis: industry
 
 ## 핵심 제품
 
-- **Fruity Glam Tint** (프루티 글램 틴트) — 50색상, 출시 1년 누적 100만 개 판매
-- **본딩 글로우 립스틱** — FGI 기반 빠른 컬러 확장
+- **Fruity Glam Tint** (프루티 글램 틴트) — 2022.03 출시, 50색상, 1년 내 100만 개 판매. 세포라 미국 입점가 $18
+- **Fruity Lip Glotioner** — 세포라 미국 입점가 $18
+- **Bonding Glow Lipstick** (본딩 글로우 립스틱) — 2023.05 출시, 큐텐재팬 메가와리 랭킹 최다판매 1위. 세포라 미국 온라인 독점 $16
+- **Jelling Nude Gloss** (젤링 누드 글로스) — 2024.01 신컬러 4종 한·일 동시 발매, 선주문 4일 만에 2만 개+
 - **맥시 글레이어 틴트** — 20색상, 올리브영 신규 입점
 - **신규**: 본딩 커버 쿠션, 팝핑 벌룬 틴트(레드캡), 클렌징 라인
 
@@ -45,11 +47,15 @@ axis: industry
 
 ### 일본
 - [[Qoo10_일본]]: 립 카테고리 **11분기 연속 1위**
-- LOFT / PLAZA / @cosme: 450개 매장 (2024.06 기준), 목표 1,000매장
+- LOFT / PLAZA / @cosme: 350개(2024.02) → 450개(2024.06) 매장, 목표 1,000매장
+- 이세탄 백화점 협업 (2024.03)
+- LIPS 베스트 코스메 어워드 2023 **2관왕**
+- **매출 비중**: 일본 최대 80%
 - 일본 유통 자회사 JT (이지철 45% 지분)
 
 ### 미국
 - [[세포라]]: 80매장 + 온라인 (2026.02.20 입점)
+- 입점 제품: Fruity Glam Tint ($18), Fruity Lip Glotioner ($18), Bonding Glow Lipstick ($16, 온라인 독점)
 - 평점 4.5/5
 
 ### 영국
