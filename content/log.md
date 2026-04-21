@@ -135,3 +135,15 @@ updated: 2026-04-10
 - wiki 신규: events/마카오_전투.md, people/빌럼_본테쿠.md
 - wiki 갱신: moc.md (Events·People 추가, 미완료 섹션 신설), index.md (51개)
 - 비고: 빌럼 본테쿠-박연 크로스링크 후속 필요
+
+## [2026-04-21] ingest | 글로벌 젠더뉴트럴 코스메틱 브랜드 사례 분석
+
+- raw 저장: raw/cosmetics/글로벌_젠더뉴트럴_브랜드_사례분석.md
+- wiki 신규 생성 3건:
+  - entities/Aēsop.md — L'Oréal $2.5B 인수, 87% GM, 젠더리스 럭셔리 스킨케어
+  - entities/Milk Makeup.md — Waldencast, FY2024 $273.9M, Ulta 600개+ 확장
+  - entities/MAC Cosmetics.md — "All Ages, All Races, All Genders" 40년 레거시
+- wiki 업데이트 3건:
+  - concepts/젠더뉴트럴_뷰티.md — 시장 규모($10.2B→$25.6B), 브랜드 비교표 8개, 성공요인 5가지, 남성 뷰티 시장 교점 데이터 대폭 보강
+  - entities/Fenty Beauty.md — 젠더뉴트럴 전략 섹션 추가(Fenty Skin 남성 모델 캐스팅)
+  - entities/e.l.f..md — FY2025 $13.1억/25분기 연속 성장, DEI 전략 섹션, rhode 인수 추가
