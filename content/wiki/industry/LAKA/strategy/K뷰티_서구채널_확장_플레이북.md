@@ -31,7 +31,7 @@ status: active
 **Sephora 재도전 (Tier 2 확장)**
 - **2017.09**: Sephora 147도어 진입 (프레스티지 채널 재설정)
 - **2019.09**: 2년 내 전 배포 (~24개월 Tier 2)
-- 확장 트리거: 립 슬리핑 마스크 압도적 sell-through
+- 확장 트리거: 립 슬리핑 마스크 압도적 [[코스메틱_리테일_KPI|sell-through]]
 
 **폭발 지표**
 - 2020년 미국: "분당 1개 판매"
@@ -79,7 +79,7 @@ status: active
 
 **LAKA 적용 시사점**
 - Amazon → 리테일러 순서는 LAKA와 다름 (LAKA는 Sephora/Boots 먼저)
-- 그러나 **데이터 선행 원칙**은 동일: LAKA도 Sephora/Boots에서 sell-through 데이터를 쌓은 뒤 Amazon·Ulta 확장 논리로 활용 가능
+- 그러나 **데이터 선행 원칙**은 동일: LAKA도 Sephora/Boots에서 [[코스메틱_리테일_KPI|sell-through]] 데이터를 쌓은 뒤 Amazon·Ulta 확장 논리로 활용 가능
 - 성분 언어 모델: LAKA의 "Korean Tint Technology" 또는 텍스처 혁신(블러드 매트, 세럼 발색)을 구체적 명칭으로 표기하는 접근 검토 필요
 
 ---
@@ -181,7 +181,7 @@ status: active
 ### 중기 전략 (2026 H2~2027)
 
 - [ ] **Sephora-올리브영 파트너십 포지셔닝**: 2026 하반기 K뷰티 전용 존 (~700개 매장) 론칭 전 강한 퍼포먼스 확보 → 큐레이션 존 우선 입점 협상
-- [ ] **Amazon 데이터 선행**: Sephora/Boots sell-through 데이터를 Ulta·Amazon 확장 논거로 활용 (COSRX 경로)
+- [ ] **Amazon 데이터 선행**: Sephora/Boots [[코스메틱_리테일_KPI|sell-through]] 데이터를 Ulta·Amazon 확장 논거로 활용 (COSRX 경로)
 - [ ] **전략적 투자자 탐색**: 서구 채널 관계망 가진 파트너 (Amorepacific Americas, Sandbridge Capital 유형)
 
 ### 주의해야 할 함정

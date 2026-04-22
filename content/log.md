@@ -1,9 +1,14 @@
 ---
 title: "Log"
-updated: 2026-04-10
+updated: 2026-04-22
 ---
 
 # 변경 이력
+
+## [2026-04-22] ingest | 코스메틱 리테일 핵심 성과 지표(KPI) 위키
+- 소스: `Downloads/코스메틱 리테일 핵심 성과 지표(KPI) 위키.md`
+- 신규: `wiki/industry/LAKA/concepts/코스메틱_리테일_KPI.md` — 15개 KPI 정의·공식·벤치마크·LAKA 적용 포함
+- 백링크 삽입: `글로벌_채널_전략.md`, `글로벌채널_성공브랜드_사례연구.md`, `K뷰티_서구채널_확장_플레이북.md`, `세포라_리테일_경제학.md` 의 sell-through·재구매율 언급 부분
 
 ## [2026-04-11] infra | Quartz 웹 퍼블리싱 파이프라인 구축
 - 모든 vault 페이지에 `publish` frontmatter 필드 추가 (기본값: false)
