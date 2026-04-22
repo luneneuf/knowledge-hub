@@ -5,6 +5,21 @@ updated: 2026-04-22
 
 # 변경 이력
 
+## [2026-04-22] ingest | LAKA 젠더 인클루시브 브랜드 전략 리포트
+- 소스: `Downloads/LAKA_젠더인클루시브_브랜드전략_리포트.md`
+- 신규: `sources/src_LAKA_젠더인클루시브_브랜드전략_리포트.md` — 3레이어 구분·시장별 전략·언어 가이드·4가지 액션 요약
+- 신규: `entities/Fluide.md` — 퀴어 스페이스 네이밍·액티비즘 인클루시브 레퍼런스
+- 신규: `entities/Non_Gender_Specific.md` — 이름=포지션, 멀티 코렉셔널 기능 설득
+- 신규: `strategy/LAKA_젠더인클루시브_브랜드전략.md` — 시장별 프레임·3가지 실행 타입·즉시 액션 4개·언어 가이드·리스크 관리
+- 업데이트: `concepts/젠더뉴트럴_뷰티.md` — 3레이어 구분 섹션 추가, LAKA 포지션 갭 분석 추가, Fluide/NGS 링크 추가
+- 업데이트: `entities/Aēsop.md` — 립 브랜드 적용 한계 노트 추가
+
+## [2026-04-22] ingest | Clean at Sephora 글로벌 기준 2024
+- 소스: `Downloads/Global-Clean-Sephora-Criteria-2024.pdf` + 사용자 제공 리서치
+- 신규: `wiki/industry/LAKA/concepts/Clean_at_Sephora.md` — 배제 성분 목록·참여 절차·채널 전략·LAKA 시사점 포함
+- 업데이트: `wiki/industry/LAKA/concepts/클린_뷰티.md` — Clean_at_Sephora 링크 추가
+- 업데이트: `wiki/industry/LAKA/entities/세포라.md` — Clean at Sephora 섹션 및 링크 추가
+
 ## [2026-04-22] ingest | 코스메틱 리테일 핵심 성과 지표(KPI) 위키
 - 소스: `Downloads/코스메틱 리테일 핵심 성과 지표(KPI) 위키.md`
 - 신규: `wiki/industry/LAKA/concepts/코스메틱_리테일_KPI.md` — 15개 KPI 정의·공식·벤치마크·LAKA 적용 포함

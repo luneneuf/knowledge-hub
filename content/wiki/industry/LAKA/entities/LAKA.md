@@ -18,8 +18,8 @@ axis: industry
 ![브랜드 이미지](https://laka.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/8cde01ddbf15b15baba2597c3d4fa5dd.jpg)
 *LAKA 브랜드 이미지*
 
-![대표 제품](https://laka.co.kr/web/product/big/202603/66824412b8bd984af4598c0364570c20.jpg)
-*LAKA 립 컬러 라인 — Fruity Glam Tint 포함 히어로 제품군*
+![대표 제품](https://sv9-cdn.stylevana.com/media/catalog/product/l/a/laka-fruity-glam-tint-4-5g-704.jpg)
+*Fruity Glam Tint 전 쉐이드 라인업 — 현재 49색 보유, Sephora·Boots 입점 히어로 제품*
 
 ## 기본 정보
 
