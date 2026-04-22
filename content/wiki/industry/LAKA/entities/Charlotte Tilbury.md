@@ -11,6 +11,14 @@ publish: false
 
 # Charlotte Tilbury
 
+## 이미지
+
+![브랜드 로고](https://upload.wikimedia.org/wikipedia/commons/f/f0/Charlotte_Tilbury_logo.jpg)
+*Charlotte Tilbury 로고*
+
+![대표 제품](https://images.ctfassets.net/wlke2cbybljx/4RbwyZUi7BOEOmo8HHFIBk/0984388394b461e3a571a4214e123a11/The_Gift_of_Pillow_Talk_Eyes___Lips.png)
+*Pillow Talk Eyes & Lips 컬렉션 — 3초에 1개씩 팔리는 히어로 프랜차이즈*
+
 ## 요약
 
 2013년 영국 런던에서 셀럽 메이크업 아티스트 샬롯 틸버리 설립. 럭셔리-접근성(luxury-accessible) 포지셔닝. 히어로 SKU 프랜차이즈화의 정석 — Pillow Talk 셰이드.

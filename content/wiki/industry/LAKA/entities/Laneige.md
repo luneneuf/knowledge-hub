@@ -11,6 +11,14 @@ publish: false
 
 # Laneige
 
+## 이미지
+
+![서울 매장](https://upload.wikimedia.org/wikipedia/commons/c/c8/Laneige_in_Seoul%2C_South_Korea.jpg)
+*Laneige 서울 매장*
+
+![대표 제품](https://us.laneige.com/cdn/shop/files/PDPImage_1000x1000_LSM.jpg)
+*Lip Sleeping Mask — "분당 1개" 판매로 Sephora 아메리카스 립케어 카테고리 1위*
+
 ## 요약
 
 아모레퍼시픽 산하 K-뷰티 립케어 브랜드. 2017년 세포라 미국 독점 입점 후 K-뷰티 세포라 매출 1위 달성. "Lip Sleeping Mask"라는 카테고리 명칭 자체가 소비자 언어가 된 사례 — Type B 에디토리얼 누적형.

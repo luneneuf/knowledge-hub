@@ -11,6 +11,14 @@ publish: false
 
 # MAC Cosmetics
 
+## 이미지
+
+![매장 외관](https://upload.wikimedia.org/wikipedia/commons/9/92/MAC_Cosmetics_Toronto_Eaton_Centre.jpg)
+*MAC Cosmetics 토론토 Eaton Centre 매장*
+
+![브랜드 로고](https://upload.wikimedia.org/wikipedia/commons/f/fb/MAC_Cosmetics_logo.png)
+*MAC Cosmetics 로고*
+
 ## 요약
 
 1984년 토론토에서 설립. "All Ages, All Races, All Genders"를 창립 슬로건으로 내건 젠더뉴트럴 뷰티의 40년 원조. Estée Lauder 계열. 2026년 3월 세포라 미국 진출.

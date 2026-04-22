@@ -13,6 +13,11 @@ axis: industry
 
 # Qoo10 일본 (큐텐 재팬)
 
+## 이미지
+
+![플랫폼 로고](https://upload.wikimedia.org/wikipedia/commons/d/d0/New_Logo_Qoo10_eBay_Japan_G.K.jpg)
+*Qoo10 Japan 로고 — 일본 이커머스 플랫폼, LAKA 11분기 연속 1위 채널*
+
 ## 기본 정보
 
 - 일본 최대 오픈마켓 플랫폼

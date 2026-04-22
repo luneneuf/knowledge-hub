@@ -8,6 +8,11 @@ updated: 2026-04-12
 
 # Rare Beauty
 
+## 이미지
+
+![브랜드 이미지](https://upload.wikimedia.org/wikipedia/commons/9/9f/Rare_beauty.webp)
+*Rare Beauty — Selena Gomez 창업, Soft Pinch Liquid Blush로 Sephora 블러셔 카테고리 25%+ 점유*
+
 ## 요약
 
 2020년 셀레나 고메즈 설립. 정신건강 옹호·포용적 뷰티 포지셔닝. 매출 1%를 Rare Impact Fund에 기부. [[세포라]] 독점으로 기업가치 $27억 달성.

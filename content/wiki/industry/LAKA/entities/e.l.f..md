@@ -12,6 +12,14 @@ publish: false
 
 # e.l.f. Cosmetics
 
+## 이미지
+
+![브랜드 로고](https://www.elfcosmetics.com/on/demandware.static/-/Library-Sites-elfSharedLibrary/en_US/v1776798843355/elf-comestic-logo-opengraph.jpg)
+*e.l.f. Cosmetics 로고*
+
+![대표 제품](https://media.allure.com/photos/62f3d04b974046f0d0093746/master/w_1600%2Cc_limit/Angela%2520Trakoshis%2520-%2520elf%2520halo.jpg)
+*Halo Glow Liquid Filter — TikTok 바이럴로 프리미엄 경쟁 제품 대비 압도적 가성비로 히트*
+
 ## 요약
 
 2004년 미국 설립. 평균 가격 $7.50으로 프레스티지 제품의 1/4~1/5 가격에 동등 품질. [[듀프_전략]]의 대표 브랜드. 부츠 UK에서 매스 뷰티 4위까지 성장. 상장 기업(NYSE: ELF). **FY2025 매출 $1.3B, 25분기 연속 성장.** 2025년 5월 Hailey Bieber의 rhode를 최대 $1B에 인수 발표.

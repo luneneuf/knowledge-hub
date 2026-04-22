@@ -11,6 +11,14 @@ publish: false
 
 # Milk Makeup
 
+## 이미지
+
+![브랜드 로고](https://milkmakeup.com/cdn/shop/files/shopify-social-thumbnail-logo.jpg)
+*Milk Makeup 로고*
+
+![대표 제품](https://cdn.shopify.com/s/files/1/0572/3645/5609/files/Hydrogrip.jpg)
+*Hydro Grip Hydrating Primer — 스틱·젤 포맷의 클린 메이크업*
+
 ## 요약
 
 2016년 뉴욕에서 설립된 미국 인디 젠더프리 색조 브랜드. 비건·크루얼티프리, 스틱·멀티 포맷, 미니멀·젠더뉴트럴 패키지로 세포라를 통해 성장. 모기업 Waldencast 산하.

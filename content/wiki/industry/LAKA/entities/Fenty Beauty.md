@@ -11,6 +11,14 @@ publish: false
 
 # Fenty Beauty
 
+## 이미지
+
+![브랜드 이미지](https://upload.wikimedia.org/wikipedia/commons/c/cd/Fenty_Beauty_%2824990039168%29.jpg)
+*Fenty Beauty 이벤트 디스플레이*
+
+![대표 제품](https://fentybeauty.com/cdn/shop/products/FB31006_FB0420_alt1.jpg)
+*Pro Filt'r Soft Matte Foundation — 론칭 시 40개 쉐이드로 포용성 혁명을 일으킨 파운데이션*
+
 ## 요약
 
 2017년 리한나 설립. LVMH 산하 Kendo Brands와 50:50 합작. "Beauty for All" 포용적 뷰티. **세포라+부츠 동시 입점의 유일한 비교 대상.** 첫 해 매출 ~$5.7억.

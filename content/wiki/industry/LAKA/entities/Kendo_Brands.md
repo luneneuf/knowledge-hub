@@ -8,6 +8,14 @@ updated: 2026-04-12
 
 # Kendo Brands
 
+## 이미지
+
+![브랜드 로고](https://kendobrands.com/cdn/shop/t/18/assets/kendo-logo-black.png)
+*Kendo Brands 로고 — LVMH 산하 뷰티 브랜드 인큐베이터*
+
+![Lip Lab 매장](https://kendobrands.com/cdn/shop/files/BLL403613_ECOMM_Chicago_StoreImage_01_417x562.jpg)
+*Lip Lab by Bite 리테일 매장 — Kendo 산하 브랜드*
+
 ## 요약
 
 LVMH 산하 뷰티 브랜드 인큐베이터. [[세포라]]와 연계해 새 브랜드를 발굴·육성. [[Fenty_Beauty]]의 탄생지. LVMH의 뷰티 벤처 아암(arm).

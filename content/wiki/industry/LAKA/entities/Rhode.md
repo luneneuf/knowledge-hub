@@ -11,6 +11,14 @@ publish: false
 
 # Rhode
 
+## 이미지
+
+![브랜드 이미지](https://cdn.shopify.com/s/files/1/0606/5451/8510/files/rhode-1200x628.jpg)
+*Rhode 브랜드 이미지 — Hailey Bieber 창업*
+
+![대표 제품](https://cdn.shopify.com/s/files/1/0606/5451/8510/files/main-png-2000x2000_unscented.png)
+*Peptide Lip Treatment — Rhode의 히어로 립케어 제품*
+
 ## 요약
 
 2022년 Hailey Bieber 설립. 소비자 언어 "Glazed donut lips"로 세포라 입점 첫날 $15M 매출(역대 최대) 달성. 셀럽이 제품 출시 1년 전부터 언어를 선제 코이닝한 Type A 바이럴 전략의 교과서.

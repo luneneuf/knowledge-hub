@@ -13,6 +13,14 @@ axis: industry
 
 # LAKA (라카코스메틱스)
 
+## 이미지
+
+![브랜드 이미지](https://laka.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/8cde01ddbf15b15baba2597c3d4fa5dd.jpg)
+*LAKA 브랜드 이미지*
+
+![대표 제품](https://laka.co.kr/web/product/big/202603/66824412b8bd984af4598c0364570c20.jpg)
+*LAKA 립 컬러 라인 — Fruity Glam Tint 포함 히어로 제품군*
+
 ## 기본 정보
 
 - **정식명칭**: 라카코스메틱스 (LAKA Cosmetics)

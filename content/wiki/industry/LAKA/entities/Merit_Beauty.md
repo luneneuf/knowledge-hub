@@ -8,6 +8,14 @@ updated: 2026-04-12
 
 # Merit Beauty
 
+## 이미지
+
+![브랜드 로고](https://www.meritbeauty.com/cdn/shop/files/logo_mark_1.png)
+*Merit Beauty 로고*
+
+![대표 제품](https://cdn.shopify.com/s/files/1/0412/1296/9117/files/MERIT24-FlushBalm-LeBonBon_f63dc88e-8ad4-4dcc-9d81-915da4d35633.jpg)
+*The Flush Balm — Merit의 히어로 블러셔 제품*
+
 ## 요약
 
 2021년 캐서린 파워(Who What Wear 공동 창업자) 설립. 미니멀리스트 "노메이크업 메이크업" 포지셔닝. [[세포라]] 독점 론칭의 모범 사례.

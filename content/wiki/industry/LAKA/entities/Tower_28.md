@@ -8,6 +8,11 @@ updated: 2026-04-12
 
 # Tower 28 Beauty
 
+## 이미지
+
+![대표 제품](https://www.tower28beauty.com/cdn/shop/files/Image_1_4ab3c8d7-8590-43d9-805d-67503b9a430d.png)
+*SOS Daily Rescue Facial Spray — Sephora 온라인 전용 입점 6개월 만에 전 매장 롤아웃된 히어로 제품*
+
 ## 요약
 
 2019년 에이미 리우(전 [[스매쉬박스]] 글로벌 마케팅 디렉터)가 LA에서 설립한 클린뷰티 브랜드. 민감성 피부 특화(미국 습진협회 인증), "Good Clean Fun" 철학. [[세포라]] 확장의 교과서적 사례로 평가된다.

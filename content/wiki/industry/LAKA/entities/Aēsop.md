@@ -11,6 +11,14 @@ publish: false
 
 # Aēsop
 
+## 이미지
+
+![매장 외관](https://upload.wikimedia.org/wikipedia/commons/a/a7/Aesop_store.jpg)
+*Aēsop 매장 외관 — 미니멀리즘 다크톤 인테리어가 트레이드마크*
+
+![대표 제품](https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-navigation/default/dw9c315292/images/Discover_Hand_and_Body_1400x1000.jpg)
+*Hand & Body 라인 — Aēsop의 베스트셀러 카테고리*
+
 ## 요약
 
 1987년 호주 멜버른에서 설립. 성별 표기 없는 앰버색 미니멀 패키지, 식물성 원료, 젠더를 특정하지 않는 스토어 경험으로 럭셔리 젠더리스 스킨케어의 상징이 됐다. 2023년 **L'Oréal이 $2.5B(약 3.3조 원)에 인수** — L'Oréal 역사상 최대 규모 M&A.

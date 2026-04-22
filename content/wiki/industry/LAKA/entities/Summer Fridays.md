@@ -11,6 +11,14 @@ publish: false
 
 # Summer Fridays
 
+## 이미지
+
+![브랜드 로고](https://cdn.shopify.com/s/files/1/2382/2877/files/logo_c9dbae13-648a-48fc-a1f0-126bf2c9a9f1.png)
+*Summer Fridays 로고*
+
+![대표 제품](https://cdn.shopify.com/s/files/1/2382/2877/files/Jet-Lag-Main-Square.jpg)
+*Jet Lag Mask — Summer Fridays의 컬트 히어로 제품*
+
 ## 요약
 
 인플루언서 창업 미국 스킨케어·립케어 브랜드. Sofia Richie 결혼식 TikTok 바이럴(2023)로 Lip Butter Balm이 "Buttery" 소비자 언어를 형성, 전 세계 8초에 1개 판매. 예상치 못한 셀럽 바이럴을 공식 파트너십으로 전환한 교과서 사례.
