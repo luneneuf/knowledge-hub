@@ -5,6 +5,33 @@ updated: 2026-04-22
 
 # 변경 이력
 
+## [2026-04-24] ingest | LAKA 학습 자료 위키화 (14페이지)
+- 소스: `raw/study/week1/` (9개 파일), `raw/study/week2/` (23개 파일)
+- 신규 생성:
+  - `regulations/한국_화장품법.md` — 법률 제20901호, 2025년 개정 포인트, LAKA 체크리스트
+  - `regulations/미국_MoCRA.md` — 5대 의무, SAE 보고 15영업일, cGMP 시행 일정
+  - `regulations/영국_화장품규제.md` — Post-Brexit SCPN, UK RP, CPSR/PIF
+  - `regulations/일본_화장품규제.md` — PMD법 분류, GQP/GVP, 7단계 수출 절차
+  - `regulations/이상사례_보고_비교.md` — 한국·미국·영국 3국 보고 의무 비교
+  - `scm/ODM_발주_프로세스.md` — 코스맥스·한국콜마, 10단계, MOQ, 안정성 시험
+  - `scm/수출_채널별_라벨링_SKU.md` — 4개국 라벨링 비교, SKU 코드 체계
+  - `scm/수출_통관_절차.md` — 7단계, AIR vs SEA, FDA PREDICT, 세포라 납기 역산
+  - `scm/일본_유통_구조.md` — 도매 필수 경유, 마진 2배, 3가지 재고 모델
+  - `channels/세포라_운영구조.md` — Clean at Sephora, STR 기준, 도어 확장 3단계
+  - `channels/Boots_UK_운영구조.md` — Accelerator Programme, Make-up Exchange Promise
+  - `comparisons/K뷰티_립_CS_벤치마크.md` — LAKA·rom&nd·BBIA CS 비교, Project ZERO
+  - `comparisons/K뷰티_일본_리뷰_트렌드.md` — LIPS 4.31/5 1위, @cosme 唇の荒れ 카테고리
+  - `research/LAKA_글로벌_채널_리뷰.md` — 세포라·Boots·Qoo10 리뷰 데이터 종합
+- 업데이트: `wiki/index.md` — 14개 페이지 산업 섹션 추가, 총 110페이지
+
+## [2026-04-22] ingest | 세포라·울타·부츠 소유구조 및 연혁
+- 소스: 사용자 제공 리서치 (2026-04-22)
+- 신규: `sources/src_글로벌_뷰티_리테일_채널_소유구조_연혁.md` — 3채널 소유구조·역사·K-뷰티 관계 요약
+- 신규: `entities/울타뷰티.md` — 나스닥 상장·기관 분산 지분·채널 특성·LAKA 시사점
+- 신규: `comparisons/글로벌_뷰티_리테일_채널_비교.md` — 3채널 소유구조·역사·포지셔닝 종합 비교표
+- 업데이트: `entities/세포라.md` — 지배구조(LVMH→Groupe Arnault) 추가, 역사 섹션 추가, DE&I 전략 링크 추가
+- 업데이트: `entities/부츠.md` — 지배구조 수정(WBA→Sycamore+Pessina 2025), 역사 섹션 추가, 3채널 비교 링크 추가
+
 ## [2026-04-22] ingest | LAKA 젠더 인클루시브 브랜드 전략 리포트
 - 소스: `Downloads/LAKA_젠더인클루시브_브랜드전략_리포트.md`
 - 신규: `sources/src_LAKA_젠더인클루시브_브랜드전략_리포트.md` — 3레이어 구분·시장별 전략·언어 가이드·4가지 액션 요약
