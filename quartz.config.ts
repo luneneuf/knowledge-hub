@@ -43,6 +43,8 @@ const config: QuartzConfig = {
       "Sphere Legend*",
       "Threads 콘텐츠*",
       "UWO 서버 통합*",
+      "old",
+      ".claude",
       "wiki/wiki_*",
       "wiki/work-order*",
       "wiki/# LLM Wiki.md",
