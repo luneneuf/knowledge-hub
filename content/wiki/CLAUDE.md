@@ -48,6 +48,45 @@ publish: true | false   # true = 웹에 공개, false(기본값) = 로컬 전용
 
 ---
 
+## 파일 저장 경로 규칙
+
+**wiki/ 루트에 직접 파일 생성 금지.** 모든 신규 페이지는 아래 경로에 저장한다.
+
+| 타입 | 저장 경로 |
+|------|---------|
+| entity | `wiki/industry/[산업폴더]/entities/[이름].md` |
+| concept | `wiki/industry/[산업폴더]/concepts/[이름].md` |
+| comparison | `wiki/industry/[산업폴더]/comparisons/[이름].md` |
+| history | `wiki/history/[주제폴더]/[이름].md` |
+| work | `wiki/work/[프로젝트폴더]/[이름].md` |
+
+파일명 규칙:
+- `wiki_entity_`, `wiki_concept_` 등 **접두사 없이** 이름만 사용. (예: `시코르.md`, `K-뷰티_글로벌_리테일_지형.md`)
+- wiki/ 루트에는 `index.md`, `log.md`, `wiki_index.md`, `wiki_log.md`, `CLAUDE.md`만 존재.
+
+신규 파일 생성 전 반드시 해당 `industry/[산업폴더]/` 하위 폴더를 ls로 확인해 기존 파일과 중복되지 않도록 한다.
+
+---
+
+## 이미지 정책
+
+**로컬 저장 없이 외부 URL 직접 참조.** `wiki/assets/`나 `static/images/` 폴더는 사용하지 않는다.
+
+```markdown
+![설명](https://brand.com/image.jpg)
+*캡션*
+```
+
+소스 우선순위:
+1. 브랜드 공식 사이트 / CDN
+2. 위키미디어 Commons (라이선스 명확)
+3. 공식 SNS / 뉴스룸
+4. 아마존·이커머스 제품 이미지
+
+`publish: false` 페이지는 로컬 전용이므로 외부 URL 참조 허용. `publish: true` 페이지는 위키미디어 Commons 또는 공식 press kit 이미지 우선.
+
+---
+
 ## 운영 워크플로
 
 ### 인제스트 (새 소스 추가)
@@ -55,12 +94,12 @@ publish: true | false   # true = 웹에 공개, false(기본값) = 로컬 전용
 2. 내가 "이거 인제스트해줘" 라고 지시
 3. 네가 수행:
    - 소스 읽기 + 핵심 내용 파악
-   - **기존 wiki/ 페이지 탐색**: index.md를 읽고, 새 소스와 관련된 기존 entity/concept/summary 페이지를 찾는다
+   - **기존 페이지 탐색**: 해당 `industry/[산업폴더]/` 하위 폴더(entities/, concepts/, comparisons/ 등)를 직접 ls로 확인. index.md만 보지 말고 실제 파일 목록을 확인한다.
    - **기존 페이지 업데이트 우선**: 관련 페이지가 이미 있으면 새 정보를 통합한다. 새 페이지를 만드는 것이 아니라 기존 페이지를 보강한다.
      - 새로운 사실 추가
      - 기존 서술과 충돌하는 내용 발견 시 명시적으로 표기
      - 관련 [[위키링크]] 추가로 크로스레퍼런스 강화
-   - **신규 페이지는 필요할 때만**: 기존 페이지에 통합할 수 없는 새로운 entity나 concept이 등장할 때만 생성
+   - **신규 페이지는 필요할 때만**: 기존 페이지에 통합할 수 없는 새로운 entity나 concept이 등장할 때만 생성. 저장 경로는 반드시 위 "파일 저장 경로 규칙"을 따른다.
    - **소스 요약 페이지(src_*)**: raw/ 원본의 출처·범위·핵심 주장을 기록하는 용도로만 작성. 이것이 지식의 최종 형태가 아니다 — 지식은 wiki/ 내 entity/concept/summary 페이지에 통합된 상태가 최종 형태다.
    - index.md 업데이트
    - log.md에 항목 추가: `## [YYYY-MM-DD] ingest | [소스 제목]`
