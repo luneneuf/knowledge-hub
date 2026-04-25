@@ -1,6 +1,6 @@
 ---
 title: "Log"
-updated: 2026-04-10
+updated: 2026-04-25
 ---
 
 # 변경 이력
@@ -295,3 +295,27 @@ updated: 2026-04-10
   - `events/타이오완_사건.md` — pieter-nuyts, francois-caron, shuinsen 링크 추가
 - 비고: `하마다_야효에.md`, `타이오완_사건.md`는 2026-04-15 기존 생성본 유지 (중복 영문 파일 제거)
 - index.md 갱신 (67→70페이지)
+
+## [2026-04-25] ingest | LAKA 입사 전 학습 자료 1주차 — 규제 (14개 파일)
+- raw 등록: `raw/study/week1/` (day1~day6, 14개 md)
+  - 한국 화장품법(법률 제20901호), 미국 MoCRA, ODM 납품 서류, 세포라·부츠 공급자 요건, 제품 리뷰, 일본 PMD법
+- `day1_화장품법_조문.md` PDF 원문(법률 제20901호, 2026.4.2 시행) 기준으로 전면 교정
+  - 법률 번호 수정, 삭제조항(14조의2~5) 반영, 과태료 정정(1천만→100만원)
+- wiki 신규 5건 (`wiki/industry/LAKA/regulations/`):
+  - `한국_화장품법.md`, `미국_MoCRA.md`, `영국_화장품규제.md`, `일본_화장품규제.md`, `이상사례_보고_비교.md`
+
+## [2026-04-25] ingest | LAKA 입사 전 학습 자료 2주차 — SCM·CS (21개 파일)
+- raw 등록: `raw/study/week2/` (day8~day13, 21개 md + index)
+  - 화장품 SCM(ODM발주·수출통관), 세포라·Boots·일본 운영구조, CS 유입경로, 경쟁사 리뷰 벤치마크
+- wiki 신규 9건:
+  - SCM (`wiki/industry/LAKA/scm/`): `ODM_발주_프로세스.md`, `수출_채널별_라벨링_SKU.md`, `수출_통관_절차.md`, `일본_유통_구조.md`
+  - 채널 (`channels/`): `세포라_운영구조.md`, `Boots_UK_운영구조.md`
+  - 비교 (`comparisons/`): `K뷰티_립_CS_벤치마크.md`, `K뷰티_일본_리뷰_트렌드.md`
+  - 리서치 (`research/`): `LAKA_글로벌_채널_리뷰.md`
+- index.md 갱신 (110페이지)
+
+## [2026-04-25] maintenance | Vercel 배포 — 사이드바 정리 완료
+- ignorePatterns 최종 정리: 게임정책·로블록스 glob 수정(괄호→와일드카드), wiki/ 구버전 파일 전체 제외
+- 옵시디언 vault 정리 반영: business/·uwo/ 삭제, old/ 아카이브 폴더로 이전
+- ignorePatterns에 `"old"`, `".claude"` 추가
+- 공개 사이드바: Stanford CS146S, Wiki Index, Claude Skill 가이드만 노출

@@ -4,13 +4,13 @@ type: log
 axis: history
 tags: []
 created: 2026-04-05
-updated: 2026-04-16
+updated: 2026-04-25
 status: active
 publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-04-24 | 총 110페이지
+> 마지막 업데이트: 2026-04-25 | 총 110페이지
 
 ## 역사 (history/)
 
