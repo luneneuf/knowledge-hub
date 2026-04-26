@@ -1,3 +1,38 @@
+## [2026-04-26] ingest | COM-12: 일본 채널·톤28 리서치
+
+소스: raw/perplexity/2026-04-25_일본채널_톤28_리서치.md
+
+### 신규 생성 페이지 (5개)
+
+- entities/Mash_Group.md — 신규: 일본 패션·뷰티 복합 기업, SNIDEL·gelato pique·코스메키친 보유, Bain Capital 투자
+- entities/PARCO.md — 신규: J. Front Retailing 계열 복합몰, 이케부쿠로 코스메키친 B1F 입점
+- entities/NEWoMan.md — 신규: JR East/루미네 계열 역 직결 복합몰, 신주쿠 코스메키친 입점
+- entities/톤28.md — 신규: Farm to Product, 샴푸바 160만개, IMM 90억 투자(2026.04), 코스메키친 입점
+- concepts/일본_뷰티_유통_채널.md — 신규: 코스메키친·@cosme·LOFT·PLAZA·NEWoMan·PARCO 비교, K-뷰티 진입 단계 모델
+
+### 업데이트 페이지 (1개)
+
+- entities/코스메키친.md — 연결 섹션에 Mash_Group·PARCO·NEWoMan·톤28·일본_뷰티_유통_채널 링크 추가
+
+### 소스 요약
+
+1. Mash Group: 1998 설립, SNIDEL·gelato pique·코스메키친 보유, Bain Capital 투자
+2. PARCO/NEWoMan: 코스메키친 핵심 입점 몰 (J. Front / JR East 계열)
+3. 코스메키친 색조 취급: LG생건 프레시안 입점(2026) → 비건 클린 메이크업 가능
+4. LAKA 일본: @cosme·LOFT·PLAZA 75개점+, 코스메키친 미입점
+5. 톤28: Farm to Product, 153.8억(2024), IMM 90억(2026.04), 코스메키친 입점
+
+---
+
+## [2026-04-26] ingest | COM-11 미완 페이지 보완
+
+### 신규 생성 페이지 (2개)
+
+- entities/티르티르.md — 신규: K-뷰티 쿠션·스킨케어, 큐텐 재팬 1위, 이지철 전 공동대표, 시코르 강남역 큐레이션
+- concepts/K뷰티_편집숍_채널.md — 신규: 시코르·올리브영·세포라 채널 포지셔닝 비교, 브랜드 단계별 선택 기준
+
+---
+
 ## [2026-04-26] images | 7개 엔티티 이미지 섹션 추가
 
 ### 업데이트 페이지 (7개)
