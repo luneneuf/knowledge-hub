@@ -1,6 +1,6 @@
 ---
 
-title: "LAKA (라카코스메틱스)"
+title: "LAKA 라카코스메틱스"
 tags: [cosmetics, entity]
 created: 2026-04-05
 updated: 2026-04-21

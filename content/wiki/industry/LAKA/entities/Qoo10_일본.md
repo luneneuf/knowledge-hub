@@ -1,6 +1,6 @@
 ---
 
-title: "Qoo10 일본 (큐텐 재팬)"
+title: "Qoo10 일본 큐텐 재팬"
 tags: [cosmetics, entity, market/japan, channel]
 created: 2026-04-05
 updated: 2026-04-08
