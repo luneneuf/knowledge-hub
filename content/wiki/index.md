@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-04-25 | 총 110페이지
+> 마지막 업데이트: 2026-04-29 | 총 149페이지
 
 ## 역사 (history/)
 
@@ -97,6 +97,7 @@ publish: true
 | [[에이피알_벤치마크]] | comparison | APR에서 배울 점 (미국 진입, 크로스셀링) |
 | [[K-뷰티_IPO_동향]] | comparison | 2024-2026 K-뷰티 IPO 러시 5개사 비교 |
 | [[K-뷰티_ODM_비교]] | comparison | 한국콜마 vs 코스맥스 ODM 양대산맥 심층 비교 |
+| [[K뷰티_ODM_QA_실패_8유형]] | summary | FDA 리콜·Warning Letter 8유형 진단 — AMUSE IA 53-06, Kolmar Korea, It's Hanbul, LAKA 적용 시사점 |
 | [[K뷰티_브랜드_IPO_동향]] | comparison | K뷰티 브랜드 IPO 동향 |
 | [[한국콜마_vs_코스맥스_ODM_비교]] | comparison | 한국콜마 vs 코스맥스 ODM 비교 |
 | [[리스크_요인]] | summary | 약점·위험 요소 + 대응 전략 |
@@ -122,6 +123,7 @@ publish: true
 | [[이지철]] | entity | LAKA 대표이사, 전 티르티르 공동대표 |
 | [[코스맥스]] | entity | 글로벌 화장품 ODM 1위, K-인디 큐레이터 전략 |
 | [[한국콜마]] | entity | LAKA ODM 파트너 (5% 지분), 선케어 초격차 |
+| [[AMUSE]] | entity | 2018년 비건 색조 브랜드, 신세계인터내셔날 인수, 2025년 602억, FDA IA 53-06 선례 |
 | [[src_LAKA_성과관리_리서치_의뢰서]] | summary | LAKA 성과관리 제도 설계 리서치 브리프 |
 | [[src_LAKA_성과관리_케이스별_제도설계]] | summary | 3가지 케이스 시나리오 제안 |
 | [[src_LAKA_종합_리서치_리포트]] | summary | LAKA 종합 리서치 (재무·브랜드·경쟁사·일본·서플라이체인·글로벌) |
@@ -175,3 +177,72 @@ publish: true
 |--------|------|------------|
 | [[글로벌채널_성공브랜드_사례연구]] | summary | 글로벌 채널 성공 브랜드 사례 연구 |
 | [[LAKA_글로벌_채널_리뷰]] | summary | 세포라·Boots·Qoo10 채널별 리뷰·포지셔닝 종합, Fruity Glam Tint 사양 |
+
+### LAKA — KPI (concepts/kpi/)
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[OTD]] | concept | On-Time Delivery 납기준수율, 오더 기준 vs 수량 기준, OTIF와 차이 |
+
+### LAKA — SCM·구매 AI
+
+#### 케이스스터디 기업 (K-뷰티 수입유통 SCM AI)
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[Odara]] | entity | 멕시코 K-뷰티 직매입, Onebeat 도입, 재고 25% 감축 — 가장 유사한 1:1 비교 사례 |
+| [[Asian_Food_Group]] | entity | 네덜란드 아시아식품 수입도매, Slim4 도입, 폐기율 50% 감소 |
+| [[V_drug]] | entity | 일본 중부약품 400개점, Hitachi AI 자동발주, 주당 600시간 단축 |
+| [[Aramis]] | entity | 브라질 패션 SPA 98개매장, Onebeat, 재고 20%·회전율 +60% |
+| [[Gong_Cha_Japan]] | entity | 일본 차 직수입, Shippio Cargo, 인보이스 대조 80% 공수 삭감 |
+| [[Mayer_Fabrics]] | entity | 미국 텍스타일 도매 가족경영, EazyStock, 재고 12% 감축 |
+| [[BiagiBros]] | entity | 미국 3PL, Docsumo IDP, BoL 처리 20~30분→2분 |
+| [[ORBIS_DATAFLUCT]] | entity | 일본 화장품 D2C, DATAFLUCT Perswell, 연간 2,000만엔 배송비 절감 |
+| [[실리콘투]] | entity | K-뷰티 직매입 글로벌 유통, 7,000억원, AGV 풀필먼트 종착지 |
+
+#### 케이스스터디 기업 (구매 AI)
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[FINN]] | entity | 독일 자동차 구독, Rossum Aurora, 인보이스 일 2시간→15분, MVP 2일 |
+| [[Kärcher]] | entity | 독일 청소장비 1위, Prewave, 수동 due diligence 40배 감소 |
+| [[The_Little_Potato_Company]] | entity | 캐나다 미니감자 중견, Netstock, fill rate 90.9%→98% |
+| [[CCC_Intelligent_Solutions]] | entity | 미국 보험 SaaS, LinkSquares, 법무 인력 유지 계약 볼륨 2배 |
+| [[Cockroach_Labs]] | entity | 미국 분산 SQL, Tonkean, 티켓 30분→5분, P2P 100% 자동화 |
+
+#### AI 솔루션 벤더
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[Onebeat]] | entity | 이스라엘 AI 동적 보충 SaaS, Assisted→Autonomous 패턴 |
+| [[Slimstock_Slim4]] | entity | 네덜란드 수요예측+재고최적화 SaaS, MOQ·유통기한 반영 강점 |
+| [[Shippio_Cargo]] | entity | 일본 디지털 포워딩 SaaS, NACCS 연계, AI 인보이스 대조 97%+ |
+| [[DATAFLUCT_Perswell]] | entity | 일본 박스 최적화 ML SaaS, AirLake 기반 |
+| [[EazyStock]] | entity | Syncron 그룹 AI 재고 SaaS, ERP 위에 얹는 레이어 |
+| [[Docsumo]] | entity | 물류 서류 특화 IDP SaaS, BoL·패킹리스트·인보이스 |
+| [[Hitachi_AI_자동발주]] | entity | 히타치 시스템즈 수요예측형 자동발주, 일본 로컬 강점 |
+| [[Rossum_Aurora]] | entity | 체코 LLM 기반 IDP SaaS, 인보이스·AP 자동화 특화 |
+| [[Prewave]] | entity | AI 공급업체 리스크 모니터링, 일 450만 건 데이터 스캔 |
+| [[Netstock]] | entity | 수요예측·동적 안전재고 SaaS, ERP 연동, 이상치 평탄화 강점 |
+| [[LinkSquares]] | entity | CLM SaaS, 계약 자동 분류·라우팅, AI Redline |
+| [[Tonkean]] | entity | P2P 오케스트레이션, ProcurementGPT, no-code 2~3개월 도입 |
+
+#### 개념
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[AI_SCM_처리유형]] | concept | SCM AI 4대 처리유형 — 비정형변환·수요예측·매칭·예외감지 허브 |
+| [[K뷰티_수입유통_SCM_AI_도입_패턴]] | concept | 12-18개월 도입 로드맵, 9개 사례 추출 최단 ROI 경로 |
+| [[Assisted_to_Autonomous_전환패턴]] | concept | AI 발주·보충 단계적 도입 시퀀스, 조직 수용성 관리 |
+| [[IDP_인텔리전트_문서처리]] | concept | AI-OCR+자동분류+추출, 솔루션 비교, K-뷰티 서류 적용 |
+| [[구매AI_도입패턴]] | concept | 단일 task 시작·라우팅 룰·Active Learning 4가지 공통 패턴 |
+| [[공급업체_리스크_스코어링]] | concept | AI 실시간 외부 데이터 기반 공급업체 360° 리스크 정량화 |
+| [[AI_계약검토_CLM]] | concept | 계약 조항 자동 추출·deviation 탐지·리스크 기반 라우팅 |
+| [[P2P_자동화_오케스트레이션]] | concept | 구매요청→승인→PO→정산 전구간 AI 조율, 병렬 승인 전환 |
+
+#### 비교
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[SCM_AI_솔루션_비교]] | comparison | Onebeat vs Slim4 vs Hitachi 비교 + 12-18개월 로드맵 표 |
+| [[구매AI_사례_정량결과_비교]] | comparison | 구매 AI 5개 사례 KPI 종합표, 도입 우선순위 권장 |

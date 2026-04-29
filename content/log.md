@@ -5,6 +5,59 @@ updated: 2026-04-22
 
 # 변경 이력
 
+## [2026-04-29] ingest | COM-13~16 — OTD KPI + SCM AI 사례 9선 + 구매 AI 사례 5선 + AI SCM 처리유형
+
+- **COM-13** OTD(On-Time Delivery) KPI 개념 페이지
+  - 신규: `concepts/kpi/OTD.md` — 산식, 오더 기준 vs 수량 기준, 코스메틱 업계 적용, OTIF·ODM_납기준수율 크로스링크
+
+- **COM-14** 일본 K-뷰티 수입유통사 SCM AI 사례 9선 인제스트
+  - 신규 entities/케이스스터디 9개: Odara, Asian_Food_Group, V_drug, Aramis, Gong_Cha_Japan, Mayer_Fabrics, BiagiBros, ORBIS_DATAFLUCT, 실리콘투
+  - 신규 entities/솔루션벤더 7개: Onebeat, Slimstock_Slim4, Shippio_Cargo, DATAFLUCT_Perswell, EazyStock, Docsumo, Hitachi_AI_자동발주
+  - 신규 concepts/: K뷰티_수입유통_SCM_AI_도입_패턴(12-18개월 로드맵), Assisted_to_Autonomous_전환패턴, IDP_인텔리전트_문서처리
+  - 신규 comparisons/: SCM_AI_솔루션_비교
+
+- **COM-15** 중견기업 구매 AI 사례 5선 인제스트
+  - 신규 entities/케이스스터디 5개: FINN, Kärcher, The_Little_Potato_Company, CCC_Intelligent_Solutions, Cockroach_Labs
+  - 신규 entities/솔루션벤더 5개: Rossum_Aurora, Prewave, Netstock, LinkSquares, Tonkean
+  - 신규 concepts/: 공급업체_리스크_스코어링, AI_계약검토_CLM, P2P_자동화_오케스트레이션, 구매AI_도입패턴
+  - 신규 comparisons/: 구매AI_사례_정량결과_비교
+
+- **COM-16** AI SCM 처리유형 개념 인제스트
+  - 신규 concepts/: AI_SCM_처리유형 (4대 처리유형 허브 — COM-14/15 사례 연결 역할)
+
+- 업데이트: `wiki/index.md` — 총 37페이지 추가, 112→149페이지, LAKA—SCM·구매 AI 섹션 신설
+
+## [2026-04-26] ingest | AMUSE 엔티티 + K-뷰티 ODM QA 실패 8유형 분석
+- 소스: 사용자 제공 AMUSE 리서치 + `Downloads/ODM 의존 K-뷰티 립 브랜드의 QA 실패 8유형 진단.md`
+- 신규 생성:
+  - `entities/AMUSE.md` — 2018년 비건 색조 브랜드, 신세계인터내셔날 인수, 2025년 602억, 24개국 유통, 이미지 7장 (제품·매대·매장·광고), FDA IA 53-06 선례 수록
+  - `analysis/K뷰티_ODM_QA_실패_8유형.md` — FDA 리콜·Warning Letter 8유형 분류표, AMUSE/Kolmar Korea/Lime Crime/화성코스메틱/It's Hanbul 등 대표 케이스 상세, K-뷰티 ODM 특화 패턴, LAKA 시사점, ODM QA 계약 필수 7조항
+- 업데이트:
+  - `concepts/ODM.md` — K뷰티_ODM_QA_실패_8유형 링크 추가
+
+## [2026-04-26] ingest | 로제 2세 대관식 망토 리서치 (트위터 스레드 완성)
+- 소스: 세션 내 리서치 원재료 (타입풀리 드래프트 ID 8859058)
+- 신규 생성:
+  - `wiki/history/로제_2세_대관식_망토.md` — 망토 제원, 티라즈, 팔레르모 공방, 이동 경로, 발행 이력
+- 업데이트:
+  - `wiki/history/uwo/publish_log.md` — 2026-04-26 스레드 발행 기록 추가
+  - `wiki/history/uwo/moc.md` — Pure History 섹션 신설, 로제_2세_대관식_망토 링크 추가
+
+## [2026-04-26] ingest | 코스메틱 공급망·리테일 KPI 위키 기초 리포트
+- 소스: `Downloads/cosmetics_supply_chain_kpi_report.md`
+- 신규 생성:
+  - `concepts/공급망_KPI.md` — SC/EDI/SLA 개념 정의 + 7개 KPI 인덱스 + KPI 연결 구조
+  - `concepts/kpi/WMAPE.md` — 수요예측 오차율, 계산식, 코스메틱 해석
+  - `concepts/kpi/WoC.md` — Weeks of Cover, 재고 건전성, 사용기한·MOQ 적용 기준
+  - `concepts/kpi/OTIF.md` — On Time In Full, 리테일러별 정의 차이, 벌과금 구조
+  - `concepts/kpi/Channel_Stockout_Rate.md` — 채널 결품률, 서비스 레벨 역지표
+  - `concepts/kpi/UPW.md` — Units Per Door Per Week, velocity metric, 컬러 SKU 관리
+  - `concepts/kpi/ODM_납기준수율.md` — ODM 납기 성과, 기준 시점 정의 중요성
+  - `concepts/kpi/서비스_레벨.md` — 서비스 레벨 목표값, 안전재고 연계, SKU별 차등 설계
+- 업데이트:
+  - `concepts/코스메틱_리테일_KPI.md` — 공급망 KPI 섹션 추가, 공급망_KPI 링크 추가
+  - `concepts/ODM.md` — ODM_발주_프로세스, ODM_납기준수율 링크 추가
+
 ## [2026-04-24] ingest | LAKA 학습 자료 위키화 (14페이지)
 - 소스: `raw/study/week1/` (9개 파일), `raw/study/week2/` (23개 파일)
 - 신규 생성:
