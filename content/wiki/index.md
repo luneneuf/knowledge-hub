@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-04-29 | 총 149페이지
+> 마지막 업데이트: 2026-04-29 | 총 144페이지
 
 ## 역사 (history/)
 
@@ -100,11 +100,6 @@ publish: true
 | [[K뷰티_ODM_QA_실패_8유형]] | summary | FDA 리콜·Warning Letter 8유형 진단 — AMUSE IA 53-06, Kolmar Korea, It's Hanbul, LAKA 적용 시사점 |
 | [[K뷰티_브랜드_IPO_동향]] | comparison | K뷰티 브랜드 IPO 동향 |
 | [[한국콜마_vs_코스맥스_ODM_비교]] | comparison | 한국콜마 vs 코스맥스 ODM 비교 |
-| [[리스크_요인]] | summary | 약점·위험 요소 + 대응 전략 |
-| [[면접_예상질문]] | summary | 핵심 질문 6개 + 답변 방향 |
-| [[면접_준비_노트]] | summary | 면접 준비 노트 |
-| [[역량_매핑]] | summary | 경력별 역량 → LAKA 직무 연결 |
-| [[지원_전략]] | summary | 채용 모니터링, 타이밍, 아웃리치 |
 | [[K뷰티_일본시장]] | concept | 버라이어티샵 구조, 슬롯 배분, 도매 구조 |
 | [[ODM]] | concept | 제조업자개발생산 정의·OEM 비교·K-뷰티 역할 |
 | [[성과관리_시스템]] | concept | MBO/OKR/BSC 비교, HR SaaS |

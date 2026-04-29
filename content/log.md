@@ -5,6 +5,12 @@ updated: 2026-04-22
 
 # 변경 이력
 
+## [2026-04-29] cleanup | LAKA career 섹션 삭제 (입사 확정)
+
+- 삭제: `career/리스크_요인.md`, `career/면접_예상질문.md`, `career/면접_준비_노트.md`, `career/역량_매핑.md`, `career/지원_전략.md`
+- 폴더 삭제: `career/`
+- index.md에서 5개 항목 제거, 149→144페이지
+
 ## [2026-04-29] ingest | COM-13~16 — OTD KPI + SCM AI 사례 9선 + 구매 AI 사례 5선 + AI SCM 처리유형
 
 - **COM-13** OTD(On-Time Delivery) KPI 개념 페이지
