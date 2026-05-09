@@ -314,6 +314,15 @@ updated: 2026-04-25
   - 리서치 (`research/`): `LAKA_글로벌_채널_리뷰.md`
 - index.md 갱신 (110페이지)
 
+## [2026-05-10] ingest | LAKA 글로벌 전용 스킨케어 3종 신규 생성
+
+**소스**: `raw/scrape/laka_products_global_20260501.json`
+
+- **신규 생성** `products/skin-active-serum.md` — Glutathione·PDRN 세럼, Amazon US 단독 (\$18.40, ASIN: B0G1M6NR83)
+- **신규 생성** `products/active-booster.md` — Peptides·Hyaluronic Acid 부스터, Amazon US 단독 (\$20.00, ASIN: B0G1LRY8DJ)
+- **신규 생성** `products/scaling-toner.md` — AHA·PHA 스케일링 토너, Amazon US 단독 (\$16.00, ASIN: B0G1LYY37P)
+- 3종 모두 laka.co.kr 미출시, the-laka.com은 WordPress 어필리에이트(Amazon 연동)
+
 ## [2026-05-10] update | LAKA 프루티 글램 틴트 — 컬러 데이터 완성 (COM-19)
 
 **작업**: 프루티 글램 틴트 + 관련 제품 위키 데이터 보강 (COM-19 완결)
