@@ -150,7 +150,12 @@ Tom Wallace(S&OP 개념 창시자 중 한 명)와 협업하는 컨설팅 펌이 
 
 ## 파생 페이지
 
-- (예정) [[sop_overview]] — W1 작업 시 이 소스 주요 인용
-- (예정) [[demand_planning]] — Ch4 기반
-- (예정) [[supply_planning_odm]] — Ch6 기반
-- (예정) [[sop_failure_patterns]] — Ch10·11 기반
+모두 `wiki/industry/LAKA/scm/` 경로에 생성 예정.
+
+- (예정) [[sop_overview]] — W1, 이 소스 주요 인용
+- (예정) [[sop_glossary]] — W2
+- (예정) [[demand_planning]] — W3, Ch4 기반
+- (예정) [[supply_planning_odm]] — W4, Ch6 기반
+- (예정) [[sop_kpis]] — W5
+- (예정) [[sop_failure_patterns]] — W6, Ch10·11 기반
+- (예정) [[laka_sop_v1]] — W7
