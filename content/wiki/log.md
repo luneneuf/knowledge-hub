@@ -5,6 +5,32 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W3 | demand_planning — Step 2 운영 매뉴얼 (COM-22)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/demand_planning.md` — concept 페이지, W3 산출물
+
+**구성 (10개 섹션)**:
+1. 위치·책임 매핑 — Demand Manager(마케팅 BM/PM)·Marketing(15)·국내사업(14)·글로벌사업(17)·프로덕트(8)·재무(4)·승인 라인
+2. Step 2 인풋 — Step 1 데이터 + LAKA 추가 인풋 (채널별 sell-through·ODM 슬롯·환율 시나리오·시즌 캠페인)
+3. **4-Layer Forecast Layering** — Statistical baseline → Marketing adj → Sales adj → Senior Consensus
+4. **FVA (Forecast Value Added)** 측정 — 각 layer가 정확도 개선/악화에 기여한 정도. Sales 단기 과대예측 패턴 경고
+5. Volume vs Mix 분리 — Volume은 Step 2 (Family), Mix는 후속 Master Schedule (SKU)
+6. **NPI(신제품) 4 차원** — Incremental·Cannibalization·Pipeline fill·Sample. LAKA 컬러 launch curve 양식
+7. **Sally Smith Spreadsheet LAKA 템플릿** — 3 블록(Forecast/Production/Inventory) × 립 글로스 컬러군 A 예시 + 시즌·캠페인·NPI 행 분리 양식
+8. LAKA Step 2 매월 cadence — Working day 1-7
+9. Demand-side KPI 6개 사전 정의 (MAPE·Bias·FVA·Consensus On-time·NPI Accuracy)
+10. 흔한 실패 패턴 6개 + 출력(→Step 3) 5종
+
+**LAKA 특화 결정사항**:
+- 매월 working day 7까지 management-authorized forecast 확정
+- NPI 시나리오 3개(base/opt/pess) 모두 Supply Planning에 전달 → ODM 발주는 base·재고 hedge는 worst
+- Forecast Update 후 Cum Difference 색상 ±5%/±10%/±15% 트래픽 라이트
+- Volume→$ 환산 시 재무 단일 환율 시나리오 사용 (부서별 다른 환율 금지)
+
+**index.md 업데이트**: demand_planning 등재. 페이지 카운트 150 → 151.
+
+**다음**: W4 supply_planning_odm — Step 3 상세 + ODM 슬롯·Capacity 매핑 + Demand/Planning Time Fences
+
 ## [2026-05-11] W2 | sop_glossary — S&OP 용어집 (COM-21)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_glossary.md` — concept 페이지, W2 산출물

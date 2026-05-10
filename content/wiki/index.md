@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-11 | 총 150페이지
+> 마지막 업데이트: 2026-05-11 | 총 151페이지
 
 ## 역사 (history/)
 
@@ -189,6 +189,7 @@ publish: true
 |--------|------|------------|
 | [[sop_overview]] | concept | W1. LAKA Designer/Distributor 매핑, Volume/Mix, 4-tier 호라이즌, 5-step, 4 인풋, Maturity 진단, W1~W7 로드맵 |
 | [[sop_glossary]] | concept | W2. S&OP 용어집 — Wallace Glossary 70+ + Implement·SCI 보충, 16개 카테고리, LAKA 매핑 + 한국어 번역 통일안 |
+| [[demand_planning]] | concept | W3. Step 2 Demand Planning — 4-layer forecast(통계→Marketing→Sales→Consensus), FVA 측정, NPI 4 차원, Sally Smith LAKA 컬러군 템플릿, 매월 cadence |
 
 ### LAKA — SCM·구매 AI
 
