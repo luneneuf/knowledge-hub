@@ -5,6 +5,28 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W1 | sop_overview — LAKA S&OP 도입 개요 (COM-20)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_overview.md` — concept 페이지, S&OP 학습 W1 산출물
+
+**구성**:
+- LAKA = Wallace가 명시한 Designer/Distributor 카테고리 (Microsoft X-Box 매핑)
+- 현재 격차 진단 (분기 budget만 vs 매월 rolling, ODM 슬롯 사후 매칭 등)
+- The Four Fundamentals — Volume × Mix / Demand × Supply
+- 시간 호라이즌 4-tier (Strategic / Business / **Executive S&OP** / Detailed)
+- 5-Step Monthly Process + LAKA 초기 cadence 제안
+- 4개 인풋 → President 1.5h/월
+- LAKA 조직 매핑 (8부문, Process Owner = SCM 부문 S&OP파트)
+- Hard/Soft Benefits + CFO 어젠다 (Adam Szczepanski 인용)
+- SCI Maturity Model 적용 — LAKA 현재 Stage 1-2, 18개월 목표 Stage 3
+- W1~W7 로드맵 + Wallace 4-phase Implementation Path
+
+**핵심 인용 5개 (임원 브리핑용)**: Wallace Designer/Distributor 정당성, President 1.5h, Hold the high ground, CFO 어젠다, SCI 60/30/10
+
+**index.md 업데이트**: LAKA — S&OP (concepts/sop/) 섹션 신설, sop_overview 등재. 페이지 카운트 148 → 149.
+
+**다음**: W2 sop_glossary — Wallace 책 Glossary 70+ 용어 한국어 + LAKA 매핑
+
 ## [2026-05-10] ingest | Wallace & Stahl — Sales & Operations Planning: The Executive's Guide (2006, 책)
 
 **소스**: `raw/study/sop/wallace_executive_guide_book_2006.pdf` (144p, T.F. Wallace & Company, 2006 1쇄→2014 7쇄, ISBN 978-0-9978877-9-2, Internet Archive 2022 디지털화)

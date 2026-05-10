@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-10 | 총 148페이지
+> 마지막 업데이트: 2026-05-11 | 총 149페이지
 
 ## 역사 (history/)
 
@@ -182,6 +182,12 @@ publish: true
 | 페이지 | 타입 | 한 줄 설명 |
 |--------|------|------------|
 | [[OTD]] | concept | On-Time Delivery 납기준수율, 오더 기준 vs 수량 기준, OTIF와 차이 |
+
+### LAKA — S&OP (concepts/sop/)
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[sop_overview]] | concept | W1. LAKA Designer/Distributor 매핑, Volume/Mix, 4-tier 호라이즌, 5-step, 4 인풋, Maturity 진단, W1~W7 로드맵 |
 
 ### LAKA — SCM·구매 AI
 
