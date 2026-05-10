@@ -5,6 +5,38 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-10] ingest | Wallace & Stahl — Sales & Operations Planning: The Executive's Guide (2006, 책)
+
+**소스**: `raw/study/sop/wallace_executive_guide_book_2006.pdf` (144p, T.F. Wallace & Company, 2006 1쇄→2014 7쇄, ISBN 978-0-9978877-9-2, Internet Archive 2022 디지털화)
+
+- **신규 생성**: `wiki/industry/LAKA/sources/src_wallace_executive_guide_book.md` — Wallace+Stahl 책 본문 정리. 워크샵 슬라이드와 같은 프레임워크 + **신규 자산 4개 집중**:
+  - Ch5 비제조업 적용 (Retail/Designer-Distributor/Process Design/Banks) + Best Practice 3개사 (Scotts·Cast-Fab·Eli Lilly)
+  - Ch7 3 Impediments to Behavior Change (Lack of Discipline/Fuzzy Accountability/Conflict Aversion + "Get the Moose on the Table") + Energy Alignment + 4-step Implementation Path
+  - Ch8 Future Vision: Top Management War Room / Running Delta / Red Zone / Audit Trail (Sarbanes-Oxley governance)
+  - Appendix A Terminology Shift + Appendix B Lean+S&OP + Glossary 70+ 표준 용어 (W2 sop_glossary 직접 차용 가능)
+- **index.md 업데이트**: src_wallace_executive_guide_book 추가, 총 페이지 147 → 148
+
+**왜 별도 src로 작성했나 (워크샵 src와 분리)**:
+- 같은 저자·같은 프레임워크지만 매체 다름 (워크샵 슬라이드 vs 출판물 144p)
+- 책에만 있는 신규 자산 4개가 LAKA에 직접 적용 가능
+- 워크샵은 5-step process diagram·Sally Smith·Mini-S&OP의 1차 자료, 책은 Designer/Distributor 카테고리·Glossary·Future Vision의 1차 자료 — 상호 보완
+
+**LAKA 적용 결정적 인용 (책 Ch5)**:
+> "공장 소유 여부는 중요하지 않다 — demand/supply는 여전히 균형 필요하다." (Designer/Distributor 카테고리, Microsoft X-Box 사례)
+
+→ **LAKA의 ODM 의존 구조 = Wallace가 명시적으로 적용 가능하다고 한 카테고리**. W1 sop_overview 첫 문단 핵심 정당성.
+
+**CFO 직접 차용 인용 (Adam Szczepanski, V&M Star CFO, p93)**:
+> "Executive S&OP는 보통 1년에 1-2번만 일어나는 strategic process에 매월 life를 가져온다."
+
+→ LAKA CFO 이종영 대상 어젠다 협상 한 줄.
+
+**Wallace 라이브러리 입수 우선순위 (책 Appendix C에서 확인)**:
+1. Wallace, *Self-Audit Workbook* (2005) — W6 체크리스트
+2. Wallace+Stahl, *How-To Handbook* (3rd Ed) — W7 implementation 상세 (현재 raw에는 웹 리서치 요약만)
+3. Dougherty & Gray, *S&OP: Best Practices* (2006) — 13개사 케이스
+4. Crum & Palmatier, *Demand Management Best Practices* (2003) — 마케팅 부문 어젠다
+
 ## [2026-05-10] ingest | Tom Wallace — Sales & Operations Planning Workshop (2010)
 
 **소스**: `raw/study/sop/wallace_executive_sop_workshop_2010.pdf` (91p, 슬라이드 deck, OMTEC Chicago 2010-06-16, www.tfwallace.com)

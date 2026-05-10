@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-10 | 총 147페이지
+> 마지막 업데이트: 2026-05-10 | 총 148페이지
 
 ## 역사 (history/)
 
@@ -131,6 +131,7 @@ publish: true
 | [[src_implement_sop_handbook]] | summary | Implement Consulting Group S&OP 핸드북 (2014, 4th ed Light) — Tom Wallace 협업, 11챕터, People 65%/Process 25%/System 10% |
 | [[src_supply_chain_insights_sop_guide]] | summary | Supply Chain Insights S&OP 가이드 (2020, Lora Cecere) — 107개사 정량 서베이, 5단계 maturity model, 33개 벤더 카탈로그 |
 | [[src_wallace_executive_sop_workshop]] | summary | Tom Wallace S&OP 워크샵 슬라이드 (2010, OMTEC Chicago, 91p) — 개념 창시자 1차 자료, Volume/Mix 분리, Sally Smith Spreadsheet, 5-step Process, Mini-S&OP Cycle |
+| [[src_wallace_executive_guide_book]] | summary | Wallace & Stahl 책 *Executive's Guide* (2006, 144p) — Designer/Distributor 카테고리(LAKA 매핑), 3 Impediments, Future Vision (War Room/Running Delta/Red Zone/Audit Trail), Glossary 70+ |
 
 ### LAKA — 규제 (regulations/)
 
