@@ -5,6 +5,32 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] 샘플 워크북 | laka_sop_template_v0.xlsx — 작동하는 Sally Smith Sheet
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/laka_sop_template_v0.xlsx` (16KB)
+
+**배경**: 사용자 요청 — W3·data_gathering 본문의 Sally Smith·4-layer forecast·NPI·FVA 등이 실제 어떤 엑셀 결과물로 운영되는지 보여주는 샘플 필요.
+
+**5 시트 구성 (수식 51개)**:
+1. **README** — 사용법·가정·트래픽 라이트 의미·v0 한계 명시 (45 row)
+2. **Master_Data** — Family 8개(F01~F08, 단가·Lead Time·MOQ·Safety Stock) + 환율 3 시나리오(USD/GBP/JPY) + Channel 8개
+3. **F01_Sally_Smith** — 립글로스 컬러군 A 18개월 view (Nov-25~Apr-27). 3 블록(Forecast·Production·Inventory) × 4 row(Baseline·Campaign·NPI·Total Forecast) + Actual·Difference·Cum Diff. Difference 셀에 트래픽 라이트 조건부 서식 자동 적용 (±5%/±10% 임계). KRW 환산 행은 Master_Data 단가 cross-sheet 참조
+4. **NPI_Tracker** — 컬러 #208 코랄 launch 양식: 채널별 launch 일자 4개·Pipeline Fill 4 채널 합계 자동·Run-in Curve base/opt/pess 3 시나리오·Cannibalization 8% (base) / 15% (worst)
+5. **FVA_Tracking** — F01 × 3 month(2025-11/12, 2026-01) × 4 layer(Baseline/+Marketing/+Sales/+Consensus) = 12 row. APE·MAPE_3mo·FVA vs Baseline 수식. FVA 셀 자동 색상 (양수 녹색·음수 빨강). 예시 데이터에서 Sales layer가 일관 음수 FVA → Implement Ch4 "단기 과대예측" 패턴 진단 시연
+
+**디자인 원칙**:
+- 파란 글씨 = 수동 입력 / 검은 글씨 = 수식 / 녹색 글씨 = cross-sheet 참조 (financial model 표준 색상)
+- 한국어 폰트 Malgun Gothic, 헤더 D6E5F4
+- 단가 변경 시 Master_Data 1곳만 수정하면 모든 family 시트 자동 반영
+- v0 한계 명시 (1 family만, 채널 분해 X, 자동화 X) → W7에서 확장
+
+**검증**: openpyxl self-validation — 수식 51개 모두 괄호·#REF!/#NAME? 이슈 0. LibreOffice 미설치로 자동 recalc 미실시 (Excel/Numbers에서 열면 정상 작동).
+
+**연동**:
+- `demand_planning.md` §6.4에 다운로드 링크 + 5 시트 설명 추가
+- `data_gathering.md` §3.6에 Master_Data 시트 다운로드 링크 추가
+- `index.md`의 LAKA — S&OP 섹션에 첨부 항목으로 등재
+
 ## [2026-05-11] Step 시리즈 정비 — "1. Data Gathering" 신규 + Step-2 제목 "2. Demand Planning"
 
 **배경**: 사용자 지적 — Wallace 5-step 중 Step 1 (Data Gathering) 별도 페이지 없음. SCI 정량 갭 1위(58% "Difficulty getting to right data")이고 LAKA Designer/Distributor 특성상 마스터 데이터 거버넌스가 W4·W7 작동의 전제 조건이므로 별도 페이지 필요. Step 시리즈 명명 규칙 정착.

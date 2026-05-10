@@ -193,7 +193,18 @@ SCI 정의 **Planning Master Data** ([[sop_glossary|용어집]]): "대체 소싱
 
 → **이 표가 LAKA의 Planning Master Data 핵심**. W4 supply_planning_odm에서 이 데이터로 capacity 계산.
 
-### 3.6 마스터 데이터 update cycle
+### 3.6 작동하는 마스터 데이터 샘플 📎
+
+**다운로드**: [laka_sop_template_v0.xlsx](./laka_sop_template_v0.xlsx) — `Master_Data` 시트
+
+샘플 시트가 담고 있는 마스터 데이터:
+- **Family 8개** (F01~F08) — Family ID · 명칭 · 단가 · Lead Time · MOQ · Safety Stock
+- **환율 시나리오 3개** — USD/GBP/JPY → KRW · base/optimistic/pessimistic
+- **Channel 코드 8개** — CH-KR-RT/CH-KR-OL/CH-JP-Q10/CH-JP-LOFT/CH-US-SEPH/CH-US-AMZ/CH-UK-BOOTS/CH-XX-OTHER
+
+→ 모든 family 시트(`F01_Sally_Smith` 등)는 Master_Data를 cross-sheet 참조 (예: 단가 = `Master_Data!$D$4`). Master에서만 수정하면 전 시트 자동 반영.
+
+### 3.7 마스터 데이터 update cycle
 
 | 마스터 데이터 | update 빈도 | 책임 |
 |----------------|---------------|------|

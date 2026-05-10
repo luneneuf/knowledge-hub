@@ -313,7 +313,32 @@ DIFFERENCE    +2     +1    +3
 | Cum Difference 색상 | ±5% 이내 흰색, ±10% 노란색, ±15% 빨간색 (트래픽 라이트) |
 | Update 빈도 | 월간 (Step 1 데이터 입수 후 1-2일 내) |
 
-### 6.4 시즌·캠페인 분리 양식
+### 6.4 작동하는 워크북 샘플 📎
+
+**다운로드**: [laka_sop_template_v0.xlsx](./laka_sop_template_v0.xlsx)
+
+5 시트 구성 (16KB, 수식 51개):
+
+| 시트 | 내용 |
+|------|------|
+| README | 사용법 + 가정 + 컬러 코드 의미 |
+| Master_Data | Family 8개·환율 시나리오 3개·Channel 코드 8개 |
+| **F01_Sally_Smith** | 립글로스 컬러군 A 18개월 view — 3 블록(Forecast·Production·Inventory) × 4 row(Baseline·Campaign·NPI·Total) |
+| NPI_Tracker | 컬러 #208 코랄 launch curve 예시 (4 채널·3 시나리오·잠식률) |
+| FVA_Tracking | 12 row 예시 (F01 × 3 month × 4 layer) + 양수/음수 자동 색상 |
+
+**핵심 특징**:
+- 파란 글씨 = 수동 입력 셀 / 검은 글씨 = 수식 셀 / 녹색 글씨 = Master_Data cross-sheet 참조
+- Difference 행에 트래픽 라이트 자동 적용 (±5% 이내 흰색 / ±5-10% 노란색 / ±10% 초과 빨간색)
+- F01 시트의 단가는 Master_Data!$D$4 참조 → Master에서만 수정하면 자동 반영
+- KRW 환산 = Total Forecast(천 units) × 단가(KRW) ÷ 1,000 = 백만 KRW 단위
+
+**v0 한계**:
+- 1 family만 (F01). family당 시트 복제 필요
+- 채널 분해 미포함 (W7 이후 확장)
+- 자동화 없음 — manual Excel만
+
+### 6.5 시즌·캠페인 분리 양식
 
 ```
 FORECAST 블록 (3 행 분리)
