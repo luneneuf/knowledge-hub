@@ -171,10 +171,10 @@ SCI 정의 **Planning Master Data** ([[sop_glossary|용어집]]): "대체 소싱
 | Case (박스) | ODM 발주·창고 출하 | SKU별 case pack 정의 (예: 24개/박스) |
 | KRW | 재무 plan·국내 매출 | 단가 × 수량 |
 | USD | 세포라·아마존 매출 | 환율 적용 (재무 시나리오 일관) |
-| GBP | Boots 매출 | 동상 |
-| JPY | Qoo10·LOFT 매출 | 동상 |
+| GBP | Boots 매출 | 상동 |
+| JPY | Qoo10·LOFT 매출 | 상동 |
 
-→ **환율 일관성**: 재무가 base/opt/pess 3개 시나리오 단일 배포. **부서별 다른 환율 사용 절대 금지** ([[demand_planning|W3]] 실패 패턴 #3 동상).
+→ **환율 일관성**: 재무가 base/opt/pess 3개 시나리오 단일 배포. **부서별 다른 환율 사용 절대 금지** ([[demand_planning|W3]] 실패 패턴 #3 상동).
 
 ### 3.5 Lead Time·MOQ·Pack 정보 (Planning Master Data 핵심)
 
