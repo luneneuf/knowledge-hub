@@ -264,6 +264,24 @@ Step 5: Executive Meeting       (→ Decisions & Updated Game Plan)
 
 ---
 
+## 📎 작동하는 샘플 워크북
+
+**다운로드**: [laka_sop_template_v0.xlsx](./laka_sop_template_v0.xlsx) (16KB, 수식 51개)
+
+5 시트 구성:
+
+| 시트 | 내용 |
+|------|------|
+| README | 사용법 + 가정 + 컬러 코드 |
+| Master_Data | Family 8개·환율 시나리오 3개·Channel 코드 8개 |
+| **F01_Sally_Smith** | 립글로스 컬러군 A 18개월 view (베스트셀러 family 1개의 Sally Smith Spreadsheet 데모) |
+| NPI_Tracker | 컬러 #208 코랄 launch curve (4 채널·3 시나리오·잠식률) |
+| FVA_Tracking | F01 × 3 month × 4 layer = 12 row, Sales 음수 FVA 패턴 시연 |
+
+→ 임원 브리핑 시 "S&OP를 운영하면 매월 이런 1페이지를 본다"는 시각 자료로 활용. 실제 운영은 8개 family로 확장 + 채널 분해 추가 (W7 단계).
+
+---
+
 ## 핵심 인용 (임원 브리핑용)
 
 1. **Wallace ([[src_wallace_executive_guide_book|책]] Ch5)**: *"공장 소유 여부는 중요하지 않다 — demand/supply는 여전히 균형이 필요하다."* (LAKA Designer/Distributor 정당성)
