@@ -5,6 +5,36 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W2 | sop_glossary — S&OP 용어집 (COM-21)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_glossary.md` — concept 페이지, W2 산출물
+
+**구성** (16개 카테고리, 100+ 용어):
+1. Core S&OP Frameworks — S&OP / Executive S&OP / IBP / One Set of Numbers
+2. Volume vs Mix — Product Family / Subfamily / Aligned vs Matrix Resources
+3. 시간 호라이즌 — Strategic / Business / Tactical / Operational / Executional
+4. Time Fences — DTF / PTF
+5. Demand-side — Forecast / MAD / SOD / FVA / Demand Sensing / Bullwhip 등 14개
+6. Supply-side — Operations Plan / RCCP / CRP / MRP / DRP / MPS / ATP / CTP 등 11개
+7. Order Fulfillment Strategies — MTS / MTO / FTO / DTO / Demand·Supply Strategies
+8. Service Metrics — Order Fill Rate / Line Fill Rate
+9. 5-Step Process & Meetings — Pre-meeting / Exec Meeting / Mini-S&OP Cycle / Sally Smith Spreadsheet
+10. Organizational/Behavioral — Stewardship / Hold the High Ground / Moose on the Table / ABC
+11. Maturity & Failure — 5-Stage Maturity / Pothole vs Pitfall / Broken Process 7 신호 / 3 Impediments
+12. Cross-Cutting (SCI 6) — Harmonization / Synchronization / Orchestration / Above-Below the Line / Outside-In
+13. Process Frameworks 병렬 — Lean / Kanban / CPFR / VMI / APS / DDMRP
+14. Financial Integration — Running Delta / Red Zone / Audit Trail / SOX
+15. Global S&OP — Entity / Global Consolidation
+16. Wallace 라이브러리 — How-To Handbook / Self-Audit Workbook 등 입수 우선순위
+
+**한국어 번역 통일안 표** 포함 — LAKA 내부 문서/회의 표준화 base.
+
+**LAKA 매핑 명시 용어** (W3-W7에서 인용 예정): Product Family (컬러군), Demand Time Fence (한국콜마 finishing 30-45일), Planning Time Fence (~90-110일), Matrix Resources (ODM 슬롯 경쟁), MTS/MTO/FTO (베스트셀러/시즌한정/채널라벨변형), Order Fill Rate (W5 1순위), Demand Manager (마케팅 BM/PM 파트 후보), Master Scheduling Policy (W7 거버넌스 핵심).
+
+**index.md 업데이트**: sop_glossary 등재. 페이지 카운트 149 → 150.
+
+**다음**: W3 demand_planning — Step 2 상세 + Sally Smith Spreadsheet 템플릿 + Forecast Value Added (FVA) 적용
+
 ## [2026-05-11] W1 | sop_overview — LAKA S&OP 도입 개요 (COM-20)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_overview.md` — concept 페이지, S&OP 학습 W1 산출물
