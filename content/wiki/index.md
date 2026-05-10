@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-11 | 총 151페이지
+> 마지막 업데이트: 2026-05-11 | 총 152페이지
 
 ## 역사 (history/)
 
@@ -187,9 +187,10 @@ publish: true
 
 | 페이지 | 타입 | 한 줄 설명 |
 |--------|------|------------|
-| [[sop_overview]] | concept | W1. LAKA Designer/Distributor 매핑, Volume/Mix, 4-tier 호라이즌, 5-step, 4 인풋, Maturity 진단, W1~W7 로드맵 |
-| [[sop_glossary]] | concept | W2. S&OP 용어집 — Wallace Glossary 70+ + Implement·SCI 보충, 16개 카테고리, LAKA 매핑 + 한국어 번역 통일안 |
-| [[demand_planning]] | concept | W3. Step 2 Demand Planning — 4-layer forecast(통계→Marketing→Sales→Consensus), FVA 측정, NPI 4 차원, Sally Smith LAKA 컬러군 템플릿, 매월 cadence |
+| [[sop_overview]] | concept | 개요. LAKA Designer/Distributor 매핑, Volume/Mix, 4-tier 호라이즌, 5-step, 4 인풋, Maturity 진단, 로드맵 |
+| [[sop_glossary]] | concept | 용어집 — Wallace Glossary 70+ + Implement·SCI 보충, 16개 카테고리, LAKA 매핑 + 한국어 번역 통일안 |
+| [[data_gathering]] | concept | **1. Data Gathering** — 7 데이터 소스 인벤토리, 마스터 데이터 거버넌스 6 영역(Family/SKU/Channel/UoM/LeadTime/Update Cycle), 매월 day 1-3, LAKA 현행 갭 진단 |
+| [[demand_planning]] | concept | **2. Demand Planning** — 4-layer forecast(통계→Marketing→Sales→Consensus), FVA 측정, NPI 4 차원, Sally Smith LAKA 컬러군 템플릿, 매월 day 4-7 |
 
 ### LAKA — SCM·구매 AI
 

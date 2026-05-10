@@ -1,5 +1,5 @@
 ---
-title: "Demand Planning — Step 2 상세 (LAKA 적용)"
+title: "2. Demand Planning"
 type: concept
 axis: work
 tags: [work/sop, s&op, demand-planning, forecast, fva, npi, laka]
@@ -9,9 +9,9 @@ status: draft
 publish: false
 ---
 
-# Demand Planning — Step 2 상세
+# 2. Demand Planning
 
-> **본 페이지의 역할**: W3. [[sop_overview|5-step 프로세스]]의 Step 2 (Demand Planning) 운영 매뉴얼. Sally Smith Spreadsheet 템플릿 LAKA 컬러군 적용, 통계 baseline → consensus까지 layering, FVA(Forecast Value Added) 측정, 신제품(NPI) 통합, 매월 cadence.
+> **본 페이지의 역할**: [[sop_overview|5-step 프로세스]]의 **Step 2 — Demand Planning** 운영 매뉴얼. [[data_gathering|1. Data Gathering]]에서 받은 데이터로 Sally Smith Spreadsheet 템플릿 LAKA 컬러군 적용, 통계 baseline → consensus까지 layering, FVA(Forecast Value Added) 측정, 신제품(NPI) 통합, 매월 cadence.
 >
 > **연관 Linear 이슈**: [COM-22](https://linear.app/luneneuf) W3
 >

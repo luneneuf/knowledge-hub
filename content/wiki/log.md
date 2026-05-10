@@ -5,6 +5,45 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] Step 시리즈 정비 — "1. Data Gathering" 신규 + Step-2 제목 "2. Demand Planning"
+
+**배경**: 사용자 지적 — Wallace 5-step 중 Step 1 (Data Gathering) 별도 페이지 없음. SCI 정량 갭 1위(58% "Difficulty getting to right data")이고 LAKA Designer/Distributor 특성상 마스터 데이터 거버넌스가 W4·W7 작동의 전제 조건이므로 별도 페이지 필요. Step 시리즈 명명 규칙 정착.
+
+**변경 1 — `demand_planning.md` 제목 변경**:
+- frontmatter title: "Demand Planning — Step 2 상세 (LAKA 적용)" → **"2. Demand Planning"**
+- H1: "# Demand Planning — Step 2 상세" → **"# 2. Demand Planning"**
+- 본문 첫 문단에 [[data_gathering|1. Data Gathering]] 위키링크 추가
+
+**변경 2 — `data_gathering.md` 신규 생성** (`wiki/industry/LAKA/concepts/sop/data_gathering.md`):
+
+구성 (10개 섹션):
+1. 위치·책임 매핑 — Process Owner = SCM 부문 S&OP파트, 7개 데이터 소스 책임 분담
+2. Step 1의 4가지 결과물 (Sally Smith actual + Statistical baseline + 시장 인텔리전스 + Data quality report)
+3. **LAKA 데이터 소스 인벤토리 7개** — ERP·ODM·세포라/Boots/Qoo10/국내 sell-through·재고·환율·시장
+4. **마스터 데이터 거버넌스 6 영역** — Family Hierarchy(F01-F08 후보 8개)·SKU 매핑(글로벌 라벨 변형)·Channel 코드 표준화·UoM 환산·Lead time/MOQ/Pack·Update Cycle
+5. LAKA 현행 갭 진단 — 7개 갭 중 6개가 W7 도입 전 필수 해결
+6. Step 1 매월 cadence — Working day 1-3 운영표
+7. 통계 baseline 도구 — Excel MVP → 12-24개월 후 ToolsGroup/o9 검토 (Hybrid)
+8. Step 1 KPI 6개 (Data On-time·Completeness·Master Data Drift·Statistical FVA·ODM Latency·Channel Coverage)
+9. 흔한 실패 패턴 7개
+10. 출력 → Step 2 (5종)
+
+**LAKA Family 후보 (F01~F08)** 명시: 립글로스 컬러군 A/B, 립틴트, 아이섀도, 베이스, 선케어, 스킨케어, 글로벌 전용 SKU. **확정 시점 = W7 또는 그 이전 별도 합의**.
+
+**LAKA 도입 로드맵 (data 측면) 4 Phase**: Phase 0 마스터 데이터 정의 → Phase 1 Live Pilot manual → Phase 2 자동화 일부 → Phase 3 ETL/RPA + 통계 도구.
+
+**index.md 업데이트**:
+- 제목 prefix 정비: sop_overview/glossary는 "개요/용어집", data_gathering/demand_planning는 "**1. / 2.**" 번호 prefix
+- data_gathering 등재. 페이지 카운트 151 → 152.
+
+**Step 시리즈 명명 규칙 정착**:
+- Step 1 Data Gathering → "1. Data Gathering" (이번 신규)
+- Step 2 Demand Planning → "2. Demand Planning" (제목 변경)
+- Step 3 Supply Planning → "3. Supply Planning (ODM)" (W4 작업)
+- Step 4·5 (Pre-meeting·Exec Meeting) → W7 laka_sop_v1 통합 또는 별도 페이지 결정
+
+**다음**: W4로 진행 → "3. Supply Planning (ODM)" — Step 3 + 한국콜마/코스맥스 슬롯 매핑 + DTF/PTF + Aligned vs Matrix Resources LAKA 적용
+
 ## [2026-05-11] W3 | demand_planning — Step 2 운영 매뉴얼 (COM-22)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/demand_planning.md` — concept 페이지, W3 산출물
