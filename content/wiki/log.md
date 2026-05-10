@@ -5,6 +5,45 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W4 | supply_planning_odm — Step 3 운영 매뉴얼 (COM-23)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/supply_planning_odm.md` ("3. Supply Planning (ODM)")
+
+**구성 (12개 섹션)**:
+0. 위치·책임 매핑 — Supply Planning Owner = SCM 부문 (10명, 김중찬), ODM·자재·finishing·재무·sign-off 6 role
+1. Step 3 인풋(5종) · 출력(6종)
+2. Operations Plan 업데이트 — 변경 trigger 6개, Planned Production 공식, Lot Sizing 룰 4종(FLS/LFL/POQ/Min-Max)
+3. **RCCP (Rough-Cut Capacity Planning)** — Critical Resource Coefficient 변환, Resource Load 계산, Headroom 5% 임계
+4. **ODM 슬롯 매핑** — 한국 K뷰티 ODM 슬롯 확보 6단계 (Annual → Quarterly → Monthly PO → Bulk → Finishing → Inbound), 슬롯 경쟁 alternatives 4개, **거의 모든 critical resource가 Matrix** = LAKA만 사용 dedicated 자원 없음
+5. **Time Fences** — Frozen(DTF 30일)·Slushy(30-60일)·Liquid(60일+) 3 zone, ODM forecast visibility 정밀도 표
+6. **Scalability 분석** (Implement Ch6) — 영역별 단기·중기·장기 elasticity 범위, 30% 갑작스러운 demand 대응 옵션 5개
+7. **Constraint Identification & Escalation** — 5 type(Hard/Soft/Material/Capacity/Inventory), Pre-meeting 어젠다 양식
+8. Sally Smith Sheet 운영 — Step 3가 채우는 행 + Production/Inventory 트래픽 라이트 의미
+9. LAKA Step 3 매월 cadence — Working day 4-10 (Step 2와 4-7일 병행)
+10. Supply-side KPI 8개 (Production Plan Adherence·ODM Slot Utilization·Capacity Headroom·DTF Discipline 등)
+11. 흔한 실패 패턴 8개
+12. 출력 → Step 4 Pre-meeting (자료 패키지 7종)
+
+**LAKA Critical Resource 인벤토리 명시 (11개)**:
+- R-KK-LG/SC/SK (한국콜마 라인 3개) — Matrix
+- R-CM-LG (코스맥스 립글로스, 이중 발주 시) — Matrix
+- R-FN-LBL (글로벌 라벨링) — Matrix
+- R-PKG-TUBE / R-PKG-BOX (자재) — Matrix
+- R-WH-KR/JP/US/UK (4개국 창고) — Aligned
+
+→ **거의 모든 ODM·자재 자원이 Matrix** = 다른 K뷰티 브랜드와 슬롯 경쟁 → Step 3의 본질은 단순 capacity 계산이 아닌 **ODM 협상 + alternative 시나리오 도출**.
+
+**Time Fences LAKA 적용**:
+- DTF 30일 = 한국콜마 Monthly PO 발행 시점
+- PTF 60일 = Quarterly Confirmation 시점
+- 30% demand 변동 시 단기·중기·장기 가용 elasticity 표로 시각화
+
+**Pre-meeting 어젠다 양식**: Issue ID·Family·Resource·Gap·Root cause·Alt A/B/C·Recommendation·Decision needed 9개 필드
+
+**index.md 업데이트**: supply_planning_odm 등재. 페이지 카운트 152 → 153.
+
+**다음**: W5 sop_kpis — Demand-side(2.) + Supply-side(3.) KPI 통합 + Hard/Soft Benefits 측정 + [[OTD]] 확장
+
 ## [2026-05-11] 샘플 워크북 | laka_sop_template_v0.xlsx — 작동하는 Sally Smith Sheet
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/laka_sop_template_v0.xlsx` (16KB)
