@@ -5,6 +5,33 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-10] ingest | Tom Wallace — Sales & Operations Planning Workshop (2010)
+
+**소스**: `raw/study/sop/wallace_executive_sop_workshop_2010.pdf` (91p, 슬라이드 deck, OMTEC Chicago 2010-06-16, www.tfwallace.com)
+
+- **신규 생성**: `wiki/industry/LAKA/sources/src_wallace_executive_sop_workshop.md` — Wallace 워크샵 전문 정리. 12개 Part(Volume/Mix Fundamentals → 5-step Process → Sally Smith Spreadsheet → Risk/Mini-S&OP → Global 7-step → ABC Implementation → Broken Process Diagnosis → Future) + 3개 소스(Implement/SCI/Wallace) 종합 비교 표 + LAKA 조직 매핑 + 시사점 표
+- **index.md 업데이트**: src_wallace_executive_sop_workshop 추가, 총 페이지 146 → 147
+
+**왜 1차 권위인가**:
+- Implement(2014) 핸드북에서 Wallace 협업 명시
+- SCI(2020) 가이드에서 Wallace 프레임워크 인용
+- 두 보조 소스가 모두 가리키는 본인 자료가 이 PDF
+- 기존 raw `wallace_sop_handbook_summary.md` (책 요약, 웹 리서치 기반)와 동일 저자·동일 프레임워크지만 매체가 다름(book vs workshop slides) — 이 슬라이드가 1차 자료
+
+**Wallace 고유 자산 (다른 두 소스에 없음)**:
+- Volume vs Mix 분리 (Executive S&OP=Volume, Operational S&OP=Mix) — 전체 프레임워크의 출발점
+- Sally Smith's Spreadsheet 1페이지 표준 표 (Forecast/Actual/Diff/Cum Diff × 수요/공급/재고 3블록) → **W7 MVP 시트 템플릿 직접 차용**
+- 5-step Process (Data → Demand → Supply → Pre-Meeting "Heavy Lifting" → Exec Meeting)
+- Mini-S&OP Cycle (긴급 대응 매커니즘, 같은 사람·포맷·프로세스로 부분 재실행)
+- Global Executive S&OP 7-step (Entity 기반)
+- ABC of Implementation (A=People, B=Data, C=Computer)
+- Hybrid software 권장 ("When in doubt, pick 3")
+- 정량 가이드라인: 8-12개월, <$100K, President 1.5h/월
+- "Hold the high ground" vs "Build it and they will come" 경고
+- Broken Process 7 신호 + Re-implementation 경로
+
+**LAKA 적용 핵심**: W1·W7에서 Wallace를 1차 인용으로 채택, Implement·SCI는 보조. CEO 월 1.5h commitment 어젠다 협상이 진입 장벽 가장 낮은 출발점.
+
 ## [2026-05-10] ingest | Supply Chain Insights — S&OP: A Guide for the Supply Chain Leader (2020)
 
 **소스**: `raw/study/sop/supply_chain_insights_sop_guide_2020.pdf` (39p, Lora Cecere & Regina Denman, Supply Chain Insights LLC, Open Content)
