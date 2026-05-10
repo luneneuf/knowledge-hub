@@ -1,9 +1,24 @@
 ---
 title: "Log"
-updated: 2026-04-25
+updated: 2026-05-10
 ---
 
 # 변경 이력
+
+## [2026-05-10] ingest | Supply Chain Insights — S&OP: A Guide for the Supply Chain Leader (2020)
+
+**소스**: `raw/study/sop/supply_chain_insights_sop_guide_2020.pdf` (39p, Lora Cecere & Regina Denman, Supply Chain Insights LLC, Open Content)
+
+- **신규 생성**: `wiki/industry/LAKA/sources/src_supply_chain_insights_sop_guide.md` — SCI 가이드 전문 요약. Executive Overview·정의·Pre-Pandemic State·Pandemic Shifts·Maturity Model 5단계·Capability Gap·33개 벤더 카탈로그·Implement 핸드북 비교·LAKA 적용 시사점 표
+- **index.md 업데이트**: src_implement_sop_handbook + src_supply_chain_insights_sop_guide 두 줄 추가, 총 페이지 144 → 146
+
+**핵심 자산 (LAKA 적용)**:
+- 5단계 Maturity Model 표 (Stage 1 Reactive → Stage 5 Market-Driven, 6차원 평가)
+- 정량 갭 데이터: 데이터 접근 58%, 신제품-운영 정렬 −38%, Sales-Ops −36%, What-if 분석 −39%
+- 변화관리 60% / 프로세스 30% / 기술 10% 투자 비중 (Implement 65/25/10과 정합)
+- 33개 벤더 LAKA 적합도 평가 — 1순위 후보군: ToolsGroup·o9 (단, Stage 3 진입 후 검토)
+
+**연관 이슈**: COM-20 (W1 sop_overview), COM-25 (W5 sop_kpis), COM-26 (W6 sop_failure_patterns) 보조 인용 소스. concepts/sop/ 페이지는 W1~W7 진행 시 생성 예정.
 
 ## [2026-04-21] ingest | 캡틴 차이나 리단, 안사이(휘), 그리고 정씨 해상제국
 

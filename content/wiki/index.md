@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-04-29 | 총 144페이지
+> 마지막 업데이트: 2026-05-10 | 총 146페이지
 
 ## 역사 (history/)
 
@@ -128,6 +128,8 @@ publish: true
 | [[src_성과관리_리서치_결과_보고서]] | summary | 성과관리 종합 리서치 결과 |
 | [[src_에이피알_COO_보고서]] | summary | APR 분석 및 LAKA 전략 시사점 |
 | [[src_중소기업_성과관리_리서치]] | summary | 성과관리 변화 흐름, SaaS, 기업 사례 |
+| [[src_implement_sop_handbook]] | summary | Implement Consulting Group S&OP 핸드북 (2014, 4th ed Light) — Tom Wallace 협업, 11챕터, People 65%/Process 25%/System 10% |
+| [[src_supply_chain_insights_sop_guide]] | summary | Supply Chain Insights S&OP 가이드 (2020, Lora Cecere) — 107개사 정량 서베이, 5단계 maturity model, 33개 벤더 카탈로그 |
 
 ### LAKA — 규제 (regulations/)
 
