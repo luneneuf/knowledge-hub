@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-11 | 총 156페이지
+> 마지막 업데이트: 2026-05-11 | 총 157페이지
 
 ## 역사 (history/)
 
@@ -195,6 +195,7 @@ publish: true
 | [[sop_kpis]] | concept | KPIs — Process KPI 22개(Step 1·2·3·4·5) + Outcome KPI Hard 8개·Soft 7개(Wallace), OTD 확장 4단계 Fill Rate Hierarchy, Pre-meeting 7개·Exec Meeting 5개 대시보드, Stage 1→5 KPI progression |
 | [[sop_failure_patterns]] | concept | Failure Patterns — Type A 본질(Wallace 3 Impediments + Broken Process 7), Type B 진화(SCI Pothole 5 + Pitfall 6 + Capability Gap), Type C 단발(Sales 과대예측·Suicide Quadrant·Mini-S&OP 11 trigger), LAKA 8부문 위험, 분기 회고 체크리스트, Re-implementation 경로 |
 | [[laka_sop_v1]] | concept | **LAKA Live Pilot Playbook (시뮬레이션)** — Wallace 4-Phase Implementation Path LAKA 적용, 60분 Executive Briefing agenda + 예상 반론 6개, Master Scheduling Policy 7 조항 + RACI 매트릭스, 90일 Pilot 3 cycle, Step 4·5 운영 매뉴얼, Risk Register 9개, 시뮬레이션 갭 10개 자기 평가 |
+| [[laka_sop_v1_simulation]] | concept | **Pilot 90일 운영 시뮬레이션 + 회고 (Bad Day at Acme Widget 양식)** — Cycle 1 Discovery (Master Data drift 즉시 발견)·Cycle 2 Discipline (Layer 분리 효력)·Cycle 3 Stabilization (3-mo FVA로 Sales 패턴 정량 확인), Phase 2 회고 평균 2.6/3.0, Go/No-Go #2 YES, v1→v2 보정안 10개, 책상머리 한계 자기 평가 |
 | 📎 laka_sop_template_v0.xlsx | sample | 작동하는 워크북 샘플 — README/Master_Data/F01_Sally_Smith/NPI_Tracker/FVA_Tracking 5 시트, 수식 51개, 트래픽 라이트 자동 적용 |
 
 ### LAKA — SCM·구매 AI

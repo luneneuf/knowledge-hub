@@ -5,6 +5,49 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W8 | laka_sop_v1_simulation — Pilot 90일 운영 + 회고 (COM-27)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/laka_sop_v1_simulation.md` ("LAKA S&OP v1 — Pilot 90일 운영 시뮬레이션 + 회고")
+
+⚠️ **시뮬레이션 명시** — Wallace 책의 "Bad Day at Acme Widget" Ch3 storytelling 양식 차용. 가상 인물·사건 narrative. 사고 실험 가치.
+
+**구성 (8개 섹션)**:
+0. 시뮬레이션 타임라인 (2026-07 ~ 2026-10)
+1. **Cycle 1 — 8월 Discovery** — Master Data ID drift 즉시 발견(F01 SKU alias 충돌)·ODM 데이터 latency·Sales 통합 인풋·세포라 80개 매장 확장 polite bomb·ODM 슬롯 첫 위기·Pre-meeting 95분(초과)·Exec Meeting CEO "매월 이거 보자고"·학습 5개
+2. **Cycle 2 — 9월 Discipline** — Master Data 정비 후 KPI 즉시 개선·Layer별 양식 효력·F08 코스맥스 dual sourcing 첫 PO·FVA 첫 측정 (Sales APE 33% 발견)·90분 엄수·학습 4개
+3. **Cycle 3 — 10월 Stabilization** — Process Owner 자동화 시작·**3-mo FVA로 Sales 음수 패턴 정량 확인 (-11.5%p)**·코스맥스 품질 issue (2.3% vs 한국콜마 0.8%)·Mini-S&OP 발동 안 함이 정상·CEO "Window into the Future" 발언 (Wallace Soft Benefit S7 실현 첫 사례)·학습 5개
+4. **Phase 2 회고** — 8개 항목 4점 척도 평균 **2.6/3.0** (우수 zone)
+5. **Go/No-Go #2** — 6/7 YES, 1/7 △ (Soft Benefit 정량 미수집) → Phase 3 진행 결정. 가장 큰 발견 Top 7
+6. **v1 → v2 보정안** — W7 §14 자기 평가 갭 10개 점검 결과 표 + 추가 보강 5개 + 신규 Risk 4개
+7. **책상머리 시뮬레이션의 가치와 한계** — 가치 5개 + 한계 5개. Wallace "Behavior Change ≠ Fact Transfer" 재인용
+8. **다음 단계 (실제 적용 시)** — Phase 1 직전 7개 체크리스트 + 1년 후 v3 계획
+
+**핵심 storytelling 발견**:
+- Cycle 1 Master Data ID 충돌 (F01 vs "립글로스_핵심") — Pothole 즉시 발견·1주 정비
+- Cycle 1 글로벌사업 → SCM 정보 비대칭 (세포라 80개 매장 확장) — Conflict Aversion 표면화 시뮬레이션
+- Cycle 2 손여진 본부장 "Layer 분리 양식 보기 좋아요" — 양식 강제 효력
+- Cycle 3 **3-mo FVA로 Sales 단기 과대예측 패턴 정량 확인** — APE 33% / FVA −11.5%p
+- Cycle 3 CEO **"Window into the Future"** 발언 — Wallace Soft Benefit S7 실현 시뮬레이션
+- 코스맥스 첫 PO 2.3% 불량률 vs 한국콜마 0.8% — 품질 SLA 협상 필요 시점
+- Process Owner Excel macro 자동화 → Data On-time KPI 67%→95%
+
+**시뮬레이션 학습 정리**:
+- **사고 실험 도구로서의 가치**: W7 갭 10개 → 8개 검증·2개 새 발견
+- **위험 사전 식별**: W7 Risk 9개 + 4개 신규 Risk
+- **임원 교육 자료 가치**: Pilot narrative 자체가 Phase 1 Briefing 일부로 활용 가능
+- **본질적 한계**: Outcome KPI Hard Benefits (Inventory ↓·Obsolescence ↓ 등) 6-12개월 호라이즌 — 90일로 불충분
+- **Wallace 가르침 재확인**: Behavior Change ≠ Fact Transfer. 본 시뮬레이션은 "고도화된 fact transfer"
+
+**시리즈 완성**:
+- W1~W8 = 8 페이지
+- + 1 워크북 (laka_sop_template_v0.xlsx)
+- + 4 source 페이지 (Wallace workshop/book, Implement, SCI)
+- = **13개 문서**
+
+**index.md 업데이트**: laka_sop_v1_simulation 등재. 페이지 카운트 156 → 157.
+
+**전체 W1~W8 진행률**: **8/8 완료 (100%)**. LAKA S&OP 학습 시리즈 종료.
+
 ## [2026-05-11] W7 | laka_sop_v1 — Live Pilot Playbook 시뮬레이션 (COM-26)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/laka_sop_v1.md` ("LAKA S&OP v1 — Live Pilot Playbook (시뮬레이션)")
