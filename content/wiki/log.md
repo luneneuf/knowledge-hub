@@ -5,6 +5,39 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-12] 보강 | gartner_5stage_maturity — Gartner Maturity 두 모델 + 5 Ps
+
+**배경**: 사용자 요청 — 웹에서 Gartner S&OP Maturity 아티클 검색·통합. 두 무료 공개 자료 fetch:
+- ToolsGroup blog (Tim Payne 2017) — Supply Chain Planning Technology Maturity
+- My Supply Chain Group — "5 Ps of S&OP Maturity"
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/gartner_5stage_maturity.md`
+
+**핵심 발견 4개**:
+1. **Gartner는 같은 5-stage 프레임을 5 도메인에 적용** — S&OP Process / Technology / Demand-Driven / PLM / Logistics. "Gartner 5-stage maturity" 표현 시 어느 도메인인지 명시 필수
+2. **S&OP Process Model 4→5 stage 진화 이유** — *"two-thirds of companies find it difficult to move from Anticipate to Collaborate"* → Integrate 단계 신설
+3. **Gartner vs SCI IBP 정의 정반대** — SCI: IBP = Stage 3 (중간) / Gartner: IBP = Stage 4-5 (성숙). 본 wiki는 SCI 기준 채택, Gartner 인용 시 명시
+4. **5 Ps × 5 Stages 매트릭스** — People·Processes·Platforms·Policies·Performance 각각이 다른 단계에 머무는 게 일반적 ("5 Ps 균형 부재")
+
+**구성 (9 섹션)**:
+1. Gartner의 5 도메인 분류 표
+2. S&OP Process Maturity 5 Stage 정의 + 4→5 진화 이유
+3. Tim Payne Technology Maturity 5 Stage + LAKA 매핑 (Process Stage 1-2, Tech Stage 1)
+4. **5 Ps × 5 Stages 매트릭스** + My Supply Chain Group 균형 부재 사례 5개 (CPG·하이테크·중기계·산업유통·다중기능)
+5. **SCI 5-Stage vs Gartner 5-Stage 비교** + IBP 정의 차이 표
+6. Wallace의 maturity 입장 (stage 모델 X, 본질 강조)
+7. **LAKA 5 Ps 자가 진단** — People Stage 1-2, Processes Stage 1, Platforms Stage 1, Policies Stage 1, Performance Stage 1
+8. 통합 인용 가이드 — wiki 내 maturity 언급 시 명시 표기 표준
+9. 출처 8개
+
+**LAKA 적용 결정사항**:
+- 본 wiki Stage 표기 = **SCI 기준** (Stage 3 = IBP)
+- Gartner 인용 시 명시 표기 추가 (Stage 3 = Integrate, IBP는 Stage 4-5)
+- 5 Ps 균형 진단을 분기 회고 또는 [[sop_failure_patterns|W6]] 자가진단에 추가 검토 가능
+- LAKA 가장 낙후된 P = Policies + Performance
+
+**index.md 업데이트**: gartner_5stage_maturity 등재. 페이지 카운트 157 → 158.
+
 ## [2026-05-11] W8 | laka_sop_v1_simulation — Pilot 90일 운영 + 회고 (COM-27)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/laka_sop_v1_simulation.md` ("LAKA S&OP v1 — Pilot 90일 운영 시뮬레이션 + 회고")

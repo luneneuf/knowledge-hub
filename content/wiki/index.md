@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-11 | 총 157페이지
+> 마지막 업데이트: 2026-05-12 | 총 158페이지
 
 ## 역사 (history/)
 
@@ -196,6 +196,7 @@ publish: true
 | [[sop_failure_patterns]] | concept | Failure Patterns — Type A 본질(Wallace 3 Impediments + Broken Process 7), Type B 진화(SCI Pothole 5 + Pitfall 6 + Capability Gap), Type C 단발(Sales 과대예측·Suicide Quadrant·Mini-S&OP 11 trigger), LAKA 8부문 위험, 분기 회고 체크리스트, Re-implementation 경로 |
 | [[laka_sop_v1]] | concept | **LAKA Live Pilot Playbook (시뮬레이션)** — Wallace 4-Phase Implementation Path LAKA 적용, 60분 Executive Briefing agenda + 예상 반론 6개, Master Scheduling Policy 7 조항 + RACI 매트릭스, 90일 Pilot 3 cycle, Step 4·5 운영 매뉴얼, Risk Register 9개, 시뮬레이션 갭 10개 자기 평가 |
 | [[laka_sop_v1_simulation]] | concept | **Pilot 90일 운영 시뮬레이션 + 회고 (Bad Day at Acme Widget 양식)** — Cycle 1 Discovery (Master Data drift 즉시 발견)·Cycle 2 Discipline (Layer 분리 효력)·Cycle 3 Stabilization (3-mo FVA로 Sales 패턴 정량 확인), Phase 2 회고 평균 2.6/3.0, Go/No-Go #2 YES, v1→v2 보정안 10개, 책상머리 한계 자기 평가 |
+| [[gartner_5stage_maturity]] | concept | Gartner 5-Stage Maturity — Gartner는 같은 5-stage를 5 도메인(S&OP Process·Tech·DDM·PLM·Logistics)에 적용. S&OP는 React→Anticipate→Integrate→Collaborate→Orchestrate. **Integrate 단계는 2/3 기업이 막혀서 4→5 stage 진화**. SCI vs Gartner IBP 정의 정반대(SCI=Stage 3, Gartner=Stage 4-5). My Supply Chain Group 5 Ps (People·Processes·Platforms·Policies·Performance) + LAKA 5 Ps 자가 진단 |
 | 📎 laka_sop_template_v0.xlsx | sample | 작동하는 워크북 샘플 — README/Master_Data/F01_Sally_Smith/NPI_Tracker/FVA_Tracking 5 시트, 수식 51개, 트래픽 라이트 자동 적용 |
 
 ### LAKA — SCM·구매 AI
