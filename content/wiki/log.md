@@ -5,6 +5,45 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-12] 5번째 source 페이지 | src_gartner_sop_maturity_2010 — Gartner 원전 1차 자료
+
+**배경**: 사용자 요청 — Scribd URL (https://www.scribd.com/document/474294819) 본문 스캔. Jina Reader 우회로 **5/11 페이지 본문 확보** (paywall 뒤 6-11페이지 미확보).
+
+**중대 발견 — 우리 wiki 정정 필요**:
+- Gartner 원본 (Barrett & Uskert 2010, G00207249)은 **4-Stage 모델**: Reacting / Anticipating / **Collaborating** / **Orchestrating**
+- **"Integrate" 단계는 후속 진화** (67% 기업이 Stage 1-2에 정체하는 문제 대응)
+- 원본 Stage 3 (Collaborating) = "S&OP is no longer supply chain process, but rather aligned business planning process" — **IBP 진입 시점**
+- 5-Stage 버전에서 IBP는 Stage 4-5로 이동
+
+**신규 생성 (5번째 source 페이지)**: `wiki/industry/LAKA/sources/src_gartner_sop_maturity_2010.md`
+
+**구성 (12개 섹션)**:
+1. 원전 메타데이터 (저자 Jane Barrett·Michael Uskert, G00207249, 2010-11-01)
+2. 핵심 주장 — *"two-thirds of businesses do not progress beyond first two stages"*
+3. Key Findings 5개 (원문 인용)
+4. Recommendations 5개
+5. **원본 4-Stage Matrix (3 차원 × 4 단계)** — Goals/Alignment/Process & Tech 원문 표 완전 재현
+6. Stage 2 함정 — "Stuck in Neutral" 특징·한계
+7. Stage 3 진화 — 3-24mo horizon, multi-tier, "THE forum for decision making"
+8. **Translation 8 차원** (SKU·Global Units·Currency·Profit·Customer·Product Category·Plant·Countries/Regions)
+9. **Financial Integration S&OP-AOP 6-Step (a-h)** — Demand → Supply → Constraints → Manufacturing → Inventory → Distribution → SG&A → Profit roll-up
+10. Profitability 정의 — Stage 3 gross profit / Stage 4 EBIT
+11. **Stage 3 Governance Framework** — Sponsor: CEO / Coordinator: SCM / Owner: Line-of-business / KPI focus
+12. 미확보 정보 (paywall 뒤 page 6-11) 명시
+
+**우리 wiki 정정**:
+- [[gartner_5stage_maturity|gartner_5stage_maturity §2]] 정정 — 원본 2010 4-Stage + 후속 5-Stage 진화 timeline 명시
+- 원본 명칭: **Reacting · Anticipating · Collaborating · Orchestrating** (현재 wiki 명칭 React/Anticipate/Integrate/Collaborate/Orchestrate는 5-stage 버전)
+- IBP 정의 — Wallace 정확한 부분: *"once moves to Stage 3 it is no longer a supply chain process, but rather aligned business planning process"*
+
+**LAKA 적용 자산** (Gartner 2010 원전 기반 강화):
+- **W5 KPI focus** = "demand risk, customer service, profit, cash, market share" (Gartner Stage 3 원전)
+- **W7 Governance Framework** = Sponsor/Coordinator/Owner 3-role (Gartner 원전)
+- **W2 Translation 8 차원** = SKU·Currency·Profit·Customer 등 (Gartner 원전)
+- **Financial Integration 6-step** = LAKA 분기 budget·monthly S&OP 통합 base
+
+**index.md 업데이트**: src_gartner_sop_maturity_2010 등재 (5번째 source). 페이지 카운트 158 → 159.
+
 ## [2026-05-12] 보강 | gartner_5stage_maturity — Gartner Maturity 두 모델 + 5 Ps
 
 **배경**: 사용자 요청 — 웹에서 Gartner S&OP Maturity 아티클 검색·통합. 두 무료 공개 자료 fetch:

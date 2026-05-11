@@ -35,27 +35,51 @@ publish: false
 
 ---
 
-## 2. Gartner S&OP Process Maturity Model — 5 Stage
+## 2. Gartner S&OP Process Maturity Model — Original 4-Stage (2010) → 후속 5-Stage 진화
 
-### 2.1 5 Stage 정의
+⭐ **본 섹션 정정**: 새 source 페이지 [[src_gartner_sop_maturity_2010]] (Scribd 공개본 확보, 2026-05-12) 기반으로 **원본은 4-Stage였고 "Integrate" 단계는 후속 진화**임이 확인됨.
+
+### 2.1 원본 4-Stage (Barrett & Uskert 2010, G00207249)
 
 | Stage | 명칭 | 핵심 특성 |
 |--------|------|------------|
-| 1 | **React** | 사후 대응, 기능 사일로, 단기 focus |
-| 2 | **Anticipate** | demand 예측 시작, 부분 forecast 운영 |
-| 3 | **Integrate** | 내부 integration (★ 신규 추가 단계) |
-| 4 | **Collaborate** | 외부 협업 + IBP 전환 시점 |
-| 5 | **Orchestrate** | 시장-시장 오케스트레이션, trading partner 통합 |
+| **1** | **Reacting** | 사후 대응, 기능 사일로, 단기 focus, Sales review meeting 수준 |
+| **2** | **Anticipating** | demand 예측 시작, **Supply Chain ownership 정체** — 67% 기업이 여기 |
+| **3** | **Collaborating** | **Aligned business planning process** (no longer supply chain), THE forum for decision making |
+| **4** | **Orchestrating** | Business ownership 다층, 외부 collaboration, end-to-end value, risk-value trade-offs |
 
-### 2.2 왜 5-stage가 되었나 — 4→5 진화 이유
+### 2.2 후속 5-Stage 버전 (현재 통용)
 
-**원본**: 4-stage (React → Anticipate → Collaborate → Orchestrate)
+원본 2010 4-stage가 67% 기업이 Stage 1-2에 정체하는 문제를 보이자, Gartner는 후속 연구에서 **Anticipate ↔ Collaborate 사이에 "Integrate" 단계 신설**:
 
-**문제**: WebSearch 결과 — *"two-thirds of companies find it difficult to move from the Anticipate stage to the Collaborate stage"*
+| Stage | 5-Stage 명칭 | 4-Stage 매핑 |
+|--------|----------------|------------------|
+| 1 | **React** | = Reacting |
+| 2 | **Anticipate** | = Anticipating |
+| **3** | **Integrate** ★ 신규 | (4-stage에서 분리) — 내부 integration 단계 명시 |
+| 4 | **Collaborate** | = Collaborating |
+| 5 | **Orchestrate** | = Orchestrating |
 
-→ Anticipate(2)에서 Collaborate(4 구버전)으로 점프하는 갭이 너무 큼. **2/3의 기업이 막힘**.
+### 2.3 IBP 전환 시점
 
-**해결**: 그 사이에 **"Integrate"** 단계 신설. 내부 integration이 외부 협업의 전제 조건임을 명시.
+> *"Higher stages (Collaborate & Orchestrate)에서 S&OP가 IBP (Integrated Business Planning)로 transformed."*
+
+→ **Gartner 입장**:
+- 원본 2010: IBP = Stage 3-4 (Collaborating/Orchestrating)
+- 후속 5-stage: IBP = Stage 4-5 (Collaborate/Orchestrate)
+- **Wallace 원전 핵심 부분**: *"once the process moves to Stage 3 it is no longer a supply chain process, but rather an aligned business planning process"* — 4-stage 기준 Stage 3이 진정한 IBP 진입.
+
+### 2.4 67% Stage 1-2 정체 통계 (Gartner 2010 원전)
+
+**2009년 8월 182개 제조사·소매사 서베이**:
+- 67% companies still in Stage 1 or Stage 2
+- 18 companies achieved Stage 3 → 본 연구 기반
+
+→ **이 67% 정체 문제 자체가 5-stage 진화의 motivation** (Integrate 단계 추가로 중간 step 명시).
+
+### 2.5 원본 3 차원 평가 (Goals · Cross-Functional Alignment · Process & Technology)
+
+[[src_gartner_sop_maturity_2010|src §원본 4-Stage Maturity Model]] 참조 — Figure 1 원본 매트릭스 4 stage × 3 차원 정의.
 
 ### 2.3 IBP 전환 시점
 
