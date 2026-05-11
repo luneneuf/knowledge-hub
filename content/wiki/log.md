@@ -5,6 +5,50 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W7 | laka_sop_v1 — Live Pilot Playbook 시뮬레이션 (COM-26)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/laka_sop_v1.md` ("LAKA S&OP v1 — Live Pilot Playbook (시뮬레이션)")
+
+⚠️ **시뮬레이션 명시** — 페이지 상단 yellow box로 표기. 실제 LAKA Executive Briefing·인터뷰·현장 데이터 없이 추정 기반 작성. 실제 적용 시 모든 가정 보정 필요.
+
+**구성 (14개 섹션)**:
+0. **가정 명시** — 시작 시점 2026-07, Pilot Family F01+F08, Pilot Channel 3개, ODM 한국콜마+코스맥스, 마스터 데이터 사전 정착
+1. Wallace 4-Phase Implementation Path LAKA 적용 — 8-12개월, <$100K, Go/No-Go gate 2개
+2. **Phase 1 — Executive Briefing 60분 운영 매뉴얼** — 8명 참석자·sequential agenda 60분·5 sound bite·예상 반론 6개·Go/No-Go #1 6 조건
+3. Kickoff Session 반나절 agenda
+4. **Master Scheduling Policy v1 (Draft) — 7 조항** — Process Definition·Scope·Roles & Responsibilities·Time Zone·**Decision Authority RACI 매트릭스 12 의사결정**·Meeting Cadence (9 회의)·Override & Escalation
+5. **Phase 2 — Live Pilot 90일 3 Cycle** — Pilot Scope 정량·Cycle별 학습 목표·발견 가능한 문제 8개 사전 예측
+6. **Step 4 Pre-meeting 운영 매뉴얼 90분** — 6-8명 참석자·sequential agenda·출력 자료 7종
+7. **Step 5 Exec Meeting 운영 매뉴얼 60-90분** — Essential/Probable/Possible 참석·Wallace 표준 8 agenda·의사결정 4 유형·회의 후 24시간 액션
+8. **Phase 2 회고 + Go/No-Go #2** — 8개 평가 항목·7개 YES 조건
+9. Phase 3 Expansion 4개월 — Month 4-7 family·channel 확장 schedule + 운영 부담 증가 대응
+10. Phase 4 Financial Integration 2개월 — Wallace 미래 비전(War Room·Running Delta·Red Zone·Audit Trail) 도입 시점
+11. KPI 목표 Phase 2·3·4 progression 표
+12. v1 → v2 진화 계획
+13. **Risk Register 9개** — Pilot 중 위험·확률·impact·대응
+14. **시뮬레이션 갭 10개 자기 평가** — Family·ODM cadence·단가·MOQ·8부문 commitment·국내사업 공석 영향·마스터 데이터 현행·시스템 통합·ODM 데이터 협조·환율 release·분기 budget 통합 모두 추정
+
+**핵심 자산**:
+- **Master Scheduling Policy 7 조항** — LAKA-customized 거버넌스 공식 문서 양식 (CEO·이사회 승인 base)
+- **Decision Authority Matrix (RACI)** — 12 의사결정 유형 × 8 부문 R/A/C/I 명시
+- **9 회의 cadence** — Data Gathering 마감·Demand Consensus·Supply sign-off·Pre-meeting·Exec Meeting·Mini-S&OP·분기 review·연간 maturity
+- **60분 Executive Briefing agenda + 예상 반론 6개** — Phase 1 직접 운영 자료
+- **90일 Pilot 3 cycle 일정** — Day 1-20 매 cycle 활동
+- **시뮬레이션의 한계 10개 명시** — 실제 적용 시 보정해야 할 갭
+
+**LAKA-customized 결정사항**:
+- Pilot family = F01 + F08 (베스트셀러 + 글로벌 FTO)
+- Pilot channel = 세포라 US + Qoo10 JP + 한국 온라인
+- Pilot ODM = 한국콜마 + 코스맥스 (F08 dual sourcing 시뮬레이션)
+- 국내사업 본부장 공석 = CEO 임시 owner
+- 시작 시점 = 2026년 7월 (가상)
+
+**index.md 업데이트**: laka_sop_v1 등재. 페이지 카운트 155 → 156.
+
+**전체 W1~W8 진행률**: 7/8 완료 (87.5%). 마지막 W8 = 시뮬레이션 운영 (90일 Pilot 가상 진행) + 회고 + v1 → v2 업데이트.
+
+**다음**: W8 — Pilot 90일 시뮬레이션 진행. 3 cycle 가상 운영 + cycle별 발견·학습 + Phase 2 회고 + v1 보정안.
+
 ## [2026-05-11] W6 | sop_failure_patterns — 실패 패턴 통합 (COM-25)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_failure_patterns.md`
