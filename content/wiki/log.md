@@ -5,6 +5,43 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W6 | sop_failure_patterns — 실패 패턴 통합 (COM-25)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_failure_patterns.md`
+
+**구성 (9개 섹션)**:
+0. **3 Type of Failure 분류 프레임워크** — Type A 본질(behavior change)·Type B 진화(pothole/pitfall)·Type C 단발(disruption)
+1. **Type A — Wallace 3 Impediments** — Lack of Discipline(Emil's Engineers)·Fuzzy Accountability(Aerospace 케이스)·Conflict Aversion(Moose on the Table) + LAKA 위험·대응
+2. **Broken Process 7 신호** — 분기 자가진단 체크리스트 + 신호별 즉시 액션 7개
+3. **Type B — SCI Pothole 5 + Pitfall 6 + Capability Gap Top 5** + LAKA 분기 체크리스트
+4. **Type C — Sales 단기 과대예측 + Suicide Quadrant + Stockout 6 원인**
+5. **Mini-S&OP Cycle 발동 Trigger 매트릭스 11개** + 운영 룰 + 남용 위험
+6. **LAKA 8부문 특화 위험 진단 표** — 부문별 위험 패턴·모니터링 KPI + 가장 큰 위험 3개(국내사업 본부장 공석·마스터 데이터 drift·ODM 슬롯 경쟁)
+7. **분기 회고 체크리스트** — 90분 agenda + 4점 척도 점수표
+8. **Re-implementation 경로** (Wallace) — 결정 트리 4 step + 위험 신호 4개
+9. 출력 (분기 회고 + 연간 maturity 진단)
+
+**핵심 통찰**:
+- **3 type 분류가 중요** — 같은 증상이라도 type에 따라 처방이 다름. 진단 잘못되면 잘못된 대응
+- Wallace "Behavior Change vs Fact Transfer" — 본 wiki는 fact transfer, 실제 도입은 behavior change (W7 Live Pilot)
+- LAKA 가장 큰 3개 위험: 국내사업 본부장 공석·마스터 데이터 drift·ODM 슬롯 경쟁
+- Mini-S&OP는 강력하지만 남용 시 정규 cycle 약화 — 분기 6회 이상 발동 시 정규 cycle 재점검
+
+**LAKA 8부문 위험 진단 표** 핵심 매핑:
+- 크리에이티브(CEO 겸임): Emil 패턴 위험
+- 국내사업(공석): 인풋 owner 부재 (CEO 임시 owner)
+- 마케팅(15명): Baseline·Campaign 통합 인풋 위험
+- 글로벌사업(17명): 4 채널 분산 — channel별 인풋 표준 필요
+- SCM(10명): ODM over-confirm·DTF 위반 위험
+
+**Moose Rule**: Pre-meeting·Exec Meeting에 stuffed moose 인형(또는 LAKA 마스코트) — 어려운 이슈 raise 시 책상 위에 올림. Bob Stahl 컨설팅 도구 차용.
+
+**index.md 업데이트**: sop_failure_patterns 등재. 페이지 카운트 154 → 155.
+
+**전체 W1~W8 진행률**: 6/8 완료 (75%). 남은 작업: W7 laka_sop_v1 (Live Pilot Playbook 통합) + W8 시뮬레이션.
+
+**다음**: W7 laka_sop_v1 — 1~6 모두 통합 + Step 4·5 Pre-meeting·Exec Meeting 운영 매뉴얼 + Wallace 4-phase Implementation Path LAKA 적용 + 거버넌스 문서 (Master Scheduling Policy)
+
 ## [2026-05-11] W5 | sop_kpis — Process·Outcome KPI 통합 (COM-24)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_kpis.md` ("S&OP KPIs — Process · Outcome 통합")

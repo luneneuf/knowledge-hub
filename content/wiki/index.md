@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-11 | 총 154페이지
+> 마지막 업데이트: 2026-05-11 | 총 155페이지
 
 ## 역사 (history/)
 
@@ -193,6 +193,7 @@ publish: true
 | [[demand_planning]] | concept | **2. Demand Planning** — 4-layer forecast(통계→Marketing→Sales→Consensus), FVA 측정, NPI 4 차원, Sally Smith LAKA 컬러군 템플릿, 매월 day 4-7 |
 | [[supply_planning_odm]] | concept | **3. Supply Planning (ODM)** — Operations Plan + RCCP, ODM 슬롯 매핑(한국콜마·코스맥스), Aligned vs Matrix Resources, DTF 30/PTF 60일, Scalability 분석, Constraint escalation, 매월 day 4-10 |
 | [[sop_kpis]] | concept | KPIs — Process KPI 22개(Step 1·2·3·4·5) + Outcome KPI Hard 8개·Soft 7개(Wallace), OTD 확장 4단계 Fill Rate Hierarchy, Pre-meeting 7개·Exec Meeting 5개 대시보드, Stage 1→5 KPI progression |
+| [[sop_failure_patterns]] | concept | Failure Patterns — Type A 본질(Wallace 3 Impediments + Broken Process 7), Type B 진화(SCI Pothole 5 + Pitfall 6 + Capability Gap), Type C 단발(Sales 과대예측·Suicide Quadrant·Mini-S&OP 11 trigger), LAKA 8부문 위험, 분기 회고 체크리스트, Re-implementation 경로 |
 | 📎 laka_sop_template_v0.xlsx | sample | 작동하는 워크북 샘플 — README/Master_Data/F01_Sally_Smith/NPI_Tracker/FVA_Tracking 5 시트, 수식 51개, 트래픽 라이트 자동 적용 |
 
 ### LAKA — SCM·구매 AI
