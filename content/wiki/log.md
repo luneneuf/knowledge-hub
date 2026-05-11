@@ -5,6 +5,39 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-11] W5 | sop_kpis — Process·Outcome KPI 통합 (COM-24)
+
+**신규 생성**: `wiki/industry/LAKA/concepts/sop/sop_kpis.md` ("S&OP KPIs — Process · Outcome 통합")
+
+**구성 (11개 섹션)**:
+0. **2층 KPI 프레임워크** — Layer 1 Outcome (Hard/Soft Benefits) ← Layer 2 Process (Step별)
+1. **Process KPI 22개** 통합 표 — Step 1(6) + Step 2(6) + Step 3(8) + Step 4-5(2)
+2. **Outcome KPI Hard 8개** (Wallace Customer Service ↑·Inventory ↓·Obsolescence ↓·Freight ↓·Lead Times ↓·NPI Speed ↓·Productivity ↑) + LAKA 우선순위
+3. **Outcome KPI Soft 7개** (Teamwork·Communications·Decisions·$$$ Plans·Accountability·Control·Window into Future) + 반기 서베이 5점 척도
+4. **OTD 확장 — 4단계 Fill Rate Hierarchy** — Supplier→LAKA(OTD)·LAKA→Channel(Line/Order)·LAKA→End(Perfect Order). family·channel별 목표값 표 + Stockout 6 원인 분류
+5. Sally Smith Sheet 자동 측정 KPI + v0→v1 확장 plan
+6. KPI 측정 cadence + 책임 매트릭스 (Monthly·Quarterly·Semi-annual·Annual)
+7. Pre-meeting 대시보드 7개·Exec Meeting 대시보드 5개 (Wallace 5-7개 룰)
+8. **KPI 목표 Progression Stage 1→5** — 8개 핵심 KPI의 SCI Maturity Stage별 목표값 진화
+9. KPI Governance — Single Source of Truth 룰·KPI 변경 승인 룰
+10. 흔한 실패 패턴 8개 (KPI Gaming·Forecast Accuracy 단독 의존·Soft Benefit 무시 등)
+11. 출력 (월간 22개 process KPI + 분기 outcome + 연간 maturity 진단)
+
+**핵심 통찰**:
+- **Process KPI는 빠르게 움직임 (월간) → Outcome KPI는 천천히 움직임 (6-12개월)**. 운영 부서는 Process, 임원은 Outcome 보는 구분
+- Wallace 권장 "한 meeting에 KPI 5-7개" 룰 명시
+- 기존 [[OTD]] 페이지는 supplier→LAKA 측 — 본 페이지에서 LAKA→channel 측 (Order/Line Fill Rate) 보강
+- Soft Benefit 측정의 어려움을 단순 5점 척도 서베이 (반기)로 해결
+
+**LAKA Stage 1→3 KPI 진화 예시**:
+- MAPE: 측정 안 함 → 25% → **15%**
+- Order Fill Rate: 측정 안 함 → 92% → **95%** (베스트셀러·세포라)
+- Time-fence Discipline: 빈번한 위반 → 월 5건 → **0건**
+
+**index.md 업데이트**: sop_kpis 등재. 페이지 카운트 153 → 154.
+
+**다음**: W6 sop_failure_patterns — Wallace 3 Impediments + Broken Process 7 신호 + SCI Pothole·Pitfall + Sales 단기 과대예측 + Mini-S&OP Cycle 발동 trigger
+
 ## [2026-05-11] W4 | supply_planning_odm — Step 3 운영 매뉴얼 (COM-23)
 
 **신규 생성**: `wiki/industry/LAKA/concepts/sop/supply_planning_odm.md` ("3. Supply Planning (ODM)")
