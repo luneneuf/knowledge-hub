@@ -221,7 +221,70 @@ W1~W8 wiki에서 maturity 언급 시:
 
 ---
 
-## 9. 출처
+## 9. 비평 — Simon Eagle "Gartner DDVN is misleading" (2017)
+
+**LinkedIn 글**: "What do Gartner say about Demand-Driven SCM?" — Simon Eagle (CAMELOT Management Consultants)의 Gartner Demand-Driven Value Network(DDVN) Maturity 비평.
+
+### 9.1 Eagle의 Gartner DDVN 비판 3가지
+
+| # | 비판 | Eagle 입장 |
+|----|------|-----------|
+| 1 | **Pull-based replenishment를 Stage 5에 배치** | "이 핵심 속성은 Stage 3부터 시작되어야" |
+| 2 | **Stage 4에서 협업적 forecast 기반 재고 관리 추천** | *"예측-주도형 시스템은 계획되지 않은 비용 생성 버퍼(과도한 대기시간·불균형 재고)를 만든다"* |
+| 3 | **협업 SCM을 Stage 4에 배치한 순서 오류** | "내부 demand-driven 시스템 구현이 협업 단계 전제 조건" |
+
+### 9.2 Eagle의 Demand-Driven SCM 정의 (대안)
+
+> *"여러 개의 신중하게 규모가 정해진 재고 위치를 수요에 맞춰 안정적이고 예측 가능한 순서로 보충하는 pull-based 메커니즘"*
+
+**핵심 특징**:
+- 안정적·예측 가능한 재고 보충 순서
+- 고급 안전재고 (extreme/exceptional events용)
+- **예측 정확도 의존성 제거** ← Forecast-Driven과 정반대
+
+### 9.3 Demand-Driven SCM 도입 효과 (Eagle 인용)
+
+| 지표 | 개선 수준 |
+|------|------------|
+| 재고 | **−30~50%** |
+| 리드타임 | **−50% 이상** |
+| 서비스 수준 | 계획 수준 달성 |
+| 필요 용량 | 현저히 감소 |
+| 긴급 대응 | 불필요 |
+
+**사례 기업 (Eagle 인용 early adopter)**: Unilever · Nestlé · Sandoz-Novartis · Shell Lubricants · P&G · BT · AG Barr · Michelin
+
+### 9.4 Eagle 대안 4-Stage 모델 (Eagle & Barratt 2017)
+
+| Stage | 명칭 | 비율 |
+|--------|------|------|
+| 1 | Misaligned | **99%** 기업 현재 위치 |
+| 2 | Internally Aligned | 소수 |
+| 3 | Extended & Aligned | 매우 드뭄 |
+| 4 | Extended & Aligned with Dominant Player | 극소수 |
+
+→ Gartner 5-stage보다 단순하나, "99% 기업이 Stage 1에 머문다"는 도발적 진단.
+
+### 9.5 CPFR 실패 — Eagle 핵심 통찰
+
+> *"높은 예측 정확도를 요구하는 'forecast push' 모델은 필연적으로 실패한다. 문제는 forecast-driven 접근 자체에 있다."*
+
+→ Wallace의 *"Better decision-making processes"* (Forecast Accuracy 회의주의 아님)와 비교 흥미. Eagle은 더 강하게 **forecast 의존도 자체 거부**.
+
+### 9.6 LAKA 적용 시사점 (Eagle 시각)
+
+| 영역 | LAKA 현재 | Eagle 시각의 보강 |
+|------|-------------|----------------------|
+| Demand 측 | Forecast layering (4-layer) — [[demand_planning\|2.]] | Eagle: forecast 정확도 의존 줄이고 pull-based 보충 강화 |
+| Supply 측 | DTF 30/PTF 60 — [[supply_planning_odm\|3.]] | Eagle: Demand Time Fence 안의 자동 pull 메커니즘 (Kanban-like) 검토 |
+| Safety Stock | family·channel별 days-supply 목표 | Eagle: "advanced safety stock" — extreme event 대비, 평소엔 작게 |
+| 핵심 패러다임 | Forecast-Driven (Wallace·SCI·Implement 모두 동의) | Eagle은 정반대 — Demand-Driven (Pull) |
+
+→ **LAKA 입장**: 본 wiki는 Forecast-Driven (Wallace 3 학파) 패러다임 채택. Eagle 시각은 보충 reference로 유지. Stage 4+ 진입 시 demand-driven 요소 일부 도입 검토 (예: 베스트셀러 컬러에 pull-based 보충).
+
+---
+
+## 10. 출처
 
 | 자료 | 접근성 |
 |------|---------|
@@ -232,7 +295,8 @@ W1~W8 wiki에서 maturity 언급 시:
 | Gartner ID 2389615 — "Five-Stage Demand-Driven Maturity Model" | Paywalled |
 | Gartner ID 3823184 — "Five-Stage PLM Maturity Model" | Paywalled |
 | Gartner ID 3913817 — "Reference Model for S&OP System of Differentiation" | Paywalled |
-| Gartner Smarter With Gartner — "5 Stages of Logistics Maturity" | **무료 공개** |
+| Gartner Smarter With Gartner — "5 Stages of Logistics Maturity" | **무료 공개** (단, 본 fetch 시 403 — bot protection. 직접 접근 권장) |
+| **Simon Eagle / CAMELOT — "Gartner's DDVN Maturity Model is misleading"** (2017, LinkedIn) | **무료 공개** |
 
 ---
 
