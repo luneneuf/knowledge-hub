@@ -254,16 +254,61 @@ W1~W8 wiki에서 maturity 언급 시:
 
 **사례 기업 (Eagle 인용 early adopter)**: Unilever · Nestlé · Sandoz-Novartis · Shell Lubricants · P&G · BT · AG Barr · Michelin
 
-### 9.4 Eagle 대안 4-Stage 모델 (Eagle & Barratt 2017)
+### 9.4 Eagle & Barratt 4-Stage Demand-Driven Maturity Model (SCMR 2017)
 
-| Stage | 명칭 | 비율 |
-|--------|------|------|
-| 1 | Misaligned | **99%** 기업 현재 위치 |
-| 2 | Internally Aligned | 소수 |
-| 3 | Extended & Aligned | 매우 드뭄 |
-| 4 | Extended & Aligned with Dominant Player | 극소수 |
+**원전**: Mark Barratt & Simon Eagle, *"How Agile is your Supply Chain?"*, Supply Chain Management Review (SCMR), **March-April 2017**, p.34
 
-→ Gartner 5-stage보다 단순하나, "99% 기업이 Stage 1에 머문다"는 도발적 진단.
+⚠️ **본문 paywall** — SCMR 원본·BT e-editions·archive.today·Wayback Machine 모두 client-side paywall로 본문 hidden. 다음 표는 LinkedIn 비평·검색 결과·여러 인용 자료 종합:
+
+| Stage | 명칭 (정식) | 별칭 | 비율 | 핵심 특성 (확보 정보) |
+|--------|--------------|-------|------|--------------------------|
+| **1** | **Misaligned** | (Reactive) | **99%** 기업 현재 위치 | Forecast-driven, 불필요 버퍼 누적, 부서 사일로 |
+| **2** | **Internally aligned** | "Internally demand-driven" | 소수 | 내부 pull-based replenishment 시작, de-coupled inventory positions 설계 |
+| **3** | **Extended & aligned** | "Extended and demand-driven" | 매우 드물고 어려움 | 외부 supplier·고객까지 demand 신호 확장. "대부분 기업이 여기까지 못 감" |
+| **4** | **Extended & aligned with dominant player** | "Orchestrated and demand-driven" / "Demand-Driven Collaborative with Orchestrator" | 극소수 | **Zara 예시** — 지배적 orchestrator가 전체 supply network 조율 |
+
+→ Gartner 5-stage보다 단순. **"99%가 Stage 1"** 도발적 진단 + **"Most won't get beyond stage 3"** 권고.
+
+### 9.5 핵심 개념 — "Deliberate Selection and Minimisation of Supply Chain Buffers"
+
+본문 paywall 뒤지만 첫 paragraph + 인용 자료에서 추출:
+
+**Eagle/Barratt 핵심 주장 (SCMR March 2017, 첫 paragraph 인용)**:
+
+> *"Zara's customer responsive, agile supply chain — a strategy that is based on the use of **local suppliers**, **large amounts of spare distribution center capacity** and **strategically placed time-based buffers**."*
+
+**3가지 buffer 정책**:
+1. **Local suppliers** — 지리적·관계적 근접
+2. **Large spare DC capacity** — Zara는 **약 50% spare capacity** 운영 (Lean에 충격적인 비율)
+3. **Strategically placed time-based buffers** — 시간 기반 버퍼 의도적 배치
+
+**Lean과의 패러다임 차이**:
+- Lean: 버퍼 = 낭비 → 제거
+- Eagle/Barratt: 버퍼 = 응답성 enabler → **사이즈·위치 최적화** (제거 X, 의도적 배치 O)
+
+**Eagle Demand-Driven SCM 작동 정의**:
+
+> *"Multiple, carefully sized and maintained, **de-coupled inventory positions** that are each replenished in a **stable and predictable sequence** in line with demand."*
+
+### 9.6 Stage별 추정 진화 경로 (인용 자료 + 일반 maturity 패턴 기반 합리적 추론)
+
+⚠️ 다음은 paywall 본문이 아닌 합리적 추정. 실제 SCMR 본문 확보 시 보정 필요.
+
+| Transition | 추정 진화 조건 |
+|-------------|-------------------|
+| Stage 1 → 2 | 내부 부서 alignment + decoupling point 식별·설계 + pull mechanism (Kanban-like) 도입 |
+| Stage 2 → 3 | 외부 핵심 supplier·고객과 demand 신호 공유 + collaborative replenishment 룰 |
+| Stage 3 → 4 | 1개 dominant orchestrator (보통 retailer·brand owner)가 전체 network 조율 권한 보유 |
+
+### 9.7 미확보 정보 (paywall 한계)
+
+- Stage별 정량 KPI 기준
+- Zara 외 Stage 4 다른 사례
+- Stage 2·3 사이 전환 어려움의 구체 원인
+- Eagle/Barratt이 비판하는 forecast-driven 기업 통계
+- 4-stage 모델의 다른 산업 적용 사례
+
+→ SCMR 본문 (paywalled) 또는 Eagle/Barratt 후속 publication 입수 시 보강.
 
 ### 9.5 CPFR 실패 — Eagle 핵심 통찰
 
