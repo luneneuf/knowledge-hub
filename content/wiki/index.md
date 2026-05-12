@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-12 | 총 159페이지
+> 마지막 업데이트: 2026-05-12 | 총 160페이지
 
 ## 역사 (history/)
 
@@ -133,6 +133,7 @@ publish: true
 | [[src_wallace_executive_sop_workshop]] | summary | Tom Wallace S&OP 워크샵 슬라이드 (2010, OMTEC Chicago, 91p) — 개념 창시자 1차 자료, Volume/Mix 분리, Sally Smith Spreadsheet, 5-step Process, Mini-S&OP Cycle |
 | [[src_wallace_executive_guide_book]] | summary | Wallace & Stahl 책 *Executive's Guide* (2006, 144p) — Designer/Distributor 카테고리(LAKA 매핑), 3 Impediments, Future Vision (War Room/Running Delta/Red Zone/Audit Trail), Glossary 70+ |
 | [[src_gartner_sop_maturity_2010]] | summary | **Gartner S&OP Maturity 1차 자료 (Barrett & Uskert 2010, G00207249)** — 원본 4-Stage (Reacting/Anticipating/Collaborating/Orchestrating), 67% Stage 1-2 정체 통계, Stage 3에서 IBP 진입, Translation 8 차원, Financial Integration 6-step, Stage 3 Governance Framework. Scribd 공개본 5/11p 확보 |
+| [[src_gartner_demand_driven_2018]] | summary | **Gartner Demand-Driven Model (Howard/Lord/Dominy 2018, G00372772)** — FOUNDATIONAL Gartner research. 5 Stages (React/Anticipate/**Integrate**/Collaborate/Orchestrate) × 7 Dimensions (Strategic Governance·Performance Enablement·Network Design·Supply Operations·Customer Fulfillment·Demand Management·PLM) 매트릭스. LAKA 8부문 ↔ DDM 7 dimension 1:1 매핑. **본 wiki 주류 채택 모델** |
 
 ### LAKA — 규제 (regulations/)
 

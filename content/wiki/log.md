@@ -5,6 +5,60 @@ updated: 2026-05-10
 
 # 변경 이력
 
+## [2026-05-12] 6번째 source 페이지 | src_gartner_demand_driven_2018 — Gartner DDM FOUNDATIONAL research
+
+**배경**: 사용자 결정 — *"Simon Eagle 주장을 받아들이지 않고 주류를 따라갈 것"* → Gartner 본인의 가장 권위 있는 demand-driven maturity model (DDM)을 본 wiki 주류로 채택.
+
+**Scribd URL** (https://www.scribd.com/document/808040386/Gartners-Demand-Driven-Model-for-Supply-Chain-Excellence) — Jina Reader 일시 차단 (이전 Gartner SOP Scribd fetch가 abuse trigger). Wayback Machine 2025-12-14 스냅샷에서 메타데이터·구조·핵심 인용·7 dimension·5 stage 명칭 확보. 각 매트릭스 cell 정의는 SVG 렌더링으로 미확보 — paywall 해제 또는 Jina 차단 풀린 후 (2026-05-12 09:13 KST) 보강.
+
+**신규 생성 (6번째 source 페이지)**: `wiki/industry/LAKA/sources/src_gartner_demand_driven_2018.md`
+
+**원전 메타데이터**:
+- 제목: Gartner's Demand-Driven Model for Supply Chain Excellence
+- 저자: **Virginia Howard, Paul Lord, Michael Dominy**
+- 발행: 2018-11-14, Refreshed 2020-04-02
+- ID: **G00372772**
+- 등급: **FOUNDATIONAL Gartner research** (master reference for all functional maturity models)
+- Base: 100+ clients × 15+ years 연구
+
+**핵심 발견**:
+- **5 Stages × 7 Dimensions** 매트릭스 모델 (vs Gartner 2010 = 4 stage × 3 차원)
+- 5-stage 명명 "React/Anticipate/**Integrate**/Collaborate/Orchestrate"의 정착 시점 = **2018-11 DDM**
+- 7 Dimensions: Strategic Governance · Performance Enablement · Network Design · Supply Operations · Customer Fulfillment · **Demand Management** (★ distinguishing feature) · PLM
+- LAKA 8부문 ↔ DDM 7 dimension 거의 1:1 매핑 가능
+- 본 DDM은 **모든 functional maturity model (S&OP·Logistics·PLM·Customer Service·Procurement·Talent·Innovation)의 master framework**
+- Gartner의 자체 "Demand-Driven Maturity Assessment Tool" 존재
+
+**LAKA 적용 시사점**:
+- 본 DDM이 LAKA에 가장 직접 적용 가능한 framework — 8부문 = 7 dimension 1:1
+- Demand Management dimension (마케팅 15명)이 LAKA demand-driven 진입의 핵심
+- 18개월 목표 = 7 dimension 중 **Strategic Governance + Performance Enablement + Demand Management 3개를 Stage 2→3 진입** (나머지 4개는 Phase 3 이후)
+- DSR (Demand Signal Repository) + POS = LAKA Master_Data 시트 MVP의 진화 방향
+
+**구성 (12개 섹션)**:
+1. 원전 메타데이터
+2. 핵심 주장 ("balance between operating efficiency and innovation")
+3. 5 Stages 명명
+4. 7 Dimensions × LAKA 매핑 표
+5. Gartner Maturity Model Hierarchy (DDM = 마스터 / sub-models = functional)
+6. DDM Assessment Tool 명시
+7. DDM 평가 원칙 (dimension별 다른 속도 + interactions)
+8. Demand Management Dimension "distinguishing feature" 강조
+9. 약어 (DSR·POS·CTS·PDM·ROA·GTM·WMS·LSP·FTZ)
+10. LAKA 4 영역 적용 (8부문 매핑·자가 진단·18개월 목표·Demand Management 진화)
+11. Wallace·Implement·SCI·Gartner 2010 vs DDM 2018 정합성 표
+12. Eagle/Barratt 거부 / DDM 채택 정당화
+
+**index.md 업데이트**: src_gartner_demand_driven_2018 등재. 페이지 카운트 159 → 160.
+
+**6 source 페이지 통합 표** (현재 wiki의 source 학파 라이브러리):
+1. Wallace Workshop (2010, OMTEC) — Wallace 1차
+2. Wallace+Stahl Book (2006) — Wallace 1차
+3. Implement Handbook (2014) — 컨설팅 학파
+4. SCI Guide (2020, Cecere) — 정량 학파
+5. Gartner SOP Maturity (2010, Barrett & Uskert) — Gartner 4-stage origin
+6. **Gartner DDM (2018, Howard/Lord/Dominy)** — Gartner 5-stage × 7-dimension FOUNDATIONAL ★ wiki 주류 채택 모델
+
 ## [2026-05-12] 5번째 source 페이지 | src_gartner_sop_maturity_2010 — Gartner 원전 1차 자료
 
 **배경**: 사용자 요청 — Scribd URL (https://www.scribd.com/document/474294819) 본문 스캔. Jina Reader 우회로 **5/11 페이지 본문 확보** (paywall 뒤 6-11페이지 미확보).
