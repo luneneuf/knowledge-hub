@@ -14,6 +14,13 @@ obsidian-vaults/wiki/
 │   └── assets/           # 이미지 등 첨부 파일
 ├── wiki/                 # LLM 생성 위키 (네가 소유)
 │   ├── history/          # 축 1: 역사 공부
+│   │   ├── people/       # 인물
+│   │   ├── events/       # 사건·원정·전투
+│   │   ├── places/       # 장소·번·성곽
+│   │   ├── themes/       # 개념·유물·제도·비교
+│   │   ├── concepts/     # 순수 제도·시스템
+│   │   ├── moc.md        # 역사 허브 인덱스
+│   │   └── publish_log.md
 │   ├── work/             # 축 2: 회사 업무
 │   └── industry/         # 축 3: 다른 산업 공부
 │       └── [회사명]/     # 현재 공부 중인 산업/회사 단위
@@ -42,7 +49,7 @@ publish: true | false   # true = 웹에 공개, false(기본값) = 로컬 전용
 ```
 
 태그 체계:
-- history 축: `#history/uwo`, `#history/[주제]`
+- history 축: `#history/[주제]` (예: `history/japan`, `history/sengoku`, `history/voc`)
 - work 축: `#work/[프로젝트명]`
 - industry 축: `#industry/[회사명]`
 
@@ -57,7 +64,11 @@ publish: true | false   # true = 웹에 공개, false(기본값) = 로컬 전용
 | entity | `wiki/industry/[산업폴더]/entities/[이름].md` |
 | concept | `wiki/industry/[산업폴더]/concepts/[이름].md` |
 | comparison | `wiki/industry/[산업폴더]/comparisons/[이름].md` |
-| history | `wiki/history/[주제폴더]/[이름].md` |
+| history — 인물 | `wiki/history/people/[이름].md` |
+| history — 사건 | `wiki/history/events/[이름].md` |
+| history — 장소·번 | `wiki/history/places/[이름].md` |
+| history — 개념·유물 | `wiki/history/themes/[이름].md` |
+| history — 제도·시스템 | `wiki/history/concepts/[이름].md` |
 | work | `wiki/work/[프로젝트폴더]/[이름].md` |
 
 파일명 규칙:
