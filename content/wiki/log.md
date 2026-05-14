@@ -1,9 +1,48 @@
 ---
 title: "Log"
-updated: 2026-05-10
+updated: 2026-05-12
 ---
 
 # 변경 이력
+
+## [2026-05-12] ingest | HBR 7편 위키화 — work/management 신설
+
+**소스**: `Downloads/` 7개 docx (KR-EN bilingual). 추출 후 `raw/hbr/`에 보존.
+
+| raw 파일 | 원문 |
+|---|---|
+| `HBR_2026_05_better_decisions_structured_empowerment.md` | Sandino, *How Fast-Growing Companies Can Make Better Decisions* (HBR 2026-05-08) |
+| `HBR_2026_05_AI_legacy_workflows.md` | Kenny & Pogrebna, *3 Ways AI Can Free Organizations from Legacy Workflows* (HBR 2026-05-07) |
+| `HBR_2026_0506_superteams.md` | Friedman, *How to Build a Superteam That Keeps Getting Better* (HBR 2026 May-Jun) |
+| `HBR_2025_11_AI_5R_framework.md` | Israeli & Ascarza, *Most AI Initiatives Fail. This 5-Part Framework Can Help.* (HBR 2025-11-20) |
+| `HBR_2026_04_burnout_by_level.md` | Auger-Domínguez, *Burnout Looks Different Across the Org Chart* (HBR 2026-04-03) |
+| `HBR_2025_0910_now_is_time_for_courage.md` | Gulati, *Now Is the Time for Courage* (HBR 2025 Sep-Oct) |
+| `HBR_2025_12_management_tips_top10.md` | HBR Editors, *Our Favorite Management Tips of 2025* (HBR 2025-12-31, digest) |
+
+**신규 폴더**: `wiki/work/management/` — work/ 축의 첫 management 클러스터.
+
+**신규 페이지 (14개)**:
+
+- `wiki/work/management/moc.md` — HBR Management 인덱스 (concept 6 + source 7 + 주제별 클러스터)
+- `wiki/work/management/concepts/` (6개)
+  - 구조화된_권한_위임 — Sandino, OXXO/School of Rock/IKEA, 5년 스트레스 테스트, Argyris 이중 루프
+  - 조직적_망각 — Kenny & Pogrebna, 3대 제약(KPI/정체성/고객 신화), AI 우회 효과
+  - 슈퍼팀_7실천 — Friedman, OKC Thunder 닻 사례, 7개 리더 행동 정량
+  - 5R_프레임워크 — Israeli & Ascarza, AI 운영 OS (Roles·Responsibilities·Rituals·Resources·Results)
+  - 직급별_번아웃 — Auger-Domínguez, 4단계 양상 + 시스템/구조 처방 + 5문항 진단
+  - 용기_5전략 — Gulati, VUCA·Knight·Weick·Mandela 토대 + 5전략 실행
+- `wiki/work/management/sources/` (7개)
+  - src_HBR_structured_empowerment_2026
+  - src_HBR_AI_legacy_workflows_2026
+  - src_HBR_superteams_2026
+  - src_HBR_5R_AI_framework_2025
+  - src_HBR_burnout_by_level_2026
+  - src_HBR_now_is_time_for_courage_2025
+  - src_HBR_management_tips_2025
+
+**index.md 업데이트**: 총 페이지 160 → 174. work/ 섹션에 노무·HBR 매니지먼트 2개 서브섹션 신설.
+
+**크로스컷팅 닻**: 심리적 안전(Edmondson), Microsoft Scrum 데일리 3개 질문, Frank Knight risk vs uncertainty, George Miller 7±2, Karl Weick sensemaking — 6개 개념 페이지가 공통 참조.
 
 ## [2026-05-12] 6번째 source 페이지 | src_gartner_demand_driven_2018 — Gartner DDM FOUNDATIONAL research
 

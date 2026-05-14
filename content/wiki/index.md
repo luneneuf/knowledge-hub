@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-12 | 총 160페이지
+> 마지막 업데이트: 2026-05-12 | 총 174페이지
 
 ## 역사 (history/)
 
@@ -76,9 +76,29 @@ publish: true
 
 ## 업무 (work/)
 
+### 노무
 | 페이지 | 타입 | 한 줄 설명 |
 |--------|------|------------|
 | [[노무wiki_파이프라인_셋업]] | summary | 노무 Wiki 파이프라인 셋업 |
+
+### HBR 매니지먼트 (work/management/)
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[moc\|HBR Management MOC]] | log | work/management 인덱스 — 6개 concept + 7개 source 클러스터 |
+| [[구조화된_권한_위임]] | concept | 검증된 옵션 메뉴 + 핵심 결과 책임 — 중앙집권/분권 양극단의 제3의 길 (Sandino 2026) |
+| [[조직적_망각]] | concept | 유효성 잃은 KPI·정체성·신화를 AI로 객관화해 떨쳐내기 (Kenny & Pogrebna 2026) |
+| [[슈퍼팀_7실천]] | concept | 학습 가속 7가지 리더 실천 — OKC Thunder 사례 (Friedman 2026) |
+| [[5R_프레임워크]] | concept | AI 이니셔티브 확장 운영 시스템 (Israeli & Ascarza 2025) |
+| [[직급별_번아웃]] | concept | 번아웃은 설계 문제 — 신입·관리자·임원·창업자 4단계 양상 (Auger-Domínguez 2026) |
+| [[용기_5전략]] | concept | VUCA 시대의 학습 가능한 기술 — 내러티브·자신감·작은 발걸음·연결·평정 (Gulati 2025) |
+| [[src_HBR_structured_empowerment_2026]] | summary | Sandino, How Fast-Growing Companies Can Make Better Decisions (HBR 2026-05-08) |
+| [[src_HBR_AI_legacy_workflows_2026]] | summary | Kenny & Pogrebna, 3 Ways AI Can Free Organizations from Legacy Workflows (HBR 2026-05-07) |
+| [[src_HBR_superteams_2026]] | summary | Friedman, How to Build a Superteam That Keeps Getting Better (HBR 2026 May-Jun) |
+| [[src_HBR_5R_AI_framework_2025]] | summary | Israeli & Ascarza, Most AI Initiatives Fail. This 5-Part Framework Can Help (HBR 2025-11-20) |
+| [[src_HBR_burnout_by_level_2026]] | summary | Auger-Domínguez, Burnout Looks Different Across the Org Chart (HBR 2026-04-03) |
+| [[src_HBR_now_is_time_for_courage_2025]] | summary | Gulati, Now Is the Time for Courage (HBR 2025 Sep-Oct) |
+| [[src_HBR_management_tips_2025]] | summary | HBR Editors, Our Favorite Management Tips of 2025 (HBR 2025-12-31, 디제스트) |
 
 ## 산업 (industry/)
 
