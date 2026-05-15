@@ -1,0 +1,33 @@
+{
+  "session_id": "LipTint_LAKA_20260516",
+  "topic": "립틴트 (Lip Tint) — LAKA 경쟁 분석",
+  "created_at": "2026-05-16T04:00:00Z",
+  "updated_at": "2026-05-16T04:45:00Z",
+  "status": "COMPLETED",
+  "current_phase": 7,
+  "requirements": {
+    "focus": ["소비자 언어 분석 (한/영/일)", "유통 채널", "ODM 및 규제"],
+    "output_format": "comprehensive_report",
+    "audience": "business_executives",
+    "special_requirements": ["source URLs required", "specific numbers required", "multilingual: KO/EN/JA"]
+  },
+  "progress": {
+    "phase_1": "skipped_structured_query",
+    "phase_2": "completed",
+    "phase_3": "completed",
+    "phase_4": "completed",
+    "phase_5": "completed",
+    "phase_6": "completed",
+    "phase_7": "completed"
+  },
+  "sources_count": 21,
+  "artifacts": {
+    "01_consumer_language": "outputs/01_full_report/01_consumer_language.md",
+    "02_distribution_channels": "outputs/01_full_report/02_distribution_channels.md",
+    "03_odm_regulation": "outputs/01_full_report/03_odm_regulation.md",
+    "executive_summary": "outputs/00_executive_summary.md",
+    "bibliography": "sources/bibliography.md",
+    "sources_jsonl": "sources/sources.jsonl"
+  },
+  "errors": []
+}

@@ -1,0 +1,55 @@
+{
+  "session_id": "lipstick_B_20260515",
+  "topic": "립스틱 (B) — K뷰티·J뷰티·시장 현황·소비자 언어·유통",
+  "linear_issue": "COM-32",
+  "created_at": "2026-05-15T00:00:00Z",
+  "updated_at": "2026-05-15T12:00:00Z",
+  "status": "COMPLETED",
+  "current_phase": 7,
+  "requirements": {
+    "focus": ["K뷰티 브랜드", "J뷰티 브랜드", "지역별 소비 패턴", "소비자 언어", "유통 채널", "ODM·규제"],
+    "output_format": "comprehensive_report",
+    "output_filename": "lip_lipstick_B_raw_20260515.md",
+    "scope": {
+      "timeframe": {"start": "2020-01-01", "end": "2026-05-15", "focus_period": "2023-2026"},
+      "geography": ["한국", "일본", "미국", "유럽"]
+    },
+    "sources": {
+      "required_types": ["brand_official", "retail_data", "consumer_reviews", "industry_reports", "regulatory"],
+      "min_quality": "B",
+      "language": ["ko", "en", "ja"]
+    },
+    "exclusions": ["립틴트", "립글로스", "립오일", "립밤"]
+  },
+  "plan": {
+    "subtopics": [
+      "K뷰티 립스틱 브랜드 (올리브영 순위·수상이력 포함)",
+      "J뷰티 립스틱 브랜드",
+      "지역별 소비 패턴 비교",
+      "소비자 언어 분석 (한/영/일)",
+      "유통 채널 특성",
+      "ODM 진입 난이도·규제 이슈"
+    ]
+  },
+  "progress": {
+    "phase_1": "skipped",
+    "phase_2": "completed",
+    "phase_3": "completed",
+    "phase_4": "completed",
+    "phase_5": "completed",
+    "phase_6": "completed",
+    "phase_7": "completed"
+  },
+  "sources_count": 42,
+  "artifacts": {
+    "agent1_kj_brands": "artifacts/agent_results/agent1_kj_brands.md",
+    "agent2_regional_consumer": "artifacts/agent_results/agent2_regional_consumer.md",
+    "agent3a_distribution": "artifacts/agent_results/agent3a_distribution.md",
+    "agent3b_odm_regulation": "artifacts/agent_results/agent3b_odm_regulation.md",
+    "final_report": "outputs/lip_lipstick_B_raw_20260515.md"
+  },
+  "errors": [
+    "agent3_original: timeout at 600s — split into agent3a + agent3b",
+    "agent3b_original: timeout at 600s — replaced with direct WebSearch"
+  ]
+}

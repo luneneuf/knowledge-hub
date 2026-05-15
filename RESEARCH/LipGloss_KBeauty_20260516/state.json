@@ -1,0 +1,28 @@
+{
+  "session_id": "LipGloss_KBeauty_20260516",
+  "topic": "립글로스 (Lip Gloss) K-beauty 경쟁 분석",
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T09:00:00Z",
+  "status": "COMPLETED",
+  "current_phase": 7,
+  "sources_count": 30,
+  "progress": {
+    "phase_1": "completed",
+    "phase_2": "completed",
+    "phase_3": "completed",
+    "phase_4": "completed",
+    "phase_5": "completed",
+    "phase_6": "completed",
+    "phase_7": "completed"
+  },
+  "outputs": [
+    "outputs/00_executive_summary.md",
+    "outputs/01_full_report/01_consumer_language.md",
+    "outputs/01_full_report/02_distribution_channels.md",
+    "outputs/01_full_report/03_odm_manufacturing.md",
+    "outputs/01_full_report/04_regulatory_landscape.md",
+    "outputs/01_full_report/05_strategic_implications.md",
+    "sources/bibliography.md"
+  ],
+  "errors": []
+}

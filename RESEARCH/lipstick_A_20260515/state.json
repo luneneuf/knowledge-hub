@@ -1,0 +1,46 @@
+{
+  "session_id": "lipstick_A_20260515",
+  "topic": "립스틱 (A) — 정의·역사·제형 분류·글로벌 브랜드",
+  "linear_issue": "COM-31",
+  "created_at": "2026-05-15T00:00:00Z",
+  "updated_at": "2026-05-15T00:00:00Z",
+  "status": "PHASE_2_PLANNING",
+  "current_phase": 2,
+  "requirements": {
+    "focus": ["정의 및 제형 분류", "성분 구조", "역사적 기원", "글로벌 브랜드", "시장 규모"],
+    "output_format": "comprehensive_report",
+    "output_filename": "lip_lipstick_A_raw_20260515.md",
+    "scope": {
+      "timeframe": {"start": "2020-01-01", "end": "2026-05-15", "focus_period": "2023-2026"},
+      "geography": "global"
+    },
+    "sources": {
+      "required_types": ["industry_reports", "brand_official", "market_research"],
+      "min_quality": "B",
+      "language": ["ko", "en"]
+    },
+    "audience": "general",
+    "exclusions": ["립틴트", "립글로스", "립오일", "립밤", "K뷰티 특화 분석"]
+  },
+  "plan": {
+    "subtopics": [
+      "정의 및 제형 분류 (크리미/매트/새틴/메탈릭/시어)",
+      "성분 구조 (왁스/오일/폴리머)",
+      "역사적 기원 및 카테고리 분화 타임라인",
+      "글로벌 주요 브랜드 현황 (대표 SKU·가격대·차별점)",
+      "시장 규모 및 성장률"
+    ]
+  },
+  "progress": {
+    "phase_1": "skipped",
+    "phase_2": "in_progress",
+    "phase_3": "pending",
+    "phase_4": "pending",
+    "phase_5": "pending",
+    "phase_6": "pending",
+    "phase_7": "pending"
+  },
+  "sources_count": 0,
+  "artifacts": {},
+  "errors": []
+}

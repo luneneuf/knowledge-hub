@@ -1,0 +1,43 @@
+{
+  "session_id": "LipOil_2026_0516",
+  "topic": "립오일(Lip Oil) 글로벌 시장 종합 분석 — K뷰티 경쟁 분석용",
+  "created_at": "2026-05-16T00:00:00Z",
+  "updated_at": "2026-05-16T00:00:00Z",
+  "status": "PHASE_3_QUERYING",
+  "current_phase": 3,
+  "requirements": {
+    "focus": ["product_definition", "market_growth_catalysts", "market_size", "brand_landscape"],
+    "output_format": "comprehensive_report",
+    "audience": "K-beauty brand strategist",
+    "language": "Korean primary, English/Japanese sourcing",
+    "special_requirements": ["sales figures", "TikTok data", "search volume", "brand SKU data"]
+  },
+  "plan": {
+    "subtopics": [
+      "A: 립오일 정의·제형 분류 (Definition & Formulation Taxonomy)",
+      "B: 급성장 배경 분석 2022-2025 (Growth Catalyst Analysis)",
+      "C: 글로벌 시장 규모·CAGR (Market Size & Growth Rate)",
+      "D: 글로벌 브랜드 경쟁 분석 (Global Brand Landscape)",
+      "E: K-뷰티·J-뷰티 브랜드 분석 (K/J Beauty Brand Analysis)"
+    ],
+    "search_queries": {
+      "A": ["lip oil vs lip gloss balm definition formulation 2025", "lip oil ingredients castor jojoba squalane skincare actives"],
+      "B": ["lip oil trend catalyst 2022 2023 TikTok viral", "Dior Lip Glow Oil viral history", "NYX Fat Oil Lip Drip launch viral", "skinification of makeup lip oil trend"],
+      "C": ["lip oil market size 2024 2025 CAGR forecast", "global lip care market growth lip oil share 2025", "립오일 시장 규모 2024 2025"],
+      "D": ["Rhode peptide lip treatment sales viral 2023 2024", "Summer Fridays lip butter balm market position", "Rare Beauty tinted lip oil reviews sales", "e.l.f. glow reviver lip oil"],
+      "E": ["립오일 트렌드 2024 2025 한국", "innisfree green tea lip oil", "rom&nd lip oil", "canmake lip oil japan 2025"]
+    }
+  },
+  "progress": {
+    "phase_1": "completed",
+    "phase_2": "completed",
+    "phase_3": "in_progress",
+    "phase_4": "pending",
+    "phase_5": "pending",
+    "phase_6": "pending",
+    "phase_7": "pending"
+  },
+  "sources_count": 0,
+  "artifacts": {},
+  "errors": []
+}

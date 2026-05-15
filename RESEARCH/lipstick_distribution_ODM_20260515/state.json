@@ -1,0 +1,60 @@
+{
+  "session_id": "lipstick_distribution_ODM_20260515",
+  "topic": "Lipstick Distribution Channels and ODM/OEM Manufacturing Landscape",
+  "created_at": "2026-05-15T00:00:00Z",
+  "updated_at": "2026-05-15T00:00:00Z",
+  "status": "PHASE_3_QUERYING",
+  "current_phase": 3,
+  "requirements": {
+    "focus": ["distribution_channels", "ODM_manufacturing", "regulatory_compliance"],
+    "output_format": "comprehensive_report",
+    "geography": ["Korea", "Japan", "USA", "EU", "Global"],
+    "audience": "business_executives",
+    "special_requirements": ["inline citations", "regulatory article references", "MOQ/lead time data"]
+  },
+  "plan": {
+    "subtopics": [
+      "Korea distribution channels (OliveYoung, Musinsa, online, dept stores)",
+      "Japan distribution channels (@cosme, drugstores, dept stores, online)",
+      "US distribution channels (Sephora, Ulta, Amazon, mass, DTC)",
+      "Korean ODM manufacturers (Cosmax, Kolmar, Cosmetica Korea)",
+      "Global ODM comparison (Korea vs Italy vs China)",
+      "Regulatory: Korea MFDS, USA FDA, Japan MHLW, EU 1223/2009"
+    ],
+    "search_queries": {
+      "korea_distribution": ["OliveYoung market position Korea beauty retail 2024 2025", "Musinsa Beauty cosmetics growth 2024", "CJ Olive Young H&B store Korea 2024 2025"],
+      "japan_distribution": ["@cosme ranking influence Japan beauty 2024 2025", "Matsumoto Kiyoshi drugstore Japan cosmetics 2024"],
+      "us_distribution": ["Sephora Ulta Beauty distribution strategy 2024 2025", "Amazon beauty fastest growing channel 2024"],
+      "odm_korea": ["Korean cosmetic ODM manufacturer lipstick Cosmax Kolmar 2024", "코스맥스 한국콜마 립스틱 ODM MOQ 리드타임"],
+      "odm_global": ["Korean cosmetic ODM vs Italian ODM comparison quality 2024", "Intercos Italian cosmetic ODM 2024"],
+      "regulatory_korea": ["MFDS Korea cosmetics import regulation 2024", "Korea Cosmetic Act lip products labeling"],
+      "regulatory_usa": ["lipstick FDA regulation color additives lead limits USA", "FDA FD&C Act cosmetics lip color 2024"],
+      "regulatory_japan": ["Japan MHLW cosmetics import regulation lip products 2024"],
+      "regulatory_eu": ["EU cosmetics regulation lipstick prohibited ingredients 2024 2025", "EC 1223/2009 lip products CPNP"]
+    }
+  },
+  "progress": {
+    "phase_1": "skipped_structured_input",
+    "phase_2": "completed",
+    "phase_3": "in_progress",
+    "phase_4": "pending",
+    "phase_5": "pending",
+    "phase_6": "pending",
+    "phase_7": "pending"
+  },
+  "sources_count": 0,
+  "report_skeleton": [
+    "00_executive_summary",
+    "01_korea_distribution",
+    "02_japan_distribution",
+    "03_us_distribution",
+    "04_odm_korea",
+    "05_odm_global_comparison",
+    "06_regulatory_korea_mfds",
+    "07_regulatory_usa_fda",
+    "08_regulatory_japan_mhlw",
+    "09_regulatory_eu",
+    "10_conclusions_strategic_implications"
+  ],
+  "errors": []
+}
