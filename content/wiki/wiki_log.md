@@ -1,3 +1,83 @@
+## [2026-05-18] sync | LAKA 상품 카탈로그 — 사내 품목 운영 시트와 정합화
+
+소스: `C:\Users\laka\Downloads\품목 운영 시트.xlsx` (1,060 SKU, 시트 관리자 김수정) → UTF-8 dump 후 색상/사이즈/국가 variant 통합하여 베이스 제품군 50개 추출.
+
+### 상황 정리
+
+사내 실업무용 품목 운영 시트와 wiki/industry/LAKA/products/ 페이지 인벤토리를 대조한 결과:
+- 위키에 페이지가 있는 베이스 제품: 29개 (단, _index.md에는 26개만 등록 — 글로벌 단독 3종 누락)
+- Excel에는 있지만 위키에 없는 베이스 제품: **19개**
+- 이름 불일치 (Excel 기준으로 정정 필요): **2개** — "멜팅 → 멜티", "Skin Active Serum → Active Serum"
+- 사용자 지시: Excel이 실제 업무 파일이므로 이를 source of truth로 삼고 위키를 맞춤
+
+### 표기 정정 (2개)
+
+- `products/멜팅-포밍-클렌저.md` → `products/멜티-포밍-클렌저.md`
+  - title: 멜팅 포밍 클렌저 → **멜티 포밍 클렌저**
+  - title_en: Melting Foaming Cleanser → **Melty Foaming Cleanser**
+  - product_code KR1E0001 추가, sources에 품목운영시트_20260518 추가, 표기 정정 안내 박스 추가
+- `products/skin-active-serum.md` → `products/active-serum.md`
+  - title: Skin Active Serum → **Active Serum** (title_kr: 액티브 세럼 신설)
+  - product_code US1E0003 추가, 표기 정정 안내 박스 추가
+
+### 신규 stub 페이지 (19개)
+
+립 (12):
+- `products/퍼펙트-트윈-립.md` (10색, ₩22,000, 듀얼 컬러+글로스)
+- `products/스테인-립-라이너.md` (8색, ₩16,000, KR/JP)
+- `products/립-라이너.md` (14색, ₩16,000, KR 단독 — 스테인 립 라이너와 동일 컬러명 #01~#08 + 확장 #10~#15)
+- `products/맥시-글레이어-틴트-미니.md` (17색, ₩9,000)
+- `products/맥시-글레이어-틴트-버터리-누드.md` (5색, ₩18,000, 1회성)
+- `products/헬시-세럼-밤.md` (4색, ₩15,000)
+- `products/UV-실드-립밤.md` (₩18,000, 4g, KR/JP)
+- `products/UV-실드-립세럼.md` (₩18,000, 5ml, KR/JP)
+- `products/매직-립-픽서.md` (가격/용량 시트 미기입 — BM 데이터 보완 필요)
+- `products/글로우-립-컨디셔너.md` (₩15,000, 3ml, KR 단독)
+- `products/스파이시-립-플럼퍼.md` (₩17,000, 4g, 1색 #01파인애플, KR 단독)
+- `products/수딩-비건-립-오일-미니.md` (홀딩 26.01.23 기준, 단종예정/단종 혼재)
+
+페이스/컨투어 (2):
+- `products/선실드-글로이-치크.md` (11색, ₩18,000, KR/JP)
+- `products/healthy-glow-blush-balm.md` (4색, \$18.00, US 단독)
+
+스킨케어 (1):
+- `products/wrapping-cream.md` (\$25.00, 50ml, US 단독, 2025-12 런칭, 미백·주름개선)
+
+베이스 (1):
+- `products/all-day-fixing-mist.md` (\$15.00, 80ml, US, **홀딩**)
+
+아이 (1):
+- `products/와일드-브로우-셰이퍼.md` (3타입, ₩12,000, **단종예정**)
+
+툴 (1):
+- `products/본딩-커버-쿠션-퍼프.md` (2매입, 가격 시트 미기입)
+
+기타 (1):
+- `products/프루티-글램-네일.md` (2색, **단종**, 사내 시트만 기록)
+
+### 카탈로그 인덱스 갱신
+
+- `products/_index.md` 전면 재작성
+  - 총 페이지 수 26 → 48
+  - 립 15 → 24 (+9), 아이 3 → 4 (+1), 페이스 6 → 8 (+2), 스킨케어 2 → 2 (rename), 글로벌 단독 0 → 6 (신설), 기타 0 → 1 (신설)
+  - 멜팅 → 멜티 wikilink 일괄 교체
+  - active-booster/scaling-toner/active-serum/wrapping-cream/healthy-glow-blush-balm/all-day-fixing-mist를 "글로벌 단독 (US-only)" 섹션으로 분리 — 기존 _index.md는 active-booster/scaling-toner가 5월 10일에 생성되었지만 인덱스에 미반영되어 있던 stale 상태였음. 이번에 일괄 정합화.
+  - 운영 상태 표기 (1회성/단종예정/홀딩/단종) 인라인 표시
+
+### 보류 / 추적
+
+- 19개 stub 페이지 모두 상품 카피·이미지·채널별 ASIN 등 상세 데이터 보강 필요. 우선순위는 운영 중인 13개부터.
+- 사내 시트는 색상 ASIN/Amazon 가격 정보가 없음 → 상세 보강은 Amazon US/Sephora 스크래핑 또는 후속 인제스트 사이클에서 진행.
+- "멜팅 → 멜티" 표기 변경은 laka.co.kr 노출명과 다를 수 있어 BM 확인 필요.
+
+### 갱신 페이지 (3개)
+
+- `products/_index.md` updated 2026-05-01 → 2026-05-18 (전면 재작성)
+- `products/멜티-포밍-클렌저.md` (rename + content edit) updated 2026-05-01 → 2026-05-18
+- `products/active-serum.md` (rename + content edit) updated 2026-05-10 → 2026-05-18
+
+---
+
 ## [2026-05-13] update | 드레이크 — 트윗 4종 verbatim 아카이브
 
 소스: 2026-05-13 드레이크 마무리 세션 핸드오버
