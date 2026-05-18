@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-18 | 총 202페이지
+> 마지막 업데이트: 2026-05-18 | 총 253페이지
 
 ## 역사 (history/)
 
@@ -124,6 +124,7 @@ publish: true
 | [[가상_QA리드_4주플랜_시뮬레이션]] | summary | 삼성 QA 출신이 LAKA로 이직 시 첫 4주 가상 시뮬레이션 (Claude Web 문답 v2) |
 | [[품질관리_RR_2026-05]] | summary | LAKA 품질팀 R&R: 차승호 팀장·김건 책임 2인이 22개 품질관리 업무 분담 (2026-05-18 차승호 작성) |
 | [[품질팀_슬랙운영_초안_2026-05]] | summary | 품질팀 Slack 채널 5개 + 운영 규칙 + 에스컬레이션 룰 보고 초안 (2026-05-18) |
+| [[차승호_1차미팅_아젠다]] | log | 본부장→차승호 팀장 1차 미팅 아젠다 누적 — #1 R&R 17 vs 22 매핑 갭 (4문항) |
 | [[원료목록_사전보고_책임판매업자]] | concept | 책임판매업자 원료목록보고 절차·양식·LAKA 제품 카테고리 매핑(사6 립스틱·립라이너 등) |
 | [[원료목록_사전보고_FAQ_책임판매업자]] | concept | KCA FAQ 30개 LAKA 적용 분석(Q16 다중 ODM, Q26 변경보고 트리거 등) |
 | [[향료_알레르기유발성분_표시]] | concept | 향료 25종 알레르기 유발성분 표시 의무 (2020.1.1 시행, leave-on 0.001%) — LAKA 립 카테고리 직접 영향 |
@@ -220,6 +221,26 @@ COM-30 시리즈(COM-31~40) 딥리서치 결과 — Perplexity·웹 종합 8종 
 |--------|------|------------|
 | [[세포라_운영구조]] | entity | Clean at Sephora, 입점 7단계, STR 60~70%, 도어 확장 3단계 |
 | [[Boots_UK_운영구조]] | entity | Accelerator Programme, CPSR/PIF/SCPN, Make-up Exchange Promise 35일 |
+
+### LAKA — B2B 해외거래처 (entities/distributors/)
+
+해외 B2B 거래처 52곳의 매출(2025-2026) + 채널 분류. 49개 entity 스텁(status: draft)은 `entities/distributors/` 하위. 웹 deep-research가 들어오면 각 페이지에 통합. 원본 표는 [[2026-05-18_LAKA_B2B_해외거래처_매출표]].
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[LAKA_B2B_해외거래처_2025_2026]] | comparison | 52개 거래처 마스터 비교 — '25 6,362M → '26 2,052M, 권역별 매출, 신규 빅 라인 (Sociolla 800·Sephora 284) |
+| [[JSW_Asset]] | entity (draft) | 태국, '25 매출 1위 1,658M → '26 291M (-83%) |
+| [[AMID]] | entity (draft) | 대만, '25 매출 2위 1,062M → '26 27M (-97%) |
+| [[TNC_웨이포인트글로벌]] | entity (draft) | 호주(56 통상 → 웨이포인트 글로벌), '25 459M |
+| [[크레도]] | entity (draft) | 유럽, '25 427M → '26 10M (-98%) |
+| [[엠투씨]] | entity (draft) | 미국/캐나다, '25 390M |
+| [[Sociolla]] | entity (draft) | 인도네시아, '26 신규 빅 라인 800M (2월) |
+| [[Skincupid]] | entity (draft) | 영국, [[부츠]] 공급 라인 + 자체몰 합산 '25 148M / '26 136M |
+| [[SUKOSHI]] | entity (draft) | 미국/캐나다, '25 98M → '26 105M (안정 성장) |
+| [[NOTINO]] | entity (draft) | 체코 본사 유럽 EC, '25 88M |
+| [[Miin]] | entity (draft) | 스페인(EU), '25 32M → '26 34M |
+| [[크레이버_UMMA]] | entity (draft) | 글로벌 플랫폼, [[구다이글로벌]] 산하, '25 82M → '26 0 (분리 영향) |
+| ※ 그 외 38개 거래처 | entity (draft) | distributors/ 폴더 참조 — 권역별로 그룹화 |
 
 ### LAKA — 비교 (comparisons/)
 
