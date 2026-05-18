@@ -212,6 +212,56 @@ updated: 2026-05-18
   - [[LAKA]], [[이지철]], [[LAKA_채용공고_현황분석]], [[한국콜마]] 등 위키링크 연결
 - **업데이트** `wiki/index.md` — LAKA 섹션에 추가, 총 180페이지
 
+## [2026-05-17] ingest | COM-40 립 제품 소셜 트렌드 — Grok X(Twitter)
+
+**작업**: COM-31~39 Perplexity·웹 기반 리서치의 검증·보완 목적으로 Grok에 X(Twitter) 전용 리서치 의뢰. 한·영·일 3개 언어 × 8개 카테고리 = 24세트 raw 데이터 + 비교 분석 인제스트.
+
+- **Linear 이슈**: COM-40
+- **의뢰서**: `RESEARCH/lip_social_grok_20260517/BRIEF.md`
+- **raw 보존**: `content/raw/grok/lip_products/lip_social_trends_grok_raw_20260515.md` (약 9,800자)
+- **신규 위키** `wiki/industry/LAKA/concepts/립_제품_카테고리/립_소셜_트렌드_X.md`
+  - 한·영·일 패러독스: 한국=K뷰티 신상·아이돌, 영어=셀럽·2000s nostalgia, 일본=팝업·한정판
+  - **🚨 LAKA 퍼펙트 트윈 립 JP/KR 동시 바이럴** (4/24 JP 런칭 → 5월 한국 예약 폭주) — Perplexity는 못 잡은 6~18개월 leading 신호
+  - 신조어: "야르함", "3D입술", "맥시샷", "뽀용립", "탕후루립", "粘膜カラー"
+  - Perplexity vs Grok 차이 매트릭스 + LAKA 시사점 5건(#LAKAPerfectTwin 미사용·"샤넬 르 루쥬 듀오 듀프" 드립 대응 등)
+- **업데이트** `wiki/industry/LAKA/concepts/립_제품_카테고리/index.md` 허브에 COM-40 행 추가
+
+## [2026-05-17] ingest | COM-39 립버터·립마스크·립패치 — LAKA Sephora US 진입 SKU
+
+**작업**: 립 카테고리 8번째 — 케어 세그먼트 중 립버터/슬리핑 마스크/하이드로겔 패치 통합 인제스트. **2026-05-14 LAKA Soothing Prep Lip Mask Sephora US 온라인 런칭** 정보 위키화.
+
+- **Linear 이슈**: COM-39
+- **raw 보존**:
+  - `RESEARCH/lipmask_20260516/outputs/lip_lipmask_raw_20260515.md`
+  - `RESEARCH/lipmask_20260516/artifacts/agent_results/` agentA·agentB 2건
+- **신규 위키** `wiki/industry/LAKA/concepts/립_제품_카테고리/립버터_립마스크_카테고리.md`
+  - 시장: 립케어 \$4.12B / 립 마스크 세그먼트 CAGR **7.5%** (2026~33)
+  - 카테고리 정의자 2축: Laneige Lip Sleeping Mask(2015, 야간) / Summer Fridays Lip Butter Balm(2020, 데이)
+  - **2026-05-14 LAKA Soothing Prep Lip Mask Sephora 미국 온라인 런칭** 명시 — 케어 카테고리 첫 글로벌 메이저 진입
+  - SKU 화이트스페이스 3건: 야간 슬리핑 마스크 단독·립버터 단독·하이드로겔 듀오 부재 → 권고 명시
+  - 2026.7.31 EU 알레르겐 80종 라벨링 영향 분석
+- **업데이트** 허브 [[립_제품_카테고리]] index.md — COM-39 카테고리 행 추가
+
+## [2026-05-16] ingest | 립 카테고리 8종 위키화 + COM-36~38 리서치 (립스틱·립틴트·립글로스·립오일·립라이너·립밤·립플럼퍼)
+
+**작업**: COM-30 시리즈(립 제품 8개 카테고리) 딥리서치 결과를 카테고리별 위키 페이지로 일괄 전환. 신규 폴더 `립_제품_카테고리/` 신설.
+
+- **Linear 이슈**: COM-31(립스틱A)·COM-32(립스틱B)·COM-33(립틴트)·COM-34(립글로스)·COM-35(립오일)·COM-36(립라이너)·COM-37(립밤)·COM-38(립플럼퍼)
+- **raw 보존**: 각 카테고리 `RESEARCH/<카테고리>_20260516/outputs/lip_<카테고리>_raw_20260515.md` + 일부 agentA/agentB 분리
+- **신규 폴더** `wiki/industry/LAKA/concepts/립_제품_카테고리/`
+- **신규 위키 9개**:
+  - `index.md` — 허브 (시장 규모 비교 차트·공통 규제 캘린더·LAKA 종합 시사점·관련 컨셉)
+  - `립스틱_카테고리.md` — \$9.9~18.1B, APAC CAGR 8%, 럭셔리 리필 시스템, LAKA 본딩-글로우·벌키-매트·라카-데빌립
+  - `립틴트_카테고리.md` — \$1.6B, K뷰티=립틴트 글로벌 정의, LAKA 맥시-글레이어 LIPS Japan 4.35점 최고
+  - `립글로스_카테고리.md` — \$3.77~4.20B, Fenty 10초당 1개, LAKA 젤링-누드 / 프루티-립-글로셔너
+  - `립오일_카테고리.md` — \$573M → \$1,141M (2035), Dior 1.9억 뷰, Rhode \$1B 인수
+  - `립라이너_카테고리.md` — 미국 +60% (2022→24), Lip combo +97.5% YoY, LAKA Stain Lip Liner 8컬러(K뷰티 첫 젠더뉴트럴 2018)
+  - `립밤_립케어_카테고리.md` — \$4.12B, Burt's Bees 글로벌 1위(8.5%), Rhode \$1B (2025.5), DHC 누적 2억 본, 컬러 립밤 +150%
+  - `립플럼퍼_카테고리.md` — 세럼 \$4.31B / 디바이스 \$1.2B, 자극파/자연파 양극화, 펩타이드 이동
+- **2026-05-16 폴더 구조 리팩토링 커밋**: 기존 6개 페이지를 `립_제품_카테고리/` 하위로 이동 + index.md 메인 링크 경로 수정(uwo/moc·business/overview → wiki/history/moc·wiki/industry/LAKA/overview)
+- **공통 트렌드**: TikTok 주도 카테고리 부활 / K뷰티 글로벌 표준화 / 펩타이드 트리트먼트 시대 / 점막 누디 톤 한·일·미 공통
+- **공통 규제**: 🚨 **2026.7.31 EU 향료 알레르겐 80종 라벨링 발효** — 전 카테고리 leave-on 0.001% 초과 라벨 의무
+
 ## [2026-05-16] ingest | 대항해시대 동남아시아에서 기독교는 왜 실패했는가
 
 **작업**: 딥리서치 결과물을 history/themes/ 위키 페이지로 전환

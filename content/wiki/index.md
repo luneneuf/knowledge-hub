@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-18 | 총 189페이지
+> 마지막 업데이트: 2026-05-18 | 총 199페이지
 
 ## 역사 (history/)
 
@@ -174,6 +174,23 @@ publish: true
 | [[src_wallace_executive_guide_book]] | summary | Wallace & Stahl 책 *Executive's Guide* (2006, 144p) — Designer/Distributor 카테고리(LAKA 매핑), 3 Impediments, Future Vision (War Room/Running Delta/Red Zone/Audit Trail), Glossary 70+ |
 | [[src_gartner_sop_maturity_2010]] | summary | **Gartner S&OP Maturity 1차 자료 (Barrett & Uskert 2010, G00207249)** — 원본 4-Stage (Reacting/Anticipating/Collaborating/Orchestrating), 67% Stage 1-2 정체 통계, Stage 3에서 IBP 진입, Translation 8 차원, Financial Integration 6-step, Stage 3 Governance Framework. Scribd 공개본 5/11p 확보 |
 | [[src_gartner_demand_driven_2018]] | summary | **Gartner Demand-Driven Model (Howard/Lord/Dominy 2018, G00372772)** — FOUNDATIONAL Gartner research. 5 Stages (React/Anticipate/**Integrate**/Collaborate/Orchestrate) × 7 Dimensions (Strategic Governance·Performance Enablement·Network Design·Supply Operations·Customer Fulfillment·Demand Management·PLM) 매트릭스. LAKA 8부문 ↔ DDM 7 dimension 1:1 매핑. **본 wiki 주류 채택 모델** |
+
+### LAKA — 립 제품 카테고리 (concepts/립_제품_카테고리/)
+
+COM-30 시리즈(COM-31~40) 딥리서치 결과 — Perplexity·웹 종합 8종 + Grok X 소셜 트렌드 1종 + 허브.
+
+| 페이지 | 타입 | 한 줄 설명 |
+|--------|------|------------|
+| [[립_제품_카테고리\|index]] | concept | 허브 — 시장 규모 비교·공통 규제 캘린더(🚨 2026.7.31 EU 알레르겐 80종)·LAKA 종합 시사점 |
+| [[립스틱_카테고리]] | concept | \$9.9~18.1B, APAC CAGR 8%, 럭셔리 리필 시스템 (COM-31·32) |
+| [[립틴트_카테고리]] | concept | \$1.6B, K뷰티=립틴트 글로벌 정의, LAKA 맥시-글레이어 LIPS Japan 4.35점 (COM-33) |
+| [[립글로스_카테고리]] | concept | \$3.77~4.20B, Fenty 10초당 1개, 탕후루립·글래스 립 트렌드 (COM-34) |
+| [[립오일_카테고리]] | concept | \$573M→\$1,141M(2035), Dior 1.9억 뷰, Rhode \$1B 인수 (COM-35) |
+| [[립라이너_카테고리]] | concept | 미국 +60%(2022→24), Lip combo +97.5% YoY, LAKA Stain Lip Liner K뷰티 첫 젠더뉴트럴(2018) (COM-36) |
+| [[립밤_립케어_카테고리]] | concept | \$4.12B, Burt's Bees 글로벌 1위(8.5%), DHC 누적 2억 본, 컬러 립밤 +150% (COM-37) |
+| [[립플럼퍼_카테고리]] | concept | 세럼 \$4.31B / 디바이스 \$1.2B, 자극파/자연파 양극화, 펩타이드 이동 (COM-38) |
+| [[립버터_립마스크_카테고리]] | concept | 립 마스크 CAGR 7.5%(2026~33), Laneige 2초당 1개, **LAKA Soothing Prep 2026.5.14 Sephora US 온라인 런칭** (COM-39) |
+| [[립_소셜_트렌드_X]] | concept | Grok X 단독 신호 — LAKA 퍼펙트 트윈 립 JP/KR 동시 바이럴(4/24~), 신조어 "야르함·3D입술·맥시샷·뽀용립" (COM-40) |
 
 ### LAKA — 규제 (regulations/)
 
