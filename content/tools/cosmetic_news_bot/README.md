@@ -7,7 +7,10 @@
 - **트리거**: GitHub Actions cron `7 0-8 * * 1-5` (UTC) = 평일 09:07-17:07 KST 매 1시간 (일 9회)
   - 매 15분(일 96회)은 GitHub Actions private repo schedule 신뢰성 ↓로 자주 skip. 매 1시간으로 격하해 안정성 ↑.
   - 1시간 안에 RSS에 신규 기사가 1~3건 정도 올라오므로 게시 빈도 적당.
-- **출처**: 5개 RSS (`sources.json`) — 코스인코리아 / 코스모닝 / 뷰티누리 / Google News KR `화장품` / Google News EN `K-beauty`
+- **출처** (`sources.json`):
+  - **Naver Search News API** 5개 쿼리 — K뷰티 / 화장품 / 라카 화장품 / 올리브영 / K뷰티 수출
+  - **장업신문 자체 RSS** 1개 (`jangup.com/rss/allArticle.xml`)
+  - Google News RSS는 폐기 (redirect URL이 Slack OG unfurl 실패로 사용성 ↓)
 - **게시**: Slack `#cosmetic-news` (reperire 워크스페이스) — 링크 1줄만 (Slack OG unfurl이 카드 렌더)
 - **상태**: **GitHub Actions Cache** (`cosmetic-news-bot-seen-*` 키). 매 실행마다 새 unique key로 save, restore-keys prefix로 가장 최근 cache fallback. branch push 없음 — Vercel 등 외부 CI 트리거 0.
 
@@ -26,9 +29,13 @@ content/tools/cosmetic_news_bot/
 
 ## 시크릿
 
-- GitHub Repository Secret: **`SLACK_WEBHOOK_URL`**
-- 발급: Slack App → Incoming Webhooks → `#cosmetic-news` 채널 선택
-- 등록: https://github.com/luneneuf/knowledge-hub/settings/secrets/actions
+GitHub Repository Secret 3개 (https://github.com/luneneuf/knowledge-hub/settings/secrets/actions):
+
+| Secret 이름 | 용도 | 발급 |
+|---|---|---|
+| `SLACK_WEBHOOK_URL` | Slack 게시 | Slack App → Incoming Webhooks |
+| `NAVER_CLIENT_ID` | Naver Search API | https://developers.naver.com/apps/ |
+| `NAVER_CLIENT_SECRET` | Naver Search API | 동일 |
 
 ## 부트스트랩
 

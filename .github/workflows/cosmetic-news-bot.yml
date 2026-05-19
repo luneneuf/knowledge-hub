@@ -33,11 +33,11 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: seen_links.json
-          # primary key는 unique (매번 cache miss → 항상 save 트리거)
-          # restore-keys로 가장 최근 cache fallback
-          key: cosmetic-news-bot-seen-${{ github.run_id }}-${{ github.run_attempt }}
+          # v2 prefix: Google News → Naver API 출처 전환으로 fresh start.
+          # primary key는 unique (매번 cache miss → 항상 save 트리거).
+          key: cosmetic-news-bot-seen-v2-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            cosmetic-news-bot-seen-
+            cosmetic-news-bot-seen-v2-
 
       - name: Init empty state if cache miss
         run: |
@@ -59,6 +59,8 @@ jobs:
       - name: Collect and post
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python content/tools/cosmetic_news_bot/collect_and_post.py
 
       - name: Save seen_links cache
@@ -66,4 +68,4 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: seen_links.json
-          key: cosmetic-news-bot-seen-${{ github.run_id }}-${{ github.run_attempt }}
+          key: cosmetic-news-bot-seen-v2-${{ github.run_id }}-${{ github.run_attempt }}

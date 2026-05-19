@@ -1,10 +1,12 @@
 """코스메틱 뉴스 → Slack 게시 봇.
 
 GitHub Actions 워크플로가 호출. 동작:
-1. ./seen_links.json 로드 (워크플로가 state 브랜치에서 미리 가져옴, 없으면 빈 배열)
-2. sources.json의 RSS 폴링
+1. ./seen_links.json 로드 (워크플로 cache가 미리 배치, 없으면 빈 배열)
+2. sources.json의 각 source를 type별로 폴링
+   - type="naver_news": Naver Search API의 link (원본 매체 URL 또는 네이버 미러)
+   - type="rss": RSS feed의 entry.link
 3. 신규 링크만 Slack 게시 (링크 1줄 — Slack OG unfurl이 카드 렌더)
-4. seen_links.json 갱신 (워크플로가 state 브랜치로 force-push)
+4. seen_links.json 갱신 (워크플로 cache가 save)
 
 부트스트랩 보호: seen이 비어있으면 모든 항목을 seen에 기록만 하고 게시 0건
 (시작 알림 1건만). 다음 실행부터 신규만.
@@ -24,10 +26,13 @@ import requests
 SOURCES_PATH = Path(__file__).parent / "sources.json"
 STATE_PATH = Path("seen_links.json")  # cwd (workflow가 미리 배치)
 WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "").strip()
-USER_AGENT = "cosmetic-news-bot/1.0 (+https://github.com/luneneuf/knowledge-hub)"
+NAVER_ID = os.environ.get("NAVER_CLIENT_ID", "").strip()
+NAVER_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
+USER_AGENT = "cosmetic-news-bot/2.0 (+https://github.com/luneneuf/knowledge-hub)"
 MAX_PER_RUN = 20            # Slack rate limit·노이즈 보호
 SEEN_CAP = 10000            # state 파일 크기 폭주 방지
-SLACK_GAP_SEC = 1.2         # Incoming Webhook 분당 ~1건 권장 → 여유 있게
+SLACK_GAP_SEC = 1.2         # Incoming Webhook 분당 ~1건 권장
+NAVER_DISPLAY = 30          # 쿼리당 최대 30건 (API max 100)
 
 
 def load_seen() -> set[str]:
@@ -47,7 +52,7 @@ def save_seen(seen: set[str]) -> None:
     STATE_PATH.write_text(json.dumps(arr, ensure_ascii=False), encoding="utf-8")
 
 
-def fetch_source(src: dict) -> list[dict]:
+def fetch_rss(src: dict) -> list[dict]:
     headers = {"User-Agent": USER_AGENT}
     r = requests.get(src["url"], headers=headers, timeout=20)
     r.raise_for_status()
@@ -60,6 +65,46 @@ def fetch_source(src: dict) -> list[dict]:
             continue
         items.append({"title": title, "link": link, "source": src["id"]})
     return items
+
+
+def fetch_naver_news(src: dict) -> list[dict]:
+    if not NAVER_ID or not NAVER_SECRET:
+        raise RuntimeError("NAVER_CLIENT_ID / NAVER_CLIENT_SECRET not set")
+    r = requests.get(
+        "https://openapi.naver.com/v1/search/news.json",
+        params={
+            "query": src["query"],
+            "display": NAVER_DISPLAY,
+            "sort": "date",
+        },
+        headers={
+            "X-Naver-Client-Id": NAVER_ID,
+            "X-Naver-Client-Secret": NAVER_SECRET,
+        },
+        timeout=20,
+    )
+    r.raise_for_status()
+    payload = r.json()
+    items: list[dict] = []
+    for it in payload.get("items", []):
+        link = it.get("link")
+        if not link:
+            continue
+        items.append({
+            "title": it.get("title", ""),
+            "link": link,
+            "source": src["id"],
+        })
+    return items
+
+
+def fetch_source(src: dict) -> list[dict]:
+    t = src.get("type", "rss")
+    if t == "naver_news":
+        return fetch_naver_news(src)
+    if t == "rss":
+        return fetch_rss(src)
+    raise RuntimeError(f"unknown source type: {t}")
 
 
 def post_text(text: str) -> bool:

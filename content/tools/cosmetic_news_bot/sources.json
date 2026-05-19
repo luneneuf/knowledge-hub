@@ -1,32 +1,39 @@
 [
   {
-    "id": "gnews_cosinkorea",
-    "url": "https://news.google.com/rss/search?q=site%3Acosinkorea.com&hl=ko&gl=KR&ceid=KR%3Ako",
-    "enabled": true,
-    "note": "코스인코리아 (Google News site: 필터)"
+    "id": "naver_kbeauty",
+    "type": "naver_news",
+    "query": "K뷰티",
+    "enabled": true
   },
   {
-    "id": "gnews_cosmorning",
-    "url": "https://news.google.com/rss/search?q=site%3Acosmorning.com&hl=ko&gl=KR&ceid=KR%3Ako",
-    "enabled": true,
-    "note": "코스모닝 (Google News site: 필터)"
+    "id": "naver_cosmetics",
+    "type": "naver_news",
+    "query": "화장품",
+    "enabled": true
   },
   {
-    "id": "gnews_beautynury",
-    "url": "https://news.google.com/rss/search?q=site%3Abeautynury.com&hl=ko&gl=KR&ceid=KR%3Ako",
-    "enabled": true,
-    "note": "뷰티누리 (Google News site: 필터)"
+    "id": "naver_laka",
+    "type": "naver_news",
+    "query": "라카 화장품",
+    "enabled": true
   },
   {
-    "id": "gnews_kr_cosmetics",
-    "url": "https://news.google.com/rss/search?q=%ED%99%94%EC%9E%A5%ED%92%88&hl=ko&gl=KR&ceid=KR%3Ako",
-    "enabled": true,
-    "note": "Google News KR 키워드 '화장품'"
+    "id": "naver_olive_young",
+    "type": "naver_news",
+    "query": "올리브영",
+    "enabled": true
   },
   {
-    "id": "gnews_en_kbeauty",
-    "url": "https://news.google.com/rss/search?q=K-beauty&hl=en-US&gl=US&ceid=US%3Aen",
+    "id": "naver_kbeauty_export",
+    "type": "naver_news",
+    "query": "K뷰티 수출",
+    "enabled": true
+  },
+  {
+    "id": "rss_jangup",
+    "type": "rss",
+    "url": "https://www.jangup.com/rss/allArticle.xml",
     "enabled": true,
-    "note": "Google News EN 키워드 'K-beauty'"
+    "note": "장업신문 (자체 RSS 동작 확인)"
   }
 ]
