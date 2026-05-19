@@ -22,11 +22,12 @@ publish: false
 
 | 항목 | 결정 |
 |------|------|
-| 실행 주기 | **15분** (`cron: '*/15 * * * *'`) |
+| 실행 주기 | **평일 09:00-17:45 KST 매 15분** (`cron: '*/15 0-8 * * 1-5'` UTC) |
 | 호스팅 | **GitHub Actions** (`luneneuf/knowledge-hub` private repo) |
 | 언어 | **Python** (Linux runner) |
 | State 영속화 | **별도 브랜치 commit** (`bot/news-state` 가정) |
-| Slack 워크스페이스 | **개인 워크스페이스** (채널명 미정) |
+| Slack 워크스페이스 | **reperire** (`reperire.slack.com`) |
+| Slack 채널 | **#cosmetic-news** (`C0B48003D39`) |
 | 시크릿 관리 | **GitHub Secrets** (`SLACK_WEBHOOK_URL`) |
 
 ---
@@ -181,9 +182,29 @@ bot/news-state 브랜치 (main과 무관, 코드 없음)
 
 ## 5. 운영 — 실행 주기·호스팅
 
-### 5-1. 실행 주기 — 15분 확정
+### 5-1. 실행 주기 — 평일 09:00-17:45 KST 매 15분 확정
 
-`cron: '*/15 * * * *'` (UTC 기준). GitHub Actions schedule은 ±5~15분 지연 가능 (공식 명시: "We schedule jobs based on system load … may be delayed"). 본 봇은 분 단위 정확성이 필요 없으므로 무관.
+```yaml
+on:
+  schedule:
+    - cron: '*/15 0-8 * * 1-5'    # UTC 00:00-08:45 = KST 09:00-17:45, 월-금
+  workflow_dispatch:               # 수동 실행 허용
+```
+
+- GitHub Actions cron은 **UTC 고정**. KST(UTC+9) 09:00-18:00 영업시간 = UTC 00:00-09:00. `0-8`은 0시·1시···8시까지 매 15분 (마지막 슬롯 KST 17:45).
+- 18:00 정시는 미포함. 포함하려면 추가 cron 라인 `'0 9 * * 1-5'` (KST 18:00에 1회 더).
+- GitHub Actions schedule은 best-effort, ±5~15분 지연 가능. 본 봇은 분 단위 정확성 불필요.
+
+### 5-1-1. 한도 재계산
+
+| 항목 | 계산 | 월 분 |
+|------|------|------|
+| 일 실행 수 | KST 09:00-17:45 매 15분 | 36회 |
+| 평일 수 | 월 평균 22일 | — |
+| 회당 차감 | 1분 (최소 청구 단위) | — |
+| **합계** | 36 × 22 × 1 | **~792분** ✅ |
+
+→ 한도 2,000분 대비 약 40% 사용. **여유 충분** (월말까지 1,200분 마진).
 
 ### 5-2. 호스팅 — GitHub Actions 확정
 
@@ -195,8 +216,8 @@ bot/news-state 브랜치 (main과 무관, 코드 없음)
 name: cosmetic-news-bot
 on:
   schedule:
-    - cron: '*/15 * * * *'
-  workflow_dispatch:           # 수동 실행도 가능
+    - cron: '*/15 0-8 * * 1-5'   # KST 09:00-17:45 평일만
+  workflow_dispatch:             # 수동 실행 허용
 
 jobs:
   collect:
@@ -317,19 +338,23 @@ jobs:
 | Q4 | 호스팅 | ✅ **GitHub Actions (knowledge-hub private)** |
 | — | 언어 | ✅ **Python (Linux runner)** |
 | — | State 영속화 | ✅ **별도 브랜치 `bot/news-state` commit** |
-| Q1-a | Slack 워크스페이스 | ✅ **개인 워크스페이스** |
+| Q1 | Slack 워크스페이스·채널 | ✅ **reperire / #cosmetic-news** (`C0B48003D39`) |
+| Q3-재 | 무료 한도 대응 | ✅ **평일 09:00-17:45 KST 매 15분** (월 ~792분) |
 
 ### 남은 결정
 
 | # | 항목 | 기본 가정 (변경 가능) |
 |---|------|---------------------|
-| **Q3-재** | **무료 한도 대응** (§5-3) | 옵션 C: **평일 09-23시만 15분 cron** (월 ~800분, 한도 여유) |
-| **Q1-b** | **개인 워크스페이스 채널명** | `#cosmetic-news` (영문) 또는 `#코스메틱-뉴스` |
 | **Q2** | **스코프 범위** | Layer 1 (한국 전문매체) + Layer 2 (Google News KR/EN) + Layer 3 핵심 경쟁사 5개. Layer 4 (글로벌 전문매체)는 Phase 4 추가 |
 | **Q5** | **메시지 형식** | 링크 1줄만 (prefix 없음) |
 | **Q6** | **시작 출처 5개** (Phase 1) | 코스인코리아 / 코스모닝 / 뷰티누리 / Google News KR `화장품` / Google News EN `K-beauty` |
 
-→ Q3-재 + Q1-b만 결정되면 Phase 0 완료 (Webhook 발급 가능). Q2·Q5·Q6은 Phase 1 시작 직전 확정.
+### 사용자 액션 (Phase 0 잔여)
+
+- [ ] **GitHub Secret `SLACK_WEBHOOK_URL` 등록** (knowledge-hub repo Settings)
+- [ ] (코드 push 후) GitHub Actions에서 `cosmetic-news-bot` workflow_dispatch 1회 실행 → 부트스트랩 + Slack 시작 알림 도착 확인
+
+→ Q2·Q5·Q6은 디폴트로 진행 (코스인코리아/코스모닝/뷰티누리 site:필터 + GNews KR `화장품` + GNews EN `K-beauty` 5개, 메시지 링크 1줄).
 
 ---
 

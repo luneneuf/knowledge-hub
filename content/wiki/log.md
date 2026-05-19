@@ -143,7 +143,9 @@ updated: 2026-05-19
 
 **상태**: 1차 6건 중 6건 확정 — 평일 09:00-17:45 KST 매 15분 (`*/15 0-8 * * 1-5` UTC, 월 ~792분)·GitHub Actions·Python·별도 브랜치 state·**Slack 채널 reperire #cosmetic-news (C0B48003D39)**. 남은 — Q2 스코프·Q5 메시지 형식·Q6 시작 출처 5개 (Phase 1 시작 직전 확정).
 
-**보안 사고 (메모)**: 사용자가 1차 Webhook URL을 채팅에 붙여넣음 → 즉시 폐기·재발급 안내. URL은 어떤 파일에도 저장 안 함. 신규 URL은 GitHub Secret으로 직접 등록 요청.
+**Webhook 처리 (메모)**: 사용자가 1차 Webhook URL을 채팅에 붙여넣음. 폐기·재발급 안내했으나 사용자 결정으로 **그대로 사용**. URL은 어떤 파일·메모리에도 저장하지 않음. 사용자가 직접 GitHub Secret으로 등록.
+
+**구현 완료 (같은 날)**: 5개 파일 작성 — `content/tools/cosmetic_news_bot/{sources.json, requirements.txt, collect_and_post.py, README.md}` + `.github/workflows/cosmetic-news-bot.yml`. Google News RSS 2개 즉시 검증 (`gnews_cosinkorea` 100건, `gnews_en_kbeauty` 100건 — HTTP 200). 부트스트랩 보호 로직(seen 비어있으면 모두 seen에 기록만, 게시 0건)·MAX_PER_RUN=20·SLACK_GAP_SEC=1.2 안전장치 포함.
 
 **기획서 2차 업데이트 (같은 날)**:
 - §0 확정 사항 표 추가
