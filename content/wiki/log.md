@@ -18,6 +18,53 @@ updated: 2026-05-19
 
 ---
 
+## [2026-05-19] 위키화 | 부진재고 TF 3개 거래처 + 코스메카 ODM entity 신설
+
+**작업**: 직전 [HDL + SCM 용어집] 작업의 후속 후보 4건 일괄 entity화. **부진재고 TF 평행 라인** + **ODM 5사 中 코스메카** 신규.
+
+**신규 페이지 (4)**:
+
+- `entities/distributors/POYA.md` (priority: high)
+  - 대만 최대 H&B 체인 (Watsons·Cosmed와 3대 드럭스토어), 1985 설립, 220+ 매장(목표 440), Poya Beauty 전문 포맷(2022 말 런칭)
+  - LAKA: C등급 SKU 런칭, **26년 8월 cutoff** ([[sociolla 소시올라|Sociolla]]와 동시기 평행)
+  - 정보 갭: 입점 SKU·거래 구조(직거래 vs [[AMID]] 경유)
+
+- `entities/distributors/Adaline_Group.md` (priority: high)
+  - **(주)아델라인그룹** — 서울 영등포 O2 Tower 본사, K-뷰티 글로벌 솔루션·컨설팅, 글로벌 뷰티 유통 15% MS
+  - 입점 K-뷰티: 데이지크·롬앤·코스알엑스·라운드랩·넘버즈인·아누아·이니스프리·라네즈 (이니스프리 부진재고 처리 사례)
+  - LAKA: 2/11 메일 → 2/25 여의도 사무실 방문 → **3/5 (목) 11:00 라카 본사 미팅**
+  - ⚠️ **사명 주의**: LAKA raw 표기 "Adeline", 실제 사명 "**Adaline**"
+
+- `entities/distributors/TJ_Maxx.md` (priority: high)
+  - TJX 산하, 미국 1,333매장 오프프라이스 1위. 100+ K-뷰티 브랜드 파트너십
+  - LAKA: 2/11 메일 → 2/27 해외영업팀 **이예솔** 인수인계 (제품리스트·공급가 제안 예정)
+  - 핵심 협상 변수: **단상자 리패키징·후킹 라벨** (HDL 김포센터 작업 발생 가능성). 정상 채널 [[세포라]]와의 cannibalization 방지.
+  - 바닐라코 사례 — 원가 수준 매각으로 부진재고 처리
+
+- `entities/코스메카코리아.md` (priority: high)
+  - LAKA ODM 5사 中 1, 1999 설립, 코스닥 A241710, **2018 Inglewood Lab(미국) 인수**로 한·중·미 3국 거점
+  - LAKA 주력 SKU: **데빌립 (Devil Lip)** JT 일본 수출용 안전재고, **프루티글램틴트 립 컨디셔너 기획세트**
+  - 2026-04 데빌립 과재고 → 발주 잔량 이월 신호 (셀-아웃 정체 우려)
+  - K-뷰티 ODM 3강 추격주 ([[한국콜마]]·[[코스맥스]] 다음)
+
+**갱신**:
+- `index.md` — LAKA entity 섹션 4개 행 추가 (코스메카·POYA·Adaline·TJ Maxx 모두 priority: high)
+- `SCM_용어집.md` §8 부진재고 TF — POYA·Adaline·TJ Maxx wiki 링크 활성화, 오션글로벌 추가 (미등록)
+
+**부진재고 TF 라인업 통합 현황**:
+- ✓ [[sociolla 소시올라|Sociolla]] · [[POYA]] (C등급 단종 채널, 8월 cutoff)
+- ✓ [[Adaline_Group]] · [[TJ_Maxx]] (유통 컨설팅·오프프라이스)
+- ✗ **오션글로벌** (올리브영 X 유통 결합) — 마지막 1건
+
+**후속 작업 후보**:
+- **오션글로벌** entity 신설 (부진재고 TF 마지막 라인)
+- ODM 5사 完成 — **화성코스메틱**, **씨앤씨 인터내셔널** entity 신설
+- 3/5 본사 미팅 결과 (Adaline·오션글로벌) 본부장 컨펌
+- 이예솔 담당 TJ Maxx 후속 진척 위키화
+- 데빌립 과재고 원인 분석 (코스메카 단일 SKU 의존 리스크)
+
+---
+
 ## [2026-05-19] 위키화 | HDL entity + SCM 용어집 신설
 
 **작업**: 본부장 공유 출고 가이드("HDL 1일 착인캐파 7~8천개")에서 시작된 질문 → HDL 정체 확인(forwarder.kr 등재 페이지) → entity 신규 + SCM 용어집 신설로 영구 기록.
