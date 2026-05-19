@@ -124,6 +124,7 @@ publish: true
 | [[원료목록_사전보고_책임판매업자]] | concept | 책임판매업자 원료목록보고 절차·양식·LAKA 제품 카테고리 매핑(사6 립스틱·립라이너 등) |
 | [[원료목록_사전보고_FAQ_책임판매업자]] | concept | KCA FAQ 30개 LAKA 적용 분석(Q16 다중 ODM, Q26 변경보고 트리거 등) |
 | [[향료_알레르기유발성분_표시]] | concept | 향료 25종 알레르기 유발성분 표시 의무 (2020.1.1 시행, leave-on 0.001%) — LAKA 립 카테고리 직접 영향 |
+| [[cosmetic_news_bot_기획서]] | summary | 코스메틱 산업 전반 뉴스 → Slack 실시간 게시 봇 기획서 (safety_signals 자매 도구, 결정 필요 6건) |
 
 #### QA팀 (실무 진행 기록)
 
@@ -251,13 +252,13 @@ COM-30 시리즈(COM-31~40) 딥리서치 결과 — Perplexity·웹 종합 8종 
 
 | 페이지 | 타입 | 한 줄 설명 |
 |--------|------|------------|
-| [[LAKA_B2B_해외거래처_2025_2026]] | comparison | 52개 거래처 마스터 비교 — '25 6,362M → '26 2,052M, 권역별 매출, 신규 빅 라인 (Sociolla 800·Sephora 284) |
+| [[LAKA_B2B_해외거래처_2025_2026]] | comparison | 52개 거래처 마스터 비교 — '25 6,362M → '26 2,052M, 권역별 매출, 신규 빅 라인 ([[sociolla 소시올라\|Sociolla]] 576·Sephora 284) |
 | [[JSW_Asset]] | entity (draft) | 태국, '25 매출 1위 1,658M → '26 291M (-83%) |
 | [[AMID]] | entity (draft) | 대만, '25 매출 2위 1,062M → '26 27M (-97%) |
 | [[TNC_웨이포인트글로벌]] | entity (draft) | 호주(56 통상 → 웨이포인트 글로벌), '25 459M |
 | [[크레도]] | entity (draft) | 유럽, '25 427M → '26 10M (-98%) |
 | [[엠투씨]] | entity (draft) | 미국/캐나다, '25 390M |
-| [[Sociolla]] | entity (draft) | 인도네시아, '26 신규 빅 라인 800M (2월) |
+| [[sociolla 소시올라\|Sociolla]] | entity (priority: high) | 인도네시아 Social Bella 그룹(60+ 매장) + 베트남 12 매장. '26-2 셀-인 576M, **부진재고 클리어런스 듀얼 채널** — 26년 8월 cutoff |
 | [[Skincupid]] | entity (draft) | 영국, [[부츠]] 공급 라인 + 자체몰 합산 '25 148M / '26 136M |
 | [[SUKOSHI]] | entity (draft) | 미국/캐나다, '25 98M → '26 105M (안정 성장) |
 | [[NOTINO]] | entity (draft) | 체코 본사 유럽 EC, '25 88M |

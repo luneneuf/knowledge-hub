@@ -29,4 +29,4 @@ publish: false
 
 ## 관련
 
-- [[LAKA_B2B_해외거래처_2025_2026]] · [[LAKA]] · [[Sociolla]] (동남아)
+- [[LAKA_B2B_해외거래처_2025_2026]] · [[LAKA]] · [[sociolla 소시올라|Sociolla]] (동남아)

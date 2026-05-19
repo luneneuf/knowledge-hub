@@ -3,6 +3,56 @@ title: "Log"
 updated: 2026-05-19
 ---
 
+## [2026-05-19] 위키화 | Sociolla 본문 본격 보강 + 파일명 다국어화
+
+**작업**: 사용자 요청으로 Sociolla entity 페이지 보강. 웹 리서치(Social Bella 그룹) + raw SCM 주간업무보고 시계열 통합. 파일명 다국어화.
+
+**보강 내용 — `entities/distributors/sociolla 소시올라.md`**:
+- **Social Bella 그룹 (모회사)** — 2015 설립, 누적 펀딩 $226M+ (Temasek·L Catterton 등), 밸류에이션 $564M+, 사용자 30M+, 400+ 브랜드 12,000+ 제품
+- **5개 사업부**: Sociolla(EC + 인니 60+ 매장 + 베트남 12 매장), SOCO(슈퍼앱), Beauty Journal(미디어), Lilla(맘 EC), **SDI(End-to-end 디스트리뷰션)** — LAKA 입점은 SDI 위탁 추정
+- **시계열 ⭐**: 01-W4(계획 4억) → 02-W2(2억으로 하향) → 실제 출고 **5.75억(575M)** → 03-W1(8월까지 셀-아웃 추이로 단종 결정)
+- **핵심 재해석**: Sociolla 입점은 단순 신규 빅 라인이 아닌 **부진재고(C등급) 클리어런스 채널** — 같은 부진재고 TF 라인의 Adeline Group, TJ Maxx와 평행. C등급 단종 후보 SKU(팝핑벌룬틴트 본품·미니, 젤링누드글로스 미니, 스킨4코렉터 전품목) 마지막 시장 테스트.
+- **8월 cutoff = SKU 단종 결정 트리거** — 셀-아웃 가시성 확보가 가장 중요한 KPI
+
+**파일명 변경**: `Sociolla.md` → `sociolla 소시올라.md` (다국어 병기, 공백 포함). frontmatter `aliases: [Sociolla, 소시올라, Social Bella]` 추가.
+
+**위키링크 업데이트** (5개 파일):
+- `entities/distributors/After_J.md`
+- `entities/distributors/Livingstone.md`
+- `entities/distributors/X-BEAUTY.md`
+- `concepts/Sell-in_Sell-out.md`
+- `comparisons/LAKA_B2B_해외거래처_2025_2026.md` (Sociolla 매출 800 → 576* 갱신 동반)
+
+**갱신**:
+- `index.md` — Sociolla 행 (priority: high, 부진재고 클리어런스 채널 성격 명시), B2B 비교 행 매출 576 갱신
+
+**미해결 (본부장 컨펌 필요)**:
+- 4억 → 2억 → 실제 5.75억 갭(2.9배) — 추가 SKU 합류 또는 추가 PO 메커니즘
+- 기존 stub의 "800M" 출처 — 추정으로는 4억+2억+α 합산 또는 다른 시점 데이터
+
+**후속 작업 후보**:
+- POYA(대만), Adeline Group, TJ Maxx 등 부진재고 TF 4채널 동시 entity화
+- Sociolla 셀-아웃 모니터링 KPI 정의 — SOCO 리뷰 카운트, 매장 진열 잔존율, 재주문 PO 발생 여부
+
+---
+
+## [2026-05-19] 신규 기획서 | cosmetic_news_bot — 코스메틱 산업 뉴스 Slack 봇
+
+**작업**: 사용자 요청으로 코스메틱 산업 전반 뉴스를 실시간 Slack에 게시하는 봇 기획서 초안 작성.
+
+**위치**: [[cosmetic_news_bot_기획서]] (`wiki/industry/LAKA/cosmetic_news_bot_기획서.md`)
+
+**핵심 결정**:
+- [[안전관리정보_자동수집_기술검증]] (safety_signals)와 **자매 도구로 분리 운영**. 출처·로직 일부 공유, 폴더·프로세스 분리.
+- 출력: 파일 다이제스트 (safety_signals) ↔ Slack 실시간 (본 봇)
+- 스코프: 안전·회수 (safety_signals) ↔ 산업 전반 뉴스 (본 봇)
+
+**상태**: 결정 필요 사항 6건 표시 (Slack 채널·스코프·주기·호스팅·메시지 형식·시작 출처 5개). 사용자 확정 후 Phase 1 (출처 검증) 진입 예정.
+
+**신규 페이지**: [[cosmetic_news_bot_기획서]]
+
+---
+
 ## [2026-05-19] 결정 변경 | safety_signals 정기 실행 주기 월 1회 → 일 1회
 
 **작업**: [[안전관리정보_자동수집_기술검증]] §6 의사결정 결과의 "정기 실행 주기 월 1회"를 **일 1회로 격상**.
