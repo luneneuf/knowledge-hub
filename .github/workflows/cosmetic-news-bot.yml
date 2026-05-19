@@ -2,10 +2,10 @@ name: cosmetic-news-bot
 
 on:
   schedule:
-    # KST 09:07-17:52 평일 15분 간격 (비정시 — GitHub 권장)
-    # */15는 high-load 시간대(:00·:15·:30·:45)에 skip 빈번. :07·:22·:37·:52로 회피.
-    # UTC 00:07-08:52 월-금
-    - cron: '7,22,37,52 0-8 * * 1-5'
+    # KST 09:07-17:07 평일 매시 정각 근처 (1시간 간격, 일 9회)
+    # 매 15분(일 96회)은 GitHub Actions schedule 신뢰성 ↓ — 매 1시간으로 격하해 발동률 ↑
+    # UTC 00:07-08:07 월-금
+    - cron: '7 0-8 * * 1-5'
   workflow_dispatch:
 
 permissions:

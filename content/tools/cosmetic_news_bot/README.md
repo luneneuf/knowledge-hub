@@ -4,7 +4,9 @@
 
 ## 동작
 
-- **트리거**: GitHub Actions cron `7,22,37,52 0-8 * * 1-5` (UTC) = 평일 09:07-17:52 KST 15분 간격 (비정시 — GitHub schedule skip 회피)
+- **트리거**: GitHub Actions cron `7 0-8 * * 1-5` (UTC) = 평일 09:07-17:07 KST 매 1시간 (일 9회)
+  - 매 15분(일 96회)은 GitHub Actions private repo schedule 신뢰성 ↓로 자주 skip. 매 1시간으로 격하해 안정성 ↑.
+  - 1시간 안에 RSS에 신규 기사가 1~3건 정도 올라오므로 게시 빈도 적당.
 - **출처**: 5개 RSS (`sources.json`) — 코스인코리아 / 코스모닝 / 뷰티누리 / Google News KR `화장품` / Google News EN `K-beauty`
 - **게시**: Slack `#cosmetic-news` (reperire 워크스페이스) — 링크 1줄만 (Slack OG unfurl이 카드 렌더)
 - **상태**: **GitHub Actions Cache** (`cosmetic-news-bot-seen-*` 키). 매 실행마다 새 unique key로 save, restore-keys prefix로 가장 최근 cache fallback. branch push 없음 — Vercel 등 외부 CI 트리거 0.
@@ -63,9 +65,9 @@ GitHub Actions 페이지 → `cosmetic-news-bot` 워크플로 → "Run workflow"
 
 | 항목 | 값 |
 |------|---|
-| 일 실행 수 | 36회 (KST 09:00-17:45 매 15분) |
-| 월 실행 수 | ~792회 (평일 22일 기준) |
-| Actions 분 소비 | ~792분 / 2000분 무료 한도 |
+| 일 실행 수 | 9회 (KST 09:07~17:07 매시 :07) |
+| 월 실행 수 | ~198회 (평일 22일 기준) |
+| Actions 분 소비 | ~198분 / 2000분 무료 한도 (10%) |
 | Slack 비용 | 0원 |
 
 ## 출처 추가·비활성화
