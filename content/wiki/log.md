@@ -3,6 +3,24 @@ title: "Log"
 updated: 2026-05-19
 ---
 
+## [2026-05-19] 정정 | Adeline → **Adaline** 사명 정정 + 한국 본사 사실 정정
+
+**문제**: SCM 8주차 인제스트 + 후속 ToDo 시 raw PPT 표기 "Adeline Group"을 그대로 사용. 실제 정식 사명은 **Adaline Group ((주)아델라인그룹)**, **한국 영등포 여의도 본사** 회사 (raw 자료에서 "미국(글로벌)"로 분류된 것은 글로벌 유통 커버리지 의미). 기존 [[Adaline_Group]] entity 존재했으나 링크 미연결.
+
+**웹 확인 사실**:
+- 정식 사명: **Adaline Group** (영문) / (주)아델라인그룹 (한국어)
+- 본사: 서울 영등포구 의사당대로 83, O2 Tower 22F (여의도)
+- 도메인: adalinegroup.com
+- 자회사: **RLOHA** (사이트 family site 섹션) — raw PPT 헤더 "Kloha"는 RLOHA 폰트 오인 가능성
+
+**정정 (4개 파일)**:
+- `analysis/SCM_주간보고_2026H1_종합시사점.md` line 162
+- `comparisons/LAKA_B2B_해외거래처_2025_2026.md` line 119, 132 — 권역도 "미국(글로벌)" → "한국 본사 (글로벌 유통)"
+- `concepts/신제품_재고운영_AsIs_ToBe.md` line 67, 69
+- `entities/distributors/Adaline_Group.md` 보강 — 주소 정정 (의사당대로 22→83, O2 Tower 83→22층) + 자회사 RLOHA 추가 + 한국 본사 사실 시사점 추가
+
+---
+
 ## [2026-05-19] 인제스트 | 글로벌 수단레드 사건 웹 조사 — Campo Research 발원
 
 **작업**: [[수딩비건립오일_수단레드_대만회수_2026Q1]] 라카 인시던트의 **글로벌 맥락 웹 조사** + 위키 통합.
