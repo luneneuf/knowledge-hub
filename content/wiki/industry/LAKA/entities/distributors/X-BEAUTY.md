@@ -12,7 +12,9 @@ priority: high
 
 # X-BEAUTY (XBeauty)
 
-UAE LAKA B2B **신규 빅 라인** — '26 2월 단월 첫 [[Sell-in_Sell-out|셀-인]] 약 242백만원, LAKA B2B 단일 거래처 2월 매출 **상위권**([[sociolla 소시올라|Sociolla]] 다음). UAE 대형 가족 그룹 **Al Fahim HQ Family Group** 산하 옴니채널 뷰티 리테일러.
+UAE LAKA B2B 거래처. UAE 대형 가족 그룹 **Al Fahim HQ Family Group** 산하 옴니채널 뷰티 리테일러.
+
+> ⚠️ **매출 데이터 불일치**: 이전 소스에서 '26-2월 첫 [[Sell-in_Sell-out|셀-인]] 약 242백만원으로 기록했으나, **2026-02 마감표(확정)에 미등재**. 이전 자료가 예상치이거나 3월 이후 계상 가능성. 재확인 전까지 242M 수치는 미확정으로 처리.
 
 ## 회사 개요
 

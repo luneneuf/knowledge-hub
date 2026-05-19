@@ -3,6 +3,23 @@ title: "Log"
 updated: 2026-05-19
 ---
 
+## [2026-05-19] 인제스트 | 2월 마감 B2B 매출표 — 신규 거래처 3개 + 불일치 플래그
+
+**소스**: 3월 월간회의 자료 "2월 마감" 슬라이드 (2월 확정 + 3월 예상)
+
+**신규 entity**:
+- `wiki/industry/LAKA/entities/distributors/JCOR_Kruidvat.md` — 네덜란드, 3월 예상 ~1M
+- `wiki/industry/LAKA/entities/distributors/Gabona.md` — 폴란드, 3월 예상 ~3.3M
+- `wiki/industry/LAKA/entities/distributors/Calmi.md` — 페루, 3월 예상 ~31.9M
+
+**업데이트**:
+- `LAKA_B2B_해외거래처_2025_2026.md` — 4개 신규 행 추가, Sociolla 566·Far East 115 확정값, X-BEAUTY·Glow House 불일치 경고
+- `X-BEAUTY.md` / `Glow_House.md` — 2월 마감 미등재 경고 (기존 242M/25M 미확정 처리)
+
+**2월 마감 합계**: 1,234,768,077원 / 3월 예상: 690,935,216원
+
+---
+
 ## [2026-05-19] 업데이트 | 자사몰 카페24 오픈 사실 확인
 
 **소스**: 3월 월간회의 자료 — "크리에이티브부문_국내영업팀" 슬라이드
