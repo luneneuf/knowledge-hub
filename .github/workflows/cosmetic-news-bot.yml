@@ -51,16 +51,16 @@ jobs:
 
       - name: Push updated state to bot/news-state
         run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          set -euo pipefail
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           tmp=$(mktemp -d)
           cp seen_links.json "$tmp/"
           cd "$tmp"
-          git init -q -b main
-          git checkout --orphan news-state-tmp
+          git init -q -b state
           git add seen_links.json
           git commit -q -m "state: $(date -u +%FT%TZ) [skip ci]"
-          git push -fq \
+          git push -f \
             "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" \
-            HEAD:refs/heads/bot/news-state
+            state:refs/heads/bot/news-state
+          echo "state branch updated: $(wc -c < seen_links.json) bytes"
