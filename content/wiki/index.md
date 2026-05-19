@@ -158,6 +158,7 @@ publish: true
 | [[K뷰티_브랜드_IPO_동향]] | comparison | K뷰티 브랜드 IPO 동향 |
 | [[한국콜마_vs_코스맥스_ODM_비교]] | comparison | 한국콜마 vs 코스맥스 ODM 비교 |
 | [[K뷰티_일본시장]] | concept | 버라이어티샵 구조, 슬롯 배분, 도매 구조 |
+| [[Sell-in_Sell-out]] | concept | 셀-인(브랜드→유통사)과 셀-아웃(유통사→소비자) 구분, B2B 매출표 해석, channel stuffing 위험, 채널별 데이터 가시성 |
 | [[ODM]] | concept | 제조업자개발생산 정의·OEM 비교·K-뷰티 역할 |
 | [[성과관리_시스템]] | concept | MBO/OKR/BSC 비교, HR SaaS |
 | [[젠더뉴트럴_뷰티]] | concept | LAKA 브랜드 정체성, Boundless Beauty |
@@ -176,6 +177,9 @@ publish: true
 | [[코스맥스]] | entity | 글로벌 화장품 ODM 1위, K-인디 큐레이터 전략 |
 | [[한국콜마]] | entity | LAKA ODM 파트너 (5% 지분), 선케어 초격차 |
 | [[어크로스비]] | entity | 한국 크로스보더 3PL/풀필먼트. 미·일·중 거점. LAKA UK·DE 출고 위탁 — 2026-02 출고 지연으로 런칭 2월→3월 |
+| [[X-BEAUTY]] | entity | UAE Al Fahim Group 산하 옴니채널 (Dubai Mall·DIFC·Abu Dhabi 13+ 매장) — '26 2월 첫 셀-인 242M, K-뷰티 컨셉 |
+| [[Glow_House]] | entity | 사우디 glowhouse.sa 옴니채널 멀티브랜드 (Clarins·Shiseido·Dr.Althea 등) — '26 2월 첫 셀-인 25M, 테스트 입점 추정 |
+| [[H_L\|H&L International]] | entity | Healthilosophy-korea, 서울 사근동 본사 K-뷰티 수출상 → 캐나다 시장. [[엠투씨]] M2C와 R&R 분리 필요 — '26 2월 첫 셀-인 37M |
 | [[대한화장품협회]] | entity | KCA/KCIA. 원료목록보고·성분사전·법정교육·공지 운영 (kcia.or.kr) |
 | [[株式会社JT]] | entity | LAKA 일본 법인 (PMDA 1차 대응 위탁 추정, 본사 일본사업팀과 이중 구조) |
 | [[화장품_성분사전]] | concept | KCA 운영 표준 성분명 DB (kcia.or.kr/cid), 표준화위 월 2회 심의 |

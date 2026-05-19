@@ -3,6 +3,62 @@ title: "Log"
 updated: 2026-05-19
 ---
 
+## [2026-05-19] 결정 변경 | safety_signals 정기 실행 주기 월 1회 → 일 1회
+
+**작업**: [[안전관리정보_자동수집_기술검증]] §6 의사결정 결과의 "정기 실행 주기 월 1회"를 **일 1회로 격상**.
+
+**배경**:
+- [[안전관리정보_자동수집_제안]] §해법은 원래 "일 단위 실시간 모니터링 + 주간 자동 다이제스트"로 격상한다고 명시 (line 35)
+- 5/18 기술검증·README는 R&R 15번 "월 1회 이상" 최소요건에 맞춰 보수적으로 "월 1회"로 적었음
+- 1회 수집 510건 / 4–5월 필터 후 77건 / KCIA 단독으로도 LAKA 직결 시그널 다수 — 일 단위 운영 가치 충분
+- "월 1회 이상" R&R은 일 1회로 자동 충족
+
+**문서 갱신**:
+- **수정** `content/tools/safety_signals/README.md` — §운영 계획, §다음 작업 #6 두 곳
+- **수정** [[안전관리정보_자동수집_기술검증]] — §남은 기술 작업 #4, §6 의사결정에 갱신 노트 inline 추가, §6.5 정기 운영 모드
+- 미수정: [[안전관리정보_자동수집_제안]] (이미 "일 단위" 명세), [[품질관리_RR_2026-05]] (R&R 최소요건 "월 1회 이상" 그대로), [[차승호_1차미팅_아젠다]] (미팅 의사록 성격 — 사후 결정변경은 본 log에만 기록)
+
+**관련 진행 중인 별건**:
+- 별도 Claude Code 스케줄 태스크 `kcia-edu-daily-monitor` (KCIA `edu_01.php?sse=1`만 일 1회 감시 + Gmail 초안)가 어제 만들어졌음 ([[COM-44]] Linear 이슈). 이는 `safety_signals` 파이프라인을 모르고 만들어진 **중복·축소 버전**.
+- 결정: 정식 통합 (collect-inline.ps1 + `seen_links.json` 신규 감지 + Gmail 초안/푸시 발송) 완료 전까지 **임시 유지**. 후속 작업으로 통합 시 standalone routine + 상태 파일(`C:\Users\laka\.claude\monitor-state\kcia-edu.json`) 제거 예정.
+
+**후속 작업 (별도 세션)**:
+1. `collect-inline.ps1`에 `seen_links.json` 중복 제거 로직 추가 ([[안전관리정보_자동수집_기술검증]] §남은 기술 작업 #3 구현)
+2. 일 1회 스케줄 태스크: collect 실행 → 신규 항목만 추출 → digest 생성 → Gmail 초안 + 푸시
+3. `kcia_notice_html` URL 재검토 (`notice.php` vs `edu_01.php?sse=1` — 같은 시스템의 다른 뷰인지 둘 다 봐야 하는지)
+4. 통합 완료 후 `kcia-edu-daily-monitor` 및 상태 파일 제거, [[COM-44]] 갱신/종료
+
+---
+
+## [2026-05-19] 위키화 | B2B 해외거래처 신규 3건 본격 보강 + Sell-in/Sell-out 개념 신설
+
+**작업 흐름**:
+1. 2026-02 B2B 매출표(본부장 공유)에서 위키 미등록 거래처 3건 식별 → 1차 stub 생성
+2. **각 거래처 웹 리서치(WebSearch + WebFetch)로 본격 entity 본문 작성** (이번 갱신)
+3. [[Sell-in_Sell-out]] 개념 페이지 신규 — B2B 매출표 해석의 표준 기반
+
+**신규 페이지**:
+- `wiki/industry/LAKA/concepts/Sell-in_Sell-out.md` — 셀-인/셀-아웃 정의·차이, channel stuffing, LAKA B2B 표 해석, 채널별 가시성 표, QA/SCM 시사점
+- `wiki/industry/LAKA/entities/distributors/X-BEAUTY.md` (priority: high) — **Al Fahim HQ Family Group** 산하 UAE 옴니채널 (Dubai Mall·DIFC·Silicon Central + Abu Dhabi 등 **13+ 매장**), "Asian beauty inspired" 컨셉. '26 2월 첫 셀-인 242M = initial fill 규모.
+- `wiki/industry/LAKA/entities/distributors/Glow_House.md` — 사우디 [glowhouse.sa](https://www.glowhouse.sa/en) 옴니채널 멀티브랜드 (Clarins·Shiseido·Olaplex·Dr.Althea·Axis-Y 등). '26 2월 첫 셀-인 25M = 테스트 입점 추정.
+- `wiki/industry/LAKA/entities/distributors/H_L.md` — **H&L International (Healthilosophy-korea), 서울 사근동 본사 K-뷰티 수출상**. LAKA 표 "캐나다"는 수출 대상국이고 회사 본사는 한국 → 간접 수출 구조 가능성. [[엠투씨]](M2C 미·캐나다 통합)와 R&R 분리 필요.
+
+**갱신**:
+- `wiki/index.md` — concepts 섹션 [[Sell-in_Sell-out]] 추가, 3개 distributor 행 설명을 본격 내용으로 보강
+
+**핵심 발견**:
+- **중동 진출 본격화** — X-BEAUTY(UAE 13+ 매장, Al Fahim Group) + Glow House(사우디) 동시기 가동. GCC 진출 구체화.
+- **H&L 정체 명확화 필요** — "캐나다" 시장 표기지만 실제로는 한국 수출상. 물류/규제/책임 소재 본부장 컨펌 사항.
+- **셀-인 vs 셀-아웃 분리 추적의 필요성** — Sociolla 575M, X-BEAUTY 242M 같은 큰 셀-인이 첫 등장 → channel stuffing 위험 + 재주문 곡선 모니터링 필요. [[Sell-in_Sell-out]] 페이지로 표준화.
+
+**후속 작업 후보**:
+- [[LAKA_B2B_해외거래처_2025_2026]] 비교 페이지에 3건 누락 → 보강 필요
+- H&L 한국 본사 vs 캐나다 법인 구조 본부장 컨펌
+- 셀-아웃 데이터 확보 가능 거래처 점검 — [[Qoo10_일본]]·[[부츠]]·[[세포라]] 대시보드 우선
+- UAE·사우디 화장품 규제(ECAS·SFDA·HALAL·아랍어 라벨) 컴플라이언스 체크리스트
+
+---
+
 ## [2026-05-19] 위키화 | 어크로스비 entity 신규 — UK·DE 출고 지연 사례 기록
 
 **작업**: 본부장 정보 — "UK, DE 출고 지연(어크로스비 대응 미숙)으로 2월 중순 출고 완료, 런칭 2월→3월" 컨텍스트 위키화.
