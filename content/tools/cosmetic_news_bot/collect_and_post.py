@@ -108,7 +108,13 @@ def fetch_source(src: dict) -> list[dict]:
 
 
 def post_text(text: str) -> bool:
-    r = requests.post(WEBHOOK, json={"text": text}, timeout=10)
+    # bot user의 메시지는 기본 unfurl_links=false (Slack 정책).
+    # 뉴스 기사 OG 카드 렌더링을 위해 명시적으로 true 지정 필수.
+    r = requests.post(
+        WEBHOOK,
+        json={"text": text, "unfurl_links": True, "unfurl_media": True},
+        timeout=10,
+    )
     if r.status_code != 200:
         print(f"[WARN] slack post failed: {r.status_code} {r.text[:200]}", file=sys.stderr)
         return False
