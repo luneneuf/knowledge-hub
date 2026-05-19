@@ -29,11 +29,11 @@ jobs:
           fetch-depth: 1
 
       - name: Restore seen_links cache
-        id: cache
-        uses: actions/cache@v4
+        id: cache-restore
+        uses: actions/cache/restore@v4
         with:
           path: seen_links.json
-          # 매 실행마다 unique key로 save → post-step에서 항상 저장
+          # primary key는 unique (매번 cache miss → 항상 save 트리거)
           # restore-keys로 가장 최근 cache fallback
           key: cosmetic-news-bot-seen-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
@@ -45,7 +45,7 @@ jobs:
             echo '[]' > seen_links.json
             echo "cache miss — initialized empty state"
           else
-            echo "restored cache: $(wc -c < seen_links.json) bytes"
+            echo "restored cache: $(wc -c < seen_links.json) bytes, $(python3 -c "import json; print(len(json.load(open('seen_links.json'))))" 2>/dev/null || echo '?') entries"
           fi
 
       - uses: actions/setup-python@v5
@@ -60,3 +60,10 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python content/tools/cosmetic_news_bot/collect_and_post.py
+
+      - name: Save seen_links cache
+        if: always()  # 워크플로 fail에도 save 보장
+        uses: actions/cache/save@v4
+        with:
+          path: seen_links.json
+          key: cosmetic-news-bot-seen-${{ github.run_id }}-${{ github.run_attempt }}
