@@ -4,10 +4,10 @@
 
 ## 동작
 
-- **트리거**: GitHub Actions cron `*/15 0-8 * * 1-5` (UTC) = 평일 09:00-17:45 KST 매 15분
+- **트리거**: GitHub Actions cron `7,22,37,52 0-8 * * 1-5` (UTC) = 평일 09:07-17:52 KST 15분 간격 (비정시 — GitHub schedule skip 회피)
 - **출처**: 5개 RSS (`sources.json`) — 코스인코리아 / 코스모닝 / 뷰티누리 / Google News KR `화장품` / Google News EN `K-beauty`
 - **게시**: Slack `#cosmetic-news` (reperire 워크스페이스) — 링크 1줄만 (Slack OG unfurl이 카드 렌더)
-- **상태**: `bot/news-state` 브랜치의 `seen_links.json` (force-push 갱신)
+- **상태**: **GitHub Actions Cache** (`cosmetic-news-bot-seen-*` 키). 매 실행마다 새 unique key로 save, restore-keys prefix로 가장 최근 cache fallback. branch push 없음 — Vercel 등 외부 CI 트리거 0.
 
 ## 파일
 
@@ -30,11 +30,13 @@ content/tools/cosmetic_news_bot/
 
 ## 부트스트랩
 
-첫 실행(state 브랜치 없음 → `seen_links.json` 빈 배열) 시 모든 RSS 항목이 신규로 보여 폭주 위험. 자동 보호:
+첫 실행(Actions Cache 없음 → `seen_links.json` 빈 배열) 시 모든 RSS 항목이 신규로 보여 폭주 위험. 자동 보호:
 
 1. seen이 비어있으면 → 모든 발견 항목을 seen에 기록만, Slack 게시 0건
 2. 시작 알림 1건만 게시 (`:robot_face: cosmetic-news-bot 시작 — N개 …`)
 3. 다음 실행부터 신규 항목만 게시
+
+cache TTL은 7일이지만 매 15분마다 access되므로 사실상 무한 보존.
 
 ## Rate limit·노이즈 보호
 

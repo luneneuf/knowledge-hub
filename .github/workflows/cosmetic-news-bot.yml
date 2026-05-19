@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
@@ -28,14 +28,24 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Load state from bot/news-state branch (or init)
+      - name: Restore seen_links cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: seen_links.json
+          # 매 실행마다 unique key로 save → post-step에서 항상 저장
+          # restore-keys로 가장 최근 cache fallback
+          key: cosmetic-news-bot-seen-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            cosmetic-news-bot-seen-
+
+      - name: Init empty state if cache miss
         run: |
-          if git fetch origin bot/news-state --depth=1 2>/dev/null; then
-            git show origin/bot/news-state:seen_links.json > seen_links.json
-            echo "loaded $(wc -c < seen_links.json) bytes from state branch"
-          else
+          if [ ! -f seen_links.json ]; then
             echo '[]' > seen_links.json
-            echo "bot/news-state branch not found — initialized empty state"
+            echo "cache miss — initialized empty state"
+          else
+            echo "restored cache: $(wc -c < seen_links.json) bytes"
           fi
 
       - uses: actions/setup-python@v5
@@ -50,19 +60,3 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python content/tools/cosmetic_news_bot/collect_and_post.py
-
-      - name: Push updated state to bot/news-state
-        run: |
-          set -euo pipefail
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          tmp=$(mktemp -d)
-          cp seen_links.json "$tmp/"
-          cd "$tmp"
-          git init -q -b state
-          git add seen_links.json
-          git commit -q -m "state: $(date -u +%FT%TZ) [skip ci]"
-          git push -f \
-            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" \
-            state:refs/heads/bot/news-state
-          echo "state branch updated: $(wc -c < seen_links.json) bytes"
