@@ -160,6 +160,7 @@ publish: true
 | [[한국콜마_vs_코스맥스_ODM_비교]] | comparison | 한국콜마 vs 코스맥스 ODM 비교 |
 | [[K뷰티_일본시장]] | concept | 버라이어티샵 구조, 슬롯 배분, 도매 구조 |
 | [[Sell-in_Sell-out]] | concept | 셀-인(브랜드→유통사)과 셀-아웃(유통사→소비자) 구분, B2B 매출표 해석, channel stuffing 위험, 채널별 데이터 가시성 |
+| [[GWP]] | concept | Gift With Purchase — 할인 대신 증정품으로 브랜드 가치 보호, 채널별 비용 구조, LAKA 노 세일 전략의 핵심 대체재 |
 | [[SCM_용어집]] | concept | LAKA 사내 SCM 약칭·일본어 차용어 모음 — HDL·착인·PT·국문/일문/영문·메가포·메가와리·트랙스·B/C등급 등 |
 | [[ODM]] | concept | 제조업자개발생산 정의·OEM 비교·K-뷰티 역할 |
 | [[성과관리_시스템]] | concept | MBO/OKR/BSC 비교, HR SaaS |
