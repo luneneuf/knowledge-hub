@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>품질팀 업무 프로세스 도식 (2026-05)</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #d8d4cc;
+    --accent: #2b5797;
+    --warn: #c75300;
+    --ok: #2a7d3f;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 24px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  header {
+    border-bottom: 2px solid var(--fg);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  h1 { margin: 0 0 8px; font-size: 28px; font-weight: 700; }
+  .meta { color: var(--muted); font-size: 13px; }
+  .meta span { margin-right: 16px; }
+  h2 {
+    margin: 48px 0 16px;
+    font-size: 22px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  h3 { margin: 28px 0 10px; font-size: 17px; color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 12px 0 20px;
+    background: var(--card);
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f0ece2; font-weight: 600; }
+  tr:nth-child(even) td { background: #fbfaf6; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e6e1d4;
+    color: #4a4434;
+  }
+  .badge.warn { background: #fde4d3; color: var(--warn); }
+  .badge.ok { background: #d6ead8; color: var(--ok); }
+  .badge.muted { background: #e8e5dd; color: var(--muted); }
+  .channel {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    background: #ebe8df;
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .diagram {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 24px;
+    margin: 16px 0 24px;
+    overflow-x: auto;
+  }
+  .case-note {
+    background: #f4f0e3;
+    border-left: 3px solid var(--warn);
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .case-note strong { color: var(--warn); }
+  .case-note p { margin: 4px 0; }
+  ul { margin: 8px 0 12px 20px; padding: 0; }
+  ul li { margin-bottom: 4px; }
+  .legend {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin: 16px 0 32px;
+    font-size: 14px;
+  }
+  .legend strong { color: var(--accent); }
+  .footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+  }
+  a { color: var(--accent); }
+</style>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "neutral",
+    themeVariables: {
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif',
+      fontSize: "14px"
+    },
+    sequence: {
+      mirrorActors: false,
+      bottomMarginAdj: 10,
+      messageMargin: 36,
+      noteFontWeight: "500"
+    }
+  });
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>품질팀 업무 프로세스 도식</h1>
+  <div class="meta">
+    <span>작성 2026-05-20</span>
+    <span>채널 규칙 v2 (5/22 시행) 반영</span>
+    <span>근거: 천 본부장 5/20 받은 4건 케이스</span>
+  </div>
+</header>
+
+<section>
+  <h2>1. 워크플로 카탈로그</h2>
+  <p>5/20 본부장 일괄 포워딩 4건 메일에서 식별된 4종 업무.
+    채널 매핑은 <strong>v2 (5/22)</strong> 기준 — <span class="channel">#qa-제조업체-audit</span>은 v2에서 개설 안 함.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:40px">#</th>
+        <th>워크플로</th>
+        <th>트리거</th>
+        <th>외부 관여</th>
+        <th>매핑 채널 (v2)</th>
+        <th>R&amp;R</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>A</strong></td>
+        <td>ODM 정기/신규 Audit</td>
+        <td>품질팀 자체 (사이클)</td>
+        <td>제조사 직접</td>
+        <td><span class="badge warn">채널 미개설</span> 공용폴더 운영 — 1주 회고 시 재검토</td>
+        <td>#13</td>
+      </tr>
+      <tr>
+        <td><strong>B</strong></td>
+        <td>광고문안 (워싱본) 검토</td>
+        <td>BM팀 → 품질팀</td>
+        <td>없음 (내부)</td>
+        <td><span class="channel">#qa-신제품-출시검증</span></td>
+        <td>#15</td>
+      </tr>
+      <tr>
+        <td><strong>C</strong></td>
+        <td>표시문안 (단상자) 검수</td>
+        <td>디자인팀 → 품질팀</td>
+        <td>없음 (내부)</td>
+        <td><span class="channel">#qa-신제품-출시검증</span></td>
+        <td>#4</td>
+      </tr>
+      <tr>
+        <td><strong>D</strong></td>
+        <td>부자재 게런티 / 부적합</td>
+        <td>위탁제조·공급사 (불량 발생)</td>
+        <td>한국콜마 + 부자재 공급사</td>
+        <td><span class="channel">#qa-클레임-품질이슈</span></td>
+        <td>#11</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="legend">
+    <strong>공통 사이클</strong>: 트리거 → 헤드 메시지 → 스레드 업데이트 → 클로즈<br>
+    <strong>본부장 옵저버</strong>: 천승범은 4채널 모두 멤버. 별도 메일 포워딩 불요.<br>
+    <strong>긴급 시그널</strong>: 라인 중단·회수 가능성·식약처 위해정보 = <span class="badge warn">슬랙 멘션 ❌ → 전화·대면 우선</span> (v2 변경)
+  </div>
+</section>
+
+<!-- =========================== A =========================== -->
+<section>
+  <h2>워크플로 A — ODM 제조사 Audit</h2>
+  <p>매핑 채널: <span class="badge warn">채널 미개설 (v2)</span> · Owner: 차승호 · 사이클 약 6~8주</p>
+
+  <h3>단계 요약</h3>
+  <table>
+    <thead><tr><th>단계</th><th>일정(상대)</th><th>담당</th><th>산출물</th></tr></thead>
+    <tbody>
+      <tr><td>1. 사전 자체평가 요청</td><td>T-2주</td><td>차승호</td><td>체크시트, 정제수 도면·SOP LIST 요청 공문</td></tr>
+      <tr><td>2. 현장 점검 (5대 영역)</td><td>D-day (반일)</td><td>차승호·김건 + 조민경 (구매)</td><td>현장 점검 노트</td></tr>
+      <tr><td>3. 등급 판정 + 개선지시서</td><td>T+2주</td><td>차승호</td><td>등급(A~D), 개선지시서 (.pptx + .doc)</td></tr>
+      <tr><td>4. 개선요청 공문 발송</td><td>T+2주</td><td>차승호</td><td>회신기한 4주 명시 공문</td></tr>
+      <tr><td>5. 개선결과서 회신 회수</td><td>T+6주</td><td>차승호</td><td>제조사 개선결과서</td></tr>
+      <tr><td>6. 클로즈</td><td>T+6~8주</td><td>차승호</td><td>공유폴더 보관, 다음 사이클 등록</td></tr>
+    </tbody>
+  </table>
+
+  <h3>시퀀스</h3>
+  <div class="diagram">
+<pre class="mermaid">
+sequenceDiagram
+    autonumber
+    participant QA as LAKA 품질팀<br/>(차승호·김건)
+    participant PUR as LAKA 구매팀<br/>(조민경)
+    participant ODM as ODM 제조사
+    participant FOLDER as 공용폴더
+    participant HEAD as 본부장 (옵저버)
+
+    Note over QA,ODM: T-2주 — 사전 자체평가
+    QA->>ODM: 체크시트 + 요청서류 [이메일]
+    ODM->>QA: 자체평가서 회신 [이메일]
+    QA->>FOLDER: Audit 일정·실시자 등록
+
+    Note over QA,ODM: D-day — 현장 점검 (5대 영역)
+    PUR-->>ODM: 현장 동행 (구매팀)
+    QA->>ODM: 공장·생산·시험·협력업체·외주 점검
+    QA->>FOLDER: 점검 노트 업로드
+
+    Note over QA,ODM: T+2주 — 개선요청
+    QA->>QA: 등급 판정 + 개선지시서 작성
+    QA->>ODM: [공문] 등급·개선지시서 + 회신기한 4주
+    QA->>FOLDER: 개선지시서·등급 보관
+
+    alt 부적합 등급 (D 이하)
+        QA->>HEAD: 전화·대면 보고
+    end
+
+    Note over QA,ODM: T+6주 — 회신 회수
+    ODM->>QA: 개선결과서 [이메일]
+    QA->>FOLDER: 결과서 보관 + 클로즈
+</pre>
+  </div>
+
+  <div class="case-note">
+    <strong>케이스 검증 — 씨앤씨인터내셔널 (2026)</strong>
+    <p>· 2026-04-27: 사전 자체평가 요청 (정제수 도면, SOP LIST)</p>
+    <p>· 2026-04-30 10:00: 현장 점검 (차승호·김건·조민경) — 실제 제조소 화성코스메틱(주)</p>
+    <p>· 2026-05-15: A등급, 거래가능 판정 + 개선지시서 발송</p>
+    <p>· <strong>2026-05-29 (금) — 회신 마감</strong> ← 본부장 모니터링 포인트</p>
+  </div>
+</section>
+
+<!-- =========================== B =========================== -->
+<section>
+  <h2>워크플로 B — 광고문안 (워싱본) 검토</h2>
+  <p>매핑 채널: <span class="channel">#qa-신제품-출시검증</span> · Owner: 차승호 · 김건 책임 · 1차 응답 SLA 24h</p>
+
+  <h3>단계 요약</h3>
+  <table>
+    <thead><tr><th>단계</th><th>담당</th><th>산출물</th></tr></thead>
+    <tbody>
+      <tr><td>1. 워싱본 검토 요청</td><td>BM팀</td><td>워싱 1차안 PPT</td></tr>
+      <tr><td>2. 식약처 표시광고 가이드 대조</td><td>김건</td><td>수정요청 항목 리스트</td></tr>
+      <tr><td>3. 수정요청 회신</td><td>김건</td><td>반영 요청 PPT</td></tr>
+      <tr><td>4. 수정·재검토 1~2 라운드</td><td>BM ↔ 김건</td><td>수정본 PPT</td></tr>
+      <tr><td>5. 최종 검토 OK</td><td>김건</td><td>검토완료 통보</td></tr>
+    </tbody>
+  </table>
+
+  <h3>시퀀스</h3>
+  <div class="diagram">
+<pre class="mermaid">
+sequenceDiagram
+    autonumber
+    participant BM as BM팀 (최민녕)
+    participant QA as 품질팀 (김건)
+    participant SLK as #qa-신제품-출시검증
+    participant HEAD as 본부장 (옵저버)
+
+    BM->>QA: 워싱본 PPT 검토 요청 [이메일 + d6200]
+    BM->>SLK: 헤드: [광고문안] 제품·요청자·회신희망일
+
+    loop 1~2 라운드
+        QA->>QA: 식약처 표시광고 가이드 대조
+        QA->>BM: 수정요청 회신 [이메일]
+        QA->>SLK: 스레드: 수정 N건 회신
+        BM->>QA: 수정본 + 추가 확인사항 [이메일]
+    end
+
+    QA->>BM: 최종 검토 OK [이메일]
+    QA->>SLK: 클로즈: [검토완료] 일자
+    Note right of SLK: 본부장 채널에서 자동 가시화
+</pre>
+  </div>
+
+  <div class="case-note">
+    <strong>케이스 검증 — 매직립픽서 상세페이지 (2026)</strong>
+    <p>· 2026-05-14 14:33: BM 최민녕 → 김건 검토 요청</p>
+    <p>· 2026-05-18 17:21: 김건 → 수정요청 회신</p>
+    <p>· 2026-05-19 14:45: BM → 수정본 + 추가 확인</p>
+    <p>· 2026-05-19 16:42: 김건 → 최종 OK</p>
+    <p>리드타임 5일 · 라운드 2회</p>
+  </div>
+</section>
+
+<!-- =========================== C =========================== -->
+<section>
+  <h2>워크플로 C — 표시문안 (단상자) 검수</h2>
+  <p>매핑 채널: <span class="channel">#qa-신제품-출시검증</span> · Owner: 차승호 · 김건 책임</p>
+
+  <h3>단계 요약</h3>
+  <table>
+    <thead><tr><th>단계</th><th>담당</th><th>산출물</th></tr></thead>
+    <tbody>
+      <tr><td>1. 단상자 문안 검수 요청</td><td>디자인팀</td><td>한:영문 병기 PDF</td></tr>
+      <tr><td>2. 화장품법 표시기재사항 대조</td><td>김건</td><td>수정요청 항목</td></tr>
+      <tr><td>3. 수정요청 회신</td><td>김건</td><td>정정 통보 (제조업자·중량·바코드 등)</td></tr>
+      <tr><td>4. 수정본 재검수</td><td>디자인 → 김건</td><td>수정 PDF</td></tr>
+      <tr><td>5. 검수 완료 = 인쇄 발주 GO</td><td>김건</td><td>검수완료 통보</td></tr>
+    </tbody>
+  </table>
+
+  <h3>시퀀스</h3>
+  <div class="diagram">
+<pre class="mermaid">
+sequenceDiagram
+    autonumber
+    participant DS as 디자인팀 (박다빈)
+    participant QA as 품질팀 (김건)
+    participant BM as BM팀 (참조)
+    participant SLK as #qa-신제품-출시검증
+
+    DS->>QA: 단상자 검수 요청 (BM 참조) [이메일]
+    DS->>SLK: 헤드: [표시문안] 제품·사양·회신희망일
+
+    QA->>QA: 화장품법 표시기재사항 대조
+    QA->>DS: 수정요청 회신 (BM·SCM 품질팀 참조)
+    QA->>SLK: 스레드: 수정 N건 항목 리스트
+
+    DS->>QA: 수정본 재검수 요청
+    QA->>DS: 검수 완료 OK
+    QA->>SLK: 클로즈 + 인쇄 발주 GO 시그널
+</pre>
+  </div>
+
+  <div class="case-note">
+    <strong>케이스 검증 — 매직립픽서 단상자 (2026)</strong>
+    <p>· 2026-04-24 14:02: 디자인 박다빈 → 검수 요청 (PDF 52.62MB 대용량)</p>
+    <p>· 2026-04-24 17:00: 김건 → 3건 수정요청</p>
+    <p>&nbsp;&nbsp;1) 제조업자 → 한국콜마(주) 부천공장</p>
+    <p>&nbsp;&nbsp;2) 중량 표기 오타 0.03 → <strong>0.13 oz</strong> (10배 차이)</p>
+    <p>&nbsp;&nbsp;3) 바코드 추가 8809611869608</p>
+    <p>리드타임 당일 (3시간) · 라운드 1회</p>
+  </div>
+</section>
+
+<!-- =========================== D =========================== -->
+<section>
+  <h2>워크플로 D — 부자재 게런티 / 부적합</h2>
+  <p>매핑 채널: <span class="channel">#qa-클레임-품질이슈</span> · Owner: 차승호 · 3사 협업 (LAKA·한국콜마·부자재 공급사)</p>
+
+  <h3>단계 요약</h3>
+  <table>
+    <thead><tr><th>단계</th><th>담당</th><th>산출물</th></tr></thead>
+    <tbody>
+      <tr><td>1. 불량 발견·라인 격리</td><td>한국콜마 (위탁제조)</td><td>불량 보고서, 샘플 사진</td></tr>
+      <tr><td>2. LAKA 통보</td><td>한국콜마 → 차승호</td><td>불량 보고 이메일</td></tr>
+      <tr><td>3. 게런티 요청 공문</td><td>한국콜마 → 부자재 공급사</td><td>공문 (자재번호·불량양상·책임범위)</td></tr>
+      <tr><td>4. 재고 수량 확정 통보</td><td>한국콜마</td><td>보유·현장 수량</td></tr>
+      <tr><td>5. 게런티 회신 공문</td><td>공급사 → LAKA·한국콜마</td><td>품질보증 공문 (직인)</td></tr>
+      <tr><td>6. 시장 클레임 대응 (조건부)</td><td>차승호</td><td>공문 근거 책임 추궁</td></tr>
+    </tbody>
+  </table>
+
+  <h3>시퀀스</h3>
+  <div class="diagram">
+<pre class="mermaid">
+sequenceDiagram
+    autonumber
+    participant KOL as 한국콜마 (위탁제조)
+    participant SUP as 부자재 공급사
+    participant QA as LAKA 품질팀 (차승호)
+    participant SLK as #qa-클레임-품질이슈
+    participant HEAD as 본부장
+
+    Note over KOL: 라인 가동 중 불량 발견
+    KOL->>KOL: 자재 격리·라인 중단·샘플 확보
+    KOL->>QA: 불량 보고 + 게런티 의사 [이메일]
+    QA->>HEAD: 전화·대면 (라인 중단 사안)
+    QA->>SLK: 헤드: [자재 부적합] 자재명·번호·재고·라인 상태
+
+    KOL->>SUP: [공문] 게런티 요청 (책임범위 명시)
+    KOL->>QA: 공문 사본 + 재고 통보
+    QA->>SLK: 스레드: 공문 발송 / 회신 대기 (T+N일)
+
+    SUP->>KOL: [공문] 품질보증 회신 (직인)
+    SUP->>QA: 공문 사본 송부
+    QA->>SLK: 스레드: 게런티 공문 회수 — 책임범위 N만개
+    QA->>HEAD: 전화·대면 (서면 확보 완료 보고)
+
+    alt 시장 클레임 발생 시
+        Note over QA,SUP: 공문 근거로 책임 추궁
+    end
+</pre>
+  </div>
+
+  <div class="case-note">
+    <strong>케이스 검증 — LAK-PGTT 용기 게런티 (2026)</strong>
+    <p>자재번호 51131543 · 자재명 LAK-PGTT 용기(코코스팩)공용 · 넥부 결손·융착 불량</p>
+    <p>· 2026-05-07 11:50: 한국콜마 문해진 → 코코스팩 함상균 게런티 요청 공문</p>
+    <p>· 2026-05-07 13:29: 한국콜마 재고 보유 142,103 EA / 현장 39,010 EA</p>
+    <p>· 2026-05-18 17:10: 코코스팩 → 라카·한국콜마 품질보증 공문 (완제품 3만개, 직인 누락 정정 재발송)</p>
+    <p>총 리드타임 11일 · LAKA는 발신 주체가 아닌 결과 회수자</p>
+  </div>
+</section>
+
+<!-- =========================== 종합 =========================== -->
+<section>
+  <h2>2. 채널 ↔ 워크플로 매핑 (v2)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>채널</th>
+        <th>담는 워크플로</th>
+        <th>Owner</th>
+        <th>긴급 시그널</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="channel">#qa-팀내</span> <span class="badge muted">Private</span></td>
+        <td>워크플로 없음 — 메타 조율, 인사·일정·비용</td>
+        <td>차승호</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="channel">#qa-신제품-출시검증</span></td>
+        <td>B (광고문안) · C (표시문안) · 신제품 QC · CT</td>
+        <td>차승호</td>
+        <td>가이드 위반 의심·QC 부적합 시 채널 멘션</td>
+      </tr>
+      <tr>
+        <td><span class="channel">#qa-클레임-품질이슈</span></td>
+        <td>시장 클레임 · D (부자재 게런티) · 위해정보·회수</td>
+        <td>차승호</td>
+        <td><span class="badge warn">전화·대면 우선</span> (멘션 ❌)</td>
+      </tr>
+      <tr>
+        <td><span class="channel">#qa-인허가-법규</span></td>
+        <td>식약처 정기보고 · 책판 의무 · 개정법규 · MoCRA/UKCR</td>
+        <td>김건</td>
+        <td>개정법규 자사 적용 시 채널 멘션</td>
+      </tr>
+      <tr>
+        <td><span class="badge warn">미개설</span> (구 #qa-제조업체-audit)</td>
+        <td>A (ODM Audit) — 공용폴더 운영</td>
+        <td>차승호 (정) · 김건 (부)</td>
+        <td>부적합 등급·회신 지연 시 전화·대면</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<div class="footer">
+  <p>관련 위키:
+    <a href="품질팀_업무프로세스_2026-05.md">품질팀_업무프로세스_2026-05.md</a> ·
+    <a href="품질팀_슬랙채널_규칙_2026-05.md">품질팀_슬랙채널_규칙_2026-05.md</a> ·
+    <a href="../QA팀/품질팀_슬랙운영_초안_2026-05.md">품질팀_슬랙운영_초안_2026-05.md</a> ·
+    <a href="LAKA_조직도_2026-05.md">LAKA_조직도_2026-05.md</a>
+  </p>
+  <p>출처: 2026-05-20 천 본부장 일괄 포워딩 4건 메일 (씨앤씨 Audit · 매직립픽서 광고문안·단상자 · LAK-PGTT 게런티)</p>
+</div>
+
+</div>
+</body>
+</html>
