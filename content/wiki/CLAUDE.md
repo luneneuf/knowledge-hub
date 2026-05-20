@@ -61,15 +61,26 @@ publish: true | false   # true = 웹에 공개, false(기본값) = 로컬 전용
 
 | 타입 | 저장 경로 |
 |------|---------|
-| entity | `wiki/industry/[산업폴더]/entities/[이름].md` |
-| concept | `wiki/industry/[산업폴더]/concepts/[이름].md` |
-| comparison | `wiki/industry/[산업폴더]/comparisons/[이름].md` |
+| industry — 브랜드 | `wiki/industry/[산업폴더]/brands/[이름].md` |
+| industry — 채널/리테일러 | `wiki/industry/[산업폴더]/channels/[이름].md` |
+| industry — B2B 거래처 (distributor) | `wiki/industry/[산업폴더]/distributors/[이름].md` |
+| industry — ODM/제조사 | `wiki/industry/[산업폴더]/odm/[이름].md` |
+| industry — 인물 | `wiki/industry/[산업폴더]/people/[이름].md` |
+| industry — 협회·규제기관 | `wiki/industry/[산업폴더]/associations/[이름].md` |
+| industry — 모회사·법인 | `wiki/industry/[산업폴더]/holdings/[이름].md` |
+| industry — 본사 | `wiki/industry/[산업폴더]/[산업폴더].md` (루트) |
+| industry — 개념 | `wiki/industry/[산업폴더]/concepts/[이름].md` |
+| industry — 비교 | `wiki/industry/[산업폴더]/comparisons/[이름].md` |
+| industry — SCM 외부 사례 | `wiki/industry/[산업폴더]/scm/cases/[이름].md` |
+| industry — SCM SaaS 벤더 | `wiki/industry/[산업폴더]/scm/vendors/[이름].md` |
 | history — 인물 | `wiki/history/people/[이름].md` |
 | history — 사건 | `wiki/history/events/[이름].md` |
 | history — 장소·번 | `wiki/history/places/[이름].md` |
 | history — 개념·유물 | `wiki/history/themes/[이름].md` |
 | history — 제도·시스템 | `wiki/history/concepts/[이름].md` |
 | work | `wiki/work/[프로젝트폴더]/[이름].md` |
+
+> `entities/` 폴더는 2026-05-18 폐지. 기존 entity는 위 8개 카테고리(brands·channels·distributors·odm·people·associations·holdings·본사)로 분리.
 
 파일명 규칙:
 - `wiki_entity_`, `wiki_concept_` 등 **접두사 없이** 이름만 사용. (예: `시코르.md`, `K-뷰티_글로벌_리테일_지형.md`)
@@ -105,7 +116,7 @@ publish: true | false   # true = 웹에 공개, false(기본값) = 로컬 전용
 2. 내가 "이거 인제스트해줘" 라고 지시
 3. 네가 수행:
    - 소스 읽기 + 핵심 내용 파악
-   - **기존 페이지 탐색**: 해당 `industry/[산업폴더]/` 하위 폴더(entities/, concepts/, comparisons/ 등)를 직접 ls로 확인. index.md만 보지 말고 실제 파일 목록을 확인한다.
+   - **기존 페이지 탐색**: 해당 `industry/[산업폴더]/` 하위 폴더(brands/, channels/, distributors/, odm/, people/, associations/, holdings/, concepts/, comparisons/, scm/ 등)를 직접 ls로 확인. index.md만 보지 말고 실제 파일 목록을 확인한다.
    - **기존 페이지 업데이트 우선**: 관련 페이지가 이미 있으면 새 정보를 통합한다. 새 페이지를 만드는 것이 아니라 기존 페이지를 보강한다.
      - 새로운 사실 추가
      - 기존 서술과 충돌하는 내용 발견 시 명시적으로 표기

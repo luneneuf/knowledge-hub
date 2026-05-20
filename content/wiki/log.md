@@ -3,6 +3,113 @@ title: "Log"
 updated: 2026-05-18
 ---
 
+## [2026-05-18] deep-research T2+T3+T4 | 해외 distributor 잔여 42곳 라이트 프로파일 통합
+
+**작업**: T1 7곳에 이어 T2 5곳·T3 10곳·T4 28곳 총 42곳 병렬 deep-research 후 stub 풀 통합. T1+T4 합계 **해외 B2B 거래처 49곳 전체 1차 정리 완료**.
+
+### T2 (신규 빅라인·글로벌 플랫폼, 5곳)
+- ✅ **W Cosmetics** (호주/NZ) — ANZ 멀티브랜드 체인, ABN 11649306383, **"네덜란드" 라벨은 NZ 오기 가설**
+- ✅ **예스아시아닷컴 코리아** — YesAsia Holdings(2209.HK) 한국 자회사. 본사 +45% 성장 중 → **정산 라인 이동** 가설 ('25 329→'26 37)
+- ✅ **실리콘투** — 기존 SCM 자료 보존 + LAKA 거래 매출 추이 추가. **'26 0의 결정적 단서: 2026.02.20 LAKA Sephora US 직진출** (실리콘투 우회)
+- ✅ **크레이버 (UMMA)** — 구다이글로벌이 2024 85% 인수(2,456억) → **LAKA와 동일 그룹 계열사**, 내부거래 재분류
+- ⚠️ **Far East Group** (draft 유지) — 1순위 후보 Eternal Beauty Holdings(HKEX 6883, 2025 상장), 영업팀 확정 필요
+
+### T3 (중간 규모, 10곳)
+- ✅ **JSW·AMID·Sociolla 패턴 재확인**: '25→'26 변동은 셀-인 사이클
+- ✅ **이공이공 (EOEO)** — 한국 서울 본사 북미 K뷰티 액셀러레이터·판권사. '26 0은 LAKA Sephora 직진출에 따른 자연 종료
+- ✅ **SUKOSHI Mart** — 캐나다 토론토 본사, **북미 16개 매장 → '26말 미국 40매장 + USD 100M 목표**. T3 중 유일 안정 성장(+7%). **재컨택 최우선**
+- ✅ **ORIENTRADE** = Orien Trade Group (유럽 30개국, FY25 €150M, FY26 €300M 목표). LAKA 색조 비채택
+- ✅ **NOTINO** — 체코 본사 유럽 1위 EC (€1.579B). **공급 라우팅 변경** (직거래 코드 이전) 가설
+- ✅ **MissA** — Shop Miss A (Dallas $1 매장), 가격 미스매치 자연 종료
+- ✅ **블루오션 파트너스** — Blue Ocean Global Partners (HCMC 2022), 동남아 유일 작동 디스트리뷰터
+- ✅ **스칼라르티스** = Scalartis 한국 법인, 82box.ru CIS 정기박스. 시즌 미채택 가설
+- ✅ **올그레이스** — 김강일(前 조선미녀) 창업, **2025.07 폰드그룹 190억 인수**. 자체 SELEVE 푸시 + LAKA 거래 단절 시점 겹침
+- ⚠️ **글로우데이즈·After J** (draft 유지) — 정체 확인 실패
+
+### T4·T5 (소규모, 28곳)
+**유럽 8곳**: 
+- ⭐ **Miin** (priority: medium) — 유럽 최대 K-Beauty 디스트리뷰터, 50+ 매장 5개국, T4 중 유일 '26 안정 리오더
+- ⭐ **One_Master_Distribution** (priority: medium) — 루마니아 순수 B2B 디스트리뷰터, 컨트랙트 결렬 가설
+- ⭐ **DERMASPACE** (priority: medium) — 덴마크 최대 K-Beauty
+- 그 외 Kiyo·글램터치·Beauty&Seoul·Little_Wonderland — 단발 트라이얼 패턴
+- ⚠️ **KOREAN-SKINCARE_NL** — draft 유지
+
+**미·캐나다 4곳**:
+- ⭐ **Hansung_Beauty_Group** (priority: medium) — Irvine CA, '25 1,700억, Ulta/Costco/Target 공급. **2026.02 Goodai $70M 인수** → 그룹 수직계열화
+- ✅ **H_MART** — hmart.com/laka 활성, Hansung USA 경유 이관 가설
+- ⚠️ **Eve_Beauty** — draft 유지 (Eve Beauty Source NY vs EVE USA LLC DC 후보)
+- ✅ **We_Do_Beauty** — Vancouver 단일 스튜디오
+
+**중남미 5곳**: Maissi(파나마 4매장 LAKA 정식)·KB4U(파나마 D2C)·케이스킨케어(코스타리카 한인) ✅ / ASKUKY_MED·Zenith ⚠️ draft
+
+**중동·CIS 4곳**: K-Secret(UAE GCC 최대 K-뷰티 10매장)·부자컴퍼니(두바이 KOTRA)·Vestrade(몰디브 FMCG) ✅ / MNG_LLC ⚠️ draft
+
+**아시아·호주·글로벌 7곳**:
+- ⭐ **BGL_MANAGEMENT** (priority: medium) — **= BONIIK Beauty 트레이딩 네임** (NSW Sydney ABN 11166733482). 호주 최대 K-뷰티 리테일러, LAKA 컬렉션 운영 중. **매출표 정합성 정정 필요**
+- ⭐ **Stylevana_GLAMSTAR** (priority: medium) — Stylevana 운영 법인 (Mongkok 2019)
+- ⭐ **바른손_JOLSE** (priority: medium) — 코스닥 ㈜바른손이 2020 JOLSE 흡수합병
+- ⭐ **N7_Globalgroup** (priority: medium) — 한국 하남 본사 SEA MT 디스트리뷰터
+- ✅ Livingstone(말레이시아 약국)
+- ⚠️ SEOULBEAUTY (AMID 일원화 가설)·CONNECT_SEOUL — draft 유지
+
+### 큰 그림 인사이트
+
+**1. '25→'26 매출 변동의 LAKA 구조적 동력 7가지** (49곳 패턴 종합):
+   1. LAKA 직진출 우회 (Sephora US 직계약)
+   2. 그룹(구다이) 수직계열화 (크레이버 인수 + Hansung 인수 + 한성USA + LAKA Sephora)
+   3. 정산 라인 이동 (예스아시아, NOTINO)
+   4. 셀-인 → sell-through 사이클 (JSW·AMID·Sociolla)
+   5. 채널 미스매치 자연 종료 (MissA·We_Do)
+   6. 시즌·박람회 1회성 (스칼라르티스·부자컴퍼니)
+   7. AMID 일원화 자연 소멸 (SEOULBEAUTY)
+
+**2. 매출표 라벨 정합성 이슈 11건** — BGL=BONIIK·W Cosmetics 네덜란드/NZ + 정체 확인 실패 9곳
+
+**3. 재컨택 우선순위**: Miin·One_MD·DERMASPACE·SUKOSHI·올그레이스 (priority: medium 부여)
+
+### 부수 업데이트
+- `comparisons/LAKA_B2B_해외거래처_2025_2026.md` — 주요 관찰 6항 → 6 섹션(A~F)으로 확장. 새 발견·라벨 이슈·재컨택 우선순위 등재
+- 리서치 세션 3개: `RESEARCH/LAKA_T2_distributors_20260518/`, `RESEARCH/LAKA_T3_distributors_20260518/`, `RESEARCH/LAKA_T4_distributors_20260518/`
+- 49개 stub 중 **38곳 active 전환** (T1 5 + T2 4 + T3 7 + T4 22), **11곳 draft 유지** (정체 확인 실패)
+- priority: medium 신규 부여 8곳 (Miin·One_MD·DERMASPACE·Hansung·Stylevana_GLAMSTAR·BGL_MANAGEMENT·바른손_JOLSE·N7_Globalgroup)
+
+## [2026-05-18] deep-research T1 | 해외 distributor 7곳 라이트 프로파일 통합
+
+**작업**: T1 우선순위 7곳 (JSW·AMID·TNC·크레도·엠투씨·Sociolla·Skincupid) 병렬 deep-research 후 각 stub에 풀 통합. 회사기본 + 채널커버리지 + K-뷰티 포트폴리오 + 최근 동향 + LAKA 시사점 5섹션 + 출처.
+
+- **검증 완료 5곳** (status: draft → active):
+  - **JSW Asset** (태국) — DBD 0525557000246, 2014 설립, 자기자본 66.5M THB. **2025-11 SET 상장사 Moong Pattana(MOONG) 26% 인수** + LAKA 합동 PR. Boots·Watsons·EVEANDBOY·Beautrium·Central·The Mall 풀커버. 포트폴리오: LAKA·Anua·Round Lab·Dear Klairs·Dinto·BOH·Pestlo
+  - **AMID** (대만) — 정식명 **覓間生活有限公司** (통일편호 50868028, 2018-08, 자본금 NT$490만, 대표 陳思穎). **LAKA 대만 독점 디스트리뷰터**, 2025-11 신광미츠코시 LAKA 첫 공식 팝업 'Every Shade, Every Story' ARKis Kai 앰배서더. Cosmed·松本清·Beauty STAGE·UNIKCY·Payless(2026-03 신규). Watsons·POYA 미커버 — 확장 레버
+  - **Sociolla** (인니) — PT Social Bella Indonesia, 2015 창업, 누적 투자 ~$226M (2022 Series E $60M Temasek·L Catterton). 인니 150개 매장 60+ 도시 + 베트남 13매장 + B2B 60,000도어 + SOCO 멤버 800만+. K-BeautyLand 매장존. LAKA 800M = 셀-인 PO 가설
+  - **엠투씨** (M2C) — **부산 본사 한국 회사** (미국 X). 2014 SNT → 2022 M2C. 자체 브랜드 없는 K-뷰티 100여 개 수출 전문, 미·EU·캐나다 법인 + LA/Miami/Toronto/Vancouver 4창고. 이천만불 수출탑(2024)
+  - **Skincupid** (영국) — **법인 분리 확정** (Companies House 검증): Skin Cupid Ltd(13372541, 2021-05, DTC) + Cupid Trade Ltd(15478791, 2024-02, SIC 46900 도매). 동일인 Yuan Minjing(Melody) 단독 이사. **LAKA Boots 91매장 백엔드 공급 = Cupid Trade Ltd 경유 wholesale 가설**. 2026 John Lewis 20개 K-뷰티 입점 예정 → LAKA 추가 채널 협상 카드
+- **검증 실패 2곳** (status: draft 유지, "공개 자료 확인 실패" 메모 추가):
+  - **TNC/웨이포인트 글로벌** — NICE·bizno·KITA·LinkedIn·ABN 어디서도 0건. **"56 통상"이 실제 상호인지 LAKA 내부 거래처 코드(#56 + 통상)인지 확인 필요**. 호주 분류 재검토 (한국 수출도매상이 호주 시장 향 출하 가능성). 호주 공식 디스트리뷰터 BONIIK·W Cosmetics와 중복 채널 점검 필요
+  - **크레도** — "Credo" 명 유럽 K-뷰티 디스트리뷰터 식별 0건. Credo Beauty(미국) 가능성도 국가 태그 "유럽"과 모순. 매출표 오기재 또는 단발 발주처 가설. LAKA 영업팀 거래처 마스터 확인 필요
+- **공통 발견**: 5개 검증 거래처 중 3개(JSW·AMID·Sociolla)에서 **'25→'26 급감/급증이 거래처 부실/이벤트가 아닌 초도 셀-인 → sell-through 정상화 사이클**로 수렴. 거래 안정성 가설 우세
+- **부수 업데이트**:
+  - `comparisons/LAKA_B2B_해외거래처_2025_2026.md` — 주요 관찰 6항 → 9항으로 확장, T1 검증 결과 반영
+  - 리서치 쿼리: `RESEARCH/queries/LAKA_T1_distributors_20260518.json`
+  - 리서치 세션: `RESEARCH/LAKA_T1_distributors_20260518/` (drafts 7개 + state.json)
+
+## [2026-05-18] refactor | LAKA entities/ 폴더 폐지 → 카테고리별 8개 폴더로 평탄화
+
+**작업**: `entities/`가 잡탕 폴더로 변질 → 카테고리별 분리. channel을 별도 폴더로 둘 이유가 없어 entities 자체 폐지가 맞다는 판단.
+
+- **이동 122개 파일**:
+  - `brands/` 28 (AMUSE·Rhode·Rare·롬앤·페리페라·티르티르·힌스·톤28 등)
+  - `channels/` 10 (세포라·부츠·울타·올리브영·시코르·Qoo10·코스메키친·NEWoMan·PARCO·사사)
+  - `distributors/` 50 (49개 stub + 실리콘투)
+  - `odm/` 2 (코스맥스·한국콜마)
+  - `people/` 2 (이민미·이지철)
+  - `associations/` 1 (대한화장품협회)
+  - `holdings/` 3 (Kendo Brands·Mash Group·株式会社JT)
+  - `scm/cases/` 13 + `scm/vendors/` 12 (기존 entities/ 안의 SCM 사례·SaaS 벤더 분리)
+  - `LAKA.md` → LAKA/ 루트로 이동
+- **병합 2건**: 세포라.md + 세포라_운영구조.md → channels/세포라.md (단일 파일), 부츠.md + Boots_UK_운영구조.md → channels/부츠.md (단일 파일)
+- **CLAUDE.md 파일 저장 경로 규칙 갱신**: entities/ 행 1개 → industry 카테고리 8개 행으로 확장
+- **index.md 채널 섹션 갱신** — 10개 채널 모두 등재, 운영구조 페이지 통합 반영, 255p
+
 ## [2026-05-18] 보강 | Slack 미숙자 배려 — 아젠다 #2·송부 메시지 친절 톤 재설계 + 가이드 페이지
 
 **작업**: 사용자 피드백 "차승호·김건 두 분 모두 Slack 처음 사용" → 아젠다 #2와 송부 메시지의 부담 완화 + 1페이지 시작 가이드 신설.
@@ -393,6 +500,21 @@ updated: 2026-05-18
 - **2026-05-16 폴더 구조 리팩토링 커밋**: 기존 6개 페이지를 `립_제품_카테고리/` 하위로 이동 + index.md 메인 링크 경로 수정(uwo/moc·business/overview → wiki/history/moc·wiki/industry/LAKA/overview)
 - **공통 트렌드**: TikTok 주도 카테고리 부활 / K뷰티 글로벌 표준화 / 펩타이드 트리트먼트 시대 / 점막 누디 톤 한·일·미 공통
 - **공통 규제**: 🚨 **2026.7.31 EU 향료 알레르겐 80종 라벨링 발효** — 전 카테고리 leave-on 0.001% 초과 라벨 의무
+
+## [2026-05-16] update | 카카오·초콜릿 역사 — 신규 페이지 생성 및 크로스링크 추가
+
+**작업**: 초콜릿/카카오 트윗 소재 인수인계 반영 (wiki PM 인수인계 2026-05-16)
+
+- **신규 생성** `wiki/history/themes/카카오_초콜릿_역사.md`
+  - 핵심 서사: 목테수마 2세 황실 식탁(베르날 디아스 목격 기록) → 베라크루스 수출 관문 → 유럽 귀족 한 세기 독점 → 글로벌 일상 상품
+  - 베르날 디아스 《누에바 에스파냐 정복의 진실한 역사》 1차 기록 근거 명시
+  - "황제가 매일 50잔" 통속 서술 vs 원문(항아리 50개, 황제가 일부 마심) 팩트체크 포함
+  - 검증된 타임라인(1502~17세기 중엽), 스페인 독점 구조 설명
+  - [[교역품_쇼콜라틀]], [[항구_베라크루스]], [[교역품_바닐라]] 위키링크 연결
+- **업데이트** `wiki/history/themes/교역품_쇼콜라틀.md` — 관련 페이지에 `[[카카오_초콜릿_역사]]` 추가
+- **업데이트** `wiki/history/places/항구_베라크루스.md` — 관련 페이지에 `[[카카오_초콜릿_역사]]` 추가
+- **업데이트** `wiki/history/moc.md` — Pure History 섹션에 추가
+- **업데이트** `wiki/index.md` — 베라크루스·쇼콜라틀·바닐라·카카오_초콜릿_역사 4건 인덱스 등록, 총 183페이지
 
 ## [2026-05-16] ingest | 대항해시대 동남아시아에서 기독교는 왜 실패했는가
 

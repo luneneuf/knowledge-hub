@@ -10,7 +10,7 @@ publish: true
 ---
 
 # Index
-> 마지막 업데이트: 2026-05-18 | 총 257페이지
+> 마지막 업데이트: 2026-05-18 | 총 255페이지
 
 ## 역사 (history/)
 
@@ -66,6 +66,10 @@ publish: true
 | [[호로슈]] | concept | 오다 노부나가 직할 쿠로호로슈·아카호로슈. 사번·근위 기능. 후대 왜곡 분석 포함 |
 | [[푄_현상_가나자와]] | concept | 북알프스 넘어오는 건조 고온 바람. 가나자와 봄 대화재 반복의 핵심 자연 원인 |
 | [[동남아시아_기독교_실패]] | summary | 대항해시대 기독교 실패의 정치적 논리 — 왕권 신성화 제공 여부가 종교 확산의 결정적 변수 |
+| [[항구_베라크루스]] | entity | 신스페인 최대 대서양 무역항. 카카오·바닐라 유럽 수출 관문. 은 호송선단 집결지 |
+| [[교역품_쇼콜라틀]] | concept | 아즈텍 카카오 음료 쇼콜라틀. 게임 내 획득처·제작 레시피·역사 전파 경로 종합 |
+| [[교역품_바닐라]] | concept | 신대륙 원산 향신료 바닐라. 쇼콜라틀 재료, 베라크루스 수출 교역품 |
+| [[카카오_초콜릿_역사]] | summary | 목테수마 식탁 → 베라크루스 → 유럽 귀족 독점 → 글로벌 상품. 초콜릿 세계 전파 서사 요약 |
 
 ### 쓰가루 (history/쓰가루/)
 
@@ -221,30 +225,53 @@ COM-30 시리즈(COM-31~40) 딥리서치 결과 — Perplexity·웹 종합 8종 
 
 ### LAKA — 채널 (channels/)
 
+리테일 채널(소비자 직접 접점). 세포라·부츠는 기존 entity와 운영구조 페이지를 통합 (2026-05-18).
+
 | 페이지 | 타입 | 한 줄 설명 |
 |--------|------|------------|
-| [[세포라_운영구조]] | entity | Clean at Sephora, 입점 7단계, STR 60~70%, 도어 확장 3단계 |
-| [[Boots_UK_운영구조]] | entity | Accelerator Programme, CPSR/PIF/SCPN, Make-up Exchange Promise 35일 |
+| [[세포라]] | entity | LAKA 미국 80매장 입점 + Clean at Sephora 기준·입점 7단계·STR 60~70%·도어 확장 3단계 (통합 페이지) |
+| [[부츠]] | entity | LAKA 영국 91매장 입점 + Accelerator Programme·CPSR/PIF/SCPN·Make-up Exchange Promise 35일 (통합 페이지) |
+| [[울타뷰티]] | entity | 미국 채널 — Ulta Beauty 1,400개+ 매장 |
+| [[올리브영]] | entity | CJ 올리브영 — 국내 H&B 1위 |
+| [[시코르]] | entity | 시코르 CHICOR — 신세계 운영 K-뷰티 셀렉트숍 |
+| [[Qoo10_일본]] | entity | 큐텐 재팬 — 립 11분기 연속 1위 |
+| [[코스메키친]] | entity | 일본 MASH Group 운영 프리미엄 셀렉트숍 약 100개점 |
+| [[NEWoMan]] | entity | 일본 도쿄 신주쿠 역직결형 몰 |
+| [[PARCO]] | entity | 일본 PARCO — 30~40대 패션·뷰티 셀렉트 |
+| [[사사]] | entity | Sa Sa 莎莎 — 홍콩·아시아 K-뷰티 셀렉트숍 |
 
-### LAKA — B2B 해외거래처 (entities/distributors/)
+### LAKA — B2B 해외거래처 (distributors/)
 
-해외 B2B 거래처 52곳의 매출(2025-2026) + 채널 분류. 49개 entity 스텁(status: draft)은 `entities/distributors/` 하위. 웹 deep-research가 들어오면 각 페이지에 통합. 원본 표는 [[2026-05-18_LAKA_B2B_해외거래처_매출표]].
+해외 B2B 거래처 52곳의 매출(2025-2026) + 채널 분류. **2026-05-18 deep-research T1+T2+T3+T4 완료** — 50개 stub 중 38곳 active, 12곳 draft 유지 (정체 확인 실패). priority: high 12곳, medium 10곳. 원본 표 [[2026-05-18_LAKA_B2B_해외거래처_매출표]].
 
 | 페이지 | 타입 | 한 줄 설명 |
 |--------|------|------------|
 | [[LAKA_B2B_해외거래처_2025_2026]] | comparison | 52개 거래처 마스터 비교 — '25 6,362M → '26 2,052M, 권역별 매출, 신규 빅 라인 (Sociolla 800·Sephora 284) |
-| [[JSW_Asset]] | entity (draft) | 태국, '25 매출 1위 1,658M → '26 291M (-83%) |
-| [[AMID]] | entity (draft) | 대만, '25 매출 2위 1,062M → '26 27M (-97%) |
-| [[TNC_웨이포인트글로벌]] | entity (draft) | 호주(56 통상 → 웨이포인트 글로벌), '25 459M |
-| [[크레도]] | entity (draft) | 유럽, '25 427M → '26 10M (-98%) |
-| [[엠투씨]] | entity (draft) | 미국/캐나다, '25 390M |
-| [[Sociolla]] | entity (draft) | 인도네시아, '26 신규 빅 라인 800M (2월) |
-| [[Skincupid]] | entity (draft) | 영국, [[부츠]] 공급 라인 + 자체몰 합산 '25 148M / '26 136M |
+| [[JSW_Asset]] | entity ✅ | 태국 K-뷰티 전문 (DBD 0525557000246, 2014). **2025-11 SET 상장사 MOONG 26% 인수** + LAKA 합동 PR. '25 1,658M → '26 291M (셀-인 사이클 가설) |
+| [[AMID]] | entity ✅ | 대만 **覓間生活有限公司** (50868028). **LAKA 대만 독점**, 2025-11 신광미츠코시 첫 팝업. '25 1,062M → '26 27M |
+| [[TNC_웨이포인트글로벌]] | entity ⚠️ | 호주 분류(56 통상 → 웨이포인트). **공개 자료 정체 확인 실패** — 영업팀 사내 마스터 확인 필요 |
+| [[크레도]] | entity ⚠️ | 유럽. **공개 자료 정체 확인 실패** — 매출표 오기재 또는 단발 발주처 가설 |
+| [[엠투씨]] | entity ✅ | **부산 본사 한국 회사** (M2C, 2022~). K-뷰티 100여 개 수출 전문, 미·캐나다 4창고. '25 390M → '26 30M |
+| [[Sociolla]] | entity ✅ | 인니 Social Bella 그룹 (~$226M 투자, $564M 밸류). 150매장 + 베트남 13매장 + K-BeautyLand. '26 800M (셀-인 PO) |
+| [[Skincupid]] | entity ✅ | 영국 **법인 분리 확정**: Skin Cupid Ltd(DTC) + **Cupid Trade Ltd(B2B 도매)**. LAKA Boots 91매장 백엔드 공급 가설. '25 148M / '26 136M. 2026 John Lewis 입점 예정 |
 | [[SUKOSHI]] | entity (draft) | 미국/캐나다, '25 98M → '26 105M (안정 성장) |
-| [[NOTINO]] | entity (draft) | 체코 본사 유럽 EC, '25 88M |
-| [[Miin]] | entity (draft) | 스페인(EU), '25 32M → '26 34M |
-| [[크레이버_UMMA]] | entity (draft) | 글로벌 플랫폼, [[구다이글로벌]] 산하, '25 82M → '26 0 (분리 영향) |
-| ※ 그 외 38개 거래처 | entity (draft) | distributors/ 폴더 참조 — 권역별로 그룹화 |
+| [[NOTINO]] | entity ✅ | 체코 본사 유럽 1위 EC (€1.579B). '25 88M → '26 0 (공급 라우팅 변경 가설) |
+| [[Miin]] | entity ⭐ medium | 스페인 **유럽 최대 K-Beauty 디스트리뷰터** (50+ 매장 5개국). T4 중 유일 '26 안정 |
+| [[크레이버_UMMA]] | entity ✅ | umma.io, **구다이글로벌 85% 인수(2024, 2,456억)** → LAKA와 동일 그룹. '25 82M → '26 0 (내부거래 재분류) |
+| [[실리콘투]] | entity ✅ | K-뷰티 직매입 글로벌 유통 (매출 1조+). **'26 0 = LAKA 2026.02 Sephora US 직진출 우회** |
+| [[예스아시아닷컴_코리아]] | entity ✅ | YesAsia(2209.HK) 한국 자회사. 본사 +45% 성장 중 → 정산 라인 이동 가설 |
+| [[W_Cosmetics]] | entity ✅ | 호주 ANZ 멀티브랜드 (시드니 55+매장 + NZ 4매장). **"호주/네덜란드"는 호주/NZ 오기 가설** |
+| [[Far_East_Group]] | entity ⚠️ | 1순위 후보 Eternal Beauty Holdings(HKEX 6883, 2025 상장). 영업팀 확정 필요 |
+| [[SUKOSHI]] | entity ⭐ medium | 캐나다 SUKOSHI Mart, **북미 16→40매장 + USD 100M 목표. 유일 안정 성장(+7%)** |
+| [[One_Master_Distribution]] | entity ⭐ medium | 루마니아 순수 B2B 디스트리뷰터, 동유럽 3국. 컨트랙트 결렬 → 재계약 ROI 최상 |
+| [[DERMASPACE]] | entity ⭐ medium | 덴마크 최대 K-Beauty (Trustpilot 5점). Nordic 재활성화 후보 |
+| [[BGL_MANAGEMENT]] | entity ⭐ medium | **= BONIIK Beauty 트레이딩 네임**, 호주 최대 K-뷰티 리테일러. **매출표 정합성 정정 필요** |
+| [[Hansung_Beauty_Group]] | entity ⭐ medium | Irvine CA, '25 1,700억. **2026.02 Goodai $70M 인수** → 구다이 수직계열화 |
+| [[Stylevana_GLAMSTAR]] | entity ⭐ medium | Stylevana 운영 법인(Mongkok 2019). 글로벌 K-뷰티 크로스보더 EC |
+| [[바른손_JOLSE]] | entity ⭐ medium | 코스닥 ㈜바른손 2020 JOLSE 흡수합병. 글로벌 D2C EC (140+ 브랜드) |
+| [[N7_Globalgroup]] | entity ⭐ medium | 한국 하남 본사 SEA MT 디스트리뷰터 (SG·MY) |
+| [[올그레이스]] | entity ✅ | 김강일(前 조선미녀) 창업, **2025.07 폰드그룹 190억 인수**. 인천공항 T1 |
+| ※ 그 외 22개 거래처 | entity ✅/⚠️ | distributors/ 폴더 참조 — Maissi(파나마)·K-Secret(UAE)·Vestrade(몰디브)·블루오션(베트남)·이공이공 등. draft 11곳은 영업팀 마스터 확인 필요 |
 
 ### LAKA — 비교 (comparisons/)
 
