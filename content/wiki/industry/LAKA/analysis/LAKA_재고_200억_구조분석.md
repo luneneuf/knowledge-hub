@@ -3,7 +3,7 @@ title: "LAKA 재고 200억 구조분석"
 
 tags: [cosmetics, analysis]
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-05-19
 status: active
 publish: false
 type: comparison
@@ -11,6 +11,8 @@ axis: industry
 ---
 
 # LAKA 재고 200억, 성장의 그림자 — 구조적 원인 분석
+
+> **📈 시계열 추적 페이지**: 2026 상반기 실제 재고 추이는 [[LAKA_재고_시계열_2026H1]] 참조. 본 페이지는 2024년 시점 **구조 진단**, 시계열 페이지는 **실제 측정값**과 [[부진재고_등급제_운영]] 정책 효과를 기록.
 
 ## 핵심 요약
 

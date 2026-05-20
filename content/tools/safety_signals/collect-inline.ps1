@@ -53,6 +53,7 @@ $Sources = @(
     @{ id='uk_govuk_search';   tier='B'; country='UK';  name='GOV.UK Search API — OPSS'; type='json_govuk'; url='https://www.gov.uk/api/search.json?filter_organisations=office-for-product-safety-and-standards&order=-public_timestamp&count=10' }
     @{ id='pubmed_eutils';     tier='C'; country='INT'; name='PubMed — cosmetic adverse'; type='pubmed'; url='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28cosmetic%5BTitle%5D%29+AND+%28adverse+OR+allergy+OR+dermatitis%29&sort=date&retmode=json&retmax=10' }
     @{ id='kcia_notice_html';  tier='A'; country='KR';  name='KCIA 공지사항 (HTML 스크래핑)'; type='html_kcia'; url='https://www.kcia.or.kr/home/notice/notice.php' }
+    @{ id='kcia_edu_law_html'; tier='A'; country='KR';  name='KCIA 공지/교육 — 법령 (HTML 스크래핑)'; type='html_kcia'; url='https://www.kcia.or.kr/home/edu/edu_01.php?sse=1' }
 )
 
 $UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -138,7 +139,9 @@ foreach ($s in $Sources) {
                     if ($seen[$no]) { continue }
                     $seen[$no] = $true
                     $title = ($linkMatch.Groups[3].Value -replace '\s+', ' ').Trim()
-                    $href = 'https://www.kcia.or.kr/home/notice/notice.php' + $linkMatch.Groups[1].Value
+                    # base URL은 소스 URL에서 query string 제거하여 동적으로 구성 (notice.php / edu_01.php 등 동일 템플릿 공유)
+                    $kciaBase = $s.url -replace '\?.*$', ''
+                    $href = $kciaBase + $linkMatch.Groups[1].Value
                     # 카테고리
                     $catMatch = [regex]::Match($rowHtml, '<td class="category"><p>([^<]+)</p></td>')
                     $category = if ($catMatch.Success) { $catMatch.Groups[1].Value.Trim() } else { '' }
@@ -184,6 +187,94 @@ foreach ($it in $AllItems) {
 }
 $AllItems = $kept
 Write-Host ("필터 적용 (>= {0}): 유지 {1} / 제외 {2} (기간 외 {3} + 날짜 불명 {4})" -f $StartDate.ToString('yyyy-MM-dd'), $kept.Count, ($rawCount - $kept.Count), $tooOld.Count, $undated.Count) -ForegroundColor Yellow
+
+# === 신규 항목 추출 (seen_links.json 대조) ===
+# 기존 seen_links.json을 읽어 이미 본 링크와 대조 → 신규만 별도 출력
+# 첫 실행(파일 없음): 모든 항목을 'seen'으로 등록하고 신규는 0건으로 처리
+# (베이스라인 폭주 방지 — 첫 실행 다음날부터 실제 신규 알림)
+$SeenLinksPath = Join-Path $ScriptDir 'seen_links.json'
+$IsFirstRun = -not (Test-Path $SeenLinksPath)
+$SeenLinks = @{}
+if (-not $IsFirstRun) {
+    try {
+        $existing = Get-Content $SeenLinksPath -Raw -Encoding utf8 | ConvertFrom-Json
+        foreach ($l in $existing.links) { $SeenLinks[$l] = $true }
+    } catch {
+        Write-Host "  seen_links.json 파싱 실패, 빈 상태로 시작" -ForegroundColor Yellow
+    }
+}
+
+$NewItems = @()
+$currentLinks = @{}
+foreach ($it in $AllItems) {
+    if ([string]::IsNullOrWhiteSpace($it.link)) { continue }
+    $currentLinks[$it.link] = $true
+    if (-not $SeenLinks[$it.link]) {
+        $NewItems += $it
+    }
+}
+
+if ($IsFirstRun) {
+    Write-Host "  첫 실행 감지 — 모든 항목을 seen으로 등록, 신규 0건으로 처리 (베이스라인 폭주 방지)" -ForegroundColor Cyan
+    $NewItems = @()
+}
+
+# 새 seen_links.json 작성 (기존 + 이번 수집의 모든 링크 union)
+$allLinkArr = @($SeenLinks.Keys) + @($currentLinks.Keys) | Sort-Object -Unique
+[ordered]@{
+    last_updated_at = (Get-Date -Format 'yyyy-MM-ddTHH:mm:sszzz')
+    total = $allLinkArr.Count
+    links = $allLinkArr
+} | ConvertTo-Json -Depth 3 | Out-File -FilePath $SeenLinksPath -Encoding utf8
+
+Write-Host ("신규 항목: {0}건 (필터 통과 {1}건 중 / seen_links 총 {2}개)" -f $NewItems.Count, $AllItems.Count, $allLinkArr.Count) -ForegroundColor Magenta
+
+# 신규만 별도 출력 (PowerShell 5.1: 빈 배열·단일 원소는 ConvertTo-Json 출력 불안정 → 명시적 가드)
+$newJsonPath = Join-Path $DailyDir 'new_items.json'
+$newJsonText = if ($NewItems.Count -eq 0) {
+    '[]'
+} else {
+    ConvertTo-Json -InputObject @($NewItems) -Depth 5
+}
+$newJsonText | Out-File -FilePath $newJsonPath -Encoding utf8
+Write-Host "New items JSON saved: $newJsonPath"
+
+$newMdPath = Join-Path $DailyDir 'new_digest.md'
+$newMd = New-Object System.Collections.ArrayList
+$null = $newMd.Add("# 안전관리 시그널 — 신규 항목만")
+$null = $newMd.Add("")
+$null = $newMd.Add("- 수집 시각: $NowText")
+$null = $newMd.Add("- 신규 항목: $($NewItems.Count)건")
+$null = $newMd.Add("- 첫 실행 여부: $(if ($IsFirstRun) { '예 (베이스라인 등록만, 신규 알림 없음)' } else { '아니오' })")
+$null = $newMd.Add("- 비교 기준: seen_links.json (직전 실행까지 본 링크 모음)")
+$null = $newMd.Add("")
+if ($NewItems.Count -eq 0) {
+    $null = $newMd.Add("_신규 항목 없음._")
+} else {
+    $null = $newMd.Add("## 소스별 신규 건수")
+    $null = $newMd.Add("")
+    $null = $newMd.Add("| Source | Tier | Country | Count |")
+    $null = $newMd.Add("|--------|------|---------|-------|")
+    $NewItems | Group-Object source | Sort-Object Count -Descending | ForEach-Object {
+        $first = $_.Group | Select-Object -First 1
+        $null = $newMd.Add("| $($_.Name) | $($first.tier) | $($first.country) | $($_.Count) |")
+    }
+    $null = $newMd.Add("")
+    $null = $newMd.Add("---")
+    $null = $newMd.Add("")
+    foreach ($g in ($NewItems | Group-Object source)) {
+        $null = $newMd.Add("## $($g.Name) (신규 $($g.Count)건)")
+        $null = $newMd.Add("")
+        foreach ($i in $g.Group) {
+            $title = $i.title; if ($title.Length -gt 200) { $title = $title.Substring(0,197) + '...' }
+            $null = $newMd.Add("- **[$($i.published)]** $title")
+            $null = $newMd.Add("  - $($i.link)")
+        }
+        $null = $newMd.Add("")
+    }
+}
+$newMd | Out-File -FilePath $newMdPath -Encoding utf8
+Write-Host "New items digest saved: $newMdPath"
 
 # === JSON 저장 ===
 $jsonPath = Join-Path $DailyDir 'items.json'
